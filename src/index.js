@@ -7,21 +7,37 @@ const path = require("path");
 const url = require("url");
 
 
-let win; //Creates a variable 'win', which is currently undefined (will be defined more below)
+let window1; //Creates a variable 'win', which is currently undefined (will be defined more below)
+let window2;
 
 //Basic function that opens a Window
 function createWindow() {
-    win = new BrowserWindow(); //Create new instance of BrowserWindow, name it win
+    window1 = new BrowserWindow(); //Create new instance of BrowserWindow, name it win
 
-    win.loadURL(url.format({ //Basically tells us what win is going to be doing, it will loadURL
-        pathname: path.join(__dirname, 'index.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
+    window2 = new BrowserWindow(); //Create new instance of BrowserWindow, name it window2
+
+    window1.loadURL(url.format({ //Basically tells us what win is going to be doing, it will loadURL
+        pathname: path.join(__dirname, 'window1.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
         protocol: 'file', //Protocol for local files
         slashes: true //Whether slashes should be used in the file URL
     }));
 
 
-    win.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
-    win.on('closed', () => { //When all the windows are closed
+    window2.loadURL(url.format({ //Basically tells us what win is going to be doing, it will loadURL
+        pathname: path.join(__dirname, 'window2.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
+        protocol: 'file', //Protocol for local files
+        slashes: true //Whether slashes should be used in the file URL
+    }));
+
+    window1.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
+
+    window2.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
+
+    window1.on('closed', () => { //When all the windows are closed
+        win = null; //nullify it
+    });
+
+    window2.on('closed', () => { //When all the windows are closed
         win = null; //nullify it
     });
 }
