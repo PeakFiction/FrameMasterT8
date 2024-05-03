@@ -1,20 +1,16 @@
 console.log("Hello World")
 
-const electron = require("electron")
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const url = require("url");
 
 
 let window1; //Creates a variable 'win', which is currently undefined (will be defined more below)
-let window2;
+
 
 //Basic function that opens a Window
 function createWindow() {
     window1 = new BrowserWindow(); //Create new instance of BrowserWindow, name it win
-
-    window2 = new BrowserWindow(); //Create new instance of BrowserWindow, name it window2
 
     window1.loadURL(url.format({ //Basically tells us what win is going to be doing, it will loadURL
         pathname: path.join(__dirname, 'window1.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
@@ -22,22 +18,10 @@ function createWindow() {
         slashes: true //Whether slashes should be used in the file URL
     }));
 
-
-    window2.loadURL(url.format({ //Basically tells us what win is going to be doing, it will loadURL
-        pathname: path.join(__dirname, 'window2.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
-        protocol: 'file', //Protocol for local files
-        slashes: true //Whether slashes should be used in the file URL
-    }));
-
     window1.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
-
-    window2.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
+    window1.webContents.preload = path.join(__dirname, 'preload.js');
 
     window1.on('closed', () => { //When all the windows are closed
-        win = null; //nullify it
-    });
-
-    window2.on('closed', () => { //When all the windows are closed
         win = null; //nullify it
     });
 }
@@ -58,3 +42,22 @@ app.on('activate', () => {
         createWindow()
     }
 });
+
+ipcMain.on('openWindow2', () => {
+    createWindow2();
+})
+
+function createWindow2() {
+    window2 = new BrowserWindow();
+    window2.loadURL(url.format({
+        pathname: path.join(__dirname, 'window2.html'), //Tells them where is it, __dirname is for when the .html file is in the same place as the .js file
+        protocol: 'file', //Protocol for local files
+        slashes: true //Whether slashes should be used in the file URL
+    }));
+
+    window2.webContents.openDevTools(); // Opens DevTools in the BrowserWindow (optional)
+
+    window2.on('closed', () => {
+        window2 = null;
+    });
+}
