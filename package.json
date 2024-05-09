@@ -13,9 +13,7 @@
     "electron": "^29.1.0"
   },
   "dependencies": {
+    "electron-prebuilt-compile": "^8.2.0",
     "sqlite3": "^5.1.7"
-    "electron": "^29.1.0",
-    "electron-prebuilt-compile": "^8.2.0"
-
   }
 }

@@ -1,0 +1,28 @@
+/* Styles for the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add some space below the search bar */
+  }
+  
+  #searchInput {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  /* Styles for the table container */
+  .table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #data-table {
+    width: 90%; /* Adjust the width as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  /* Additional table styles */
+  /* Add your table styles here */
+  

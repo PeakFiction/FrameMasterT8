@@ -325,6 +325,20 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
         }});
 });
 
+// Inside the code where you create the BrowserWindow for Kazuya.html
+
+// Assuming you have an instance of the Database object named 'db'
+db.all('SELECT * FROM moves', (err, moves) => {
+    if (err) {
+        // Handle error
+        console.error('Error fetching moves from database:', err.message);
+    } else {
+        // Send moves data to the renderer process
+        mainWindow.webContents.send('moves-data', moves);
+    }
+});
+
+
 // Handle data request from renderer
 function fetchData(event) {
     const query = 'SELECT * FROM moves ORDER BY isFavorite DESC, moveID ASC';  // Adjust ordering as necessary
@@ -338,3 +352,16 @@ function fetchData(event) {
     });
 }
 
+//////////////////////////////////////////// FAVORITE FUNCTION ////////////////////////////////////////////
+
+ipcMain.on('toggle-favorite', (event, moveId) => {
+    const query = `UPDATE moves SET isFavorite = NOT isFavorite WHERE moveID = ?`;
+    db.run(query, [moveId], function(err) {
+        if (err) {
+            console.error('Error updating favorite status:', err);
+            return;
+        }
+        console.log(`Rows affected: ${this.changes}`);
+        fetchData(event);  // Refetch and send updated data
+    });
+});
