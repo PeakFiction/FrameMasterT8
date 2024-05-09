@@ -10,21 +10,35 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    const b2 = document.getElementById('goToWindow2');
-    if (b2) {
-      b2.addEventListener('click', () => {
-        console.log("goToWindow2 IPCRenderer in preload.js called Current time is:", new Date());
-        ipcRenderer.send('asynchronous-message', 'goToWindow2');
-      });
+    const calculatorWindow = document.getElementById('goToCalculatorWindow');
+      if (calculatorWindow) {
+        calculatorWindow.addEventListener('click', () => {
+          console.log("calculatorWindow IPCRenderer in preload.js called. Current time is:", new Date());
+          ipcRenderer.send('asynchronous-message', 'goToCalculatorWindow');
+        });
+      }
+
+
+    function createCharacterButtonListener(characterName) {
+      const button = document.getElementById(`goTo${characterName}`);
+      if (button) {
+        button.addEventListener('click', () => {
+          console.log(`goTo${characterName} IPCRenderer in preload.js called Current time is:`, new Date());
+          ipcRenderer.send('asynchronous-message', `goTo${characterName}`);
+        });
+      }
     }
 
-    const bExtraWindow2 = document.getElementById('goToExtraWindow');
-    if (bExtraWindow2) {
-      bExtraWindow2.addEventListener('click', () => {
-        console.log("goToExtraWindow IPCRenderer in preload.js called. Current time is:", new Date());
-        ipcRenderer.send('asynchronous-message', 'goToExtraWindow');
-      });
-    }
+    const characterList = [
+      'Alisa', 'Asuka', 'Azucena', 'Bryan', 'Claudio', 'DevilJin', 'Dragunov', 'Eddy',
+      'Feng', 'Hwoarang', 'Jack8', 'Jin', 'Jun', 'Kazuya', 'King', 'Kuma', 'Lars', 'Law',
+      'Lee', 'Leo', 'Leroy', 'Lili', 'Nina', 'Panda', 'Paul', 'Raven', 'Reina', 'Shaheen',
+      'Steve', 'Victor', 'Xiaoyu', 'Yoshimitsu', 'Zafina'
+    ];
+
+    characterList.forEach(character => {
+      createCharacterButtonListener(character);
+    });
   }
 
   window.addEventListener('load', initializeEventListeners);
