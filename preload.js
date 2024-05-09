@@ -4,6 +4,8 @@ contextBridge.exposeInMainWorld(
   'electronAPI', {
       requestData: () => ipcRenderer.send('request-data'),
       receiveData: (callback) => ipcRenderer.on('data-response', (event, ...args) => callback(...args)),
+      toggleFavorite: (moveID) => ipcRenderer.send('toggle-favorite', moveID),
+      onFavoriteUpdated: (callback) => ipcRenderer.on('favorite-updated', callback)
   }
 );
 
