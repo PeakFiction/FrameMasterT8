@@ -24,7 +24,6 @@ ipcMain.on('asynchronous-message', (event, arg) => {
         case 'goToBryan':
             createCharacterWindow('Bryan');
             break;
-        // Add cases for each character below
         case 'goToClaudio':
             createCharacterWindow('Claudio');
             break;

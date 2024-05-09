@@ -1,44 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Electron Button Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Select</title>
+  <style>
+    .character-select {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .character-icon {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: #333;
+      border: 2px solid #666;
+      border-top-left-radius: 15px;
+    }
+
+    .character-icon img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .character-icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .character-icon:hover::before {
+      opacity: 1;
+    }
+
+    .character-icon.selected::before {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    .random {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #333;
+      color: #fff;
+      border: 2px solid #666;
+      border-top-left-radius: 15px;
+    }
+
+    .temp {
+      background-color: #333;
+      border: 2px solid #666;
+      border-top-left-radius: 15px;
+    }
+  </style>
 </head>
 <body>
-  <button id="goToHomePage">Go to Home Page</button>
-  <button id="goToAlisa">Go to Alisa</button>
-  <button id="goToAsuka">Go to Asuka</button>
-  <button id="goToAzucena">Go to Azucena</button>
-  <button id="goToBryan">Go to Bryan</button>
-  <button id="goToClaudio">Go to Claudio</button>
-  <button id="goToDevilJin">Go to DevilJin</button>
-  <button id="goToDragunov">Go to Dragunov</button>
-  <button id="goToEddy">Go to Eddy</button>
-  <button id="goToFeng">Go to Feng</button>
-  <button id="goToHwoarang">Go to Hwoarang</button>
-  <button id="goToJack8">Go to Jack8</button>
-  <button id="goToJin">Go to Jin</button>
-  <button id="goToJun">Go to Jun</button>
-  <button id="goToKazuya">Go to Kazuya</button>
-  <button id="goToKing">Go to King</button>
-  <button id="goToKuma">Go to Kuma</button>
-  <button id="goToLars">Go to Lars</button>
-  <button id="goToLaw">Go to Law</button>
-  <button id="goToLee">Go to Lee</button>
-  <button id="goToLeo">Go to Leo</button>
-  <button id="goToLeroy">Go to Leroy</button>
-  <button id="goToLili">Go to Lili</button>
-  <button id="goToNina">Go to Nina</button>
-  <button id="goToPanda">Go to Panda</button>
-  <button id="goToPaul">Go to Paul</button>
-  <button id="goToRaven">Go to Raven</button>
-  <button id="goToReina">Go to Reina</button>
-  <button id="goToShaheen">Go to Shaheen</button>
-  <button id="goToSteve">Go to Steve</button>
-  <button id="goToVictor">Go to Victor</button>
-  <button id="goToXiaoyu">Go to Xiaoyu</button>
-  <button id="goToYoshimitsu">Go to Yoshimitsu</button>
-  <button id="goToZafina">Go to Zafina</button>
-  <button id="goToCalculatorWindow">Go to Calculator</button>
+  <div class="character-select">
+    <!-- Add more character icons here -->
+    <div class="character-icon">
+      <a id="goToAlisa">
+      <img src="characterPortraits/alisa.webp" alt="Alisa">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToAsuka">
+      <img src="characterPortraits/asuka.webp" alt="Asuka">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToAzucena">
+        <img src="characterPortraits/azucena.webp" alt="Azucena">
+        </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToBryan">
+        <img src="characterPortraits/bryan.webp" alt="Bryan">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToClaudio">
+        <img src="characterPortraits/claudio.webp" alt="Claudio">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToDevilJin">
+        <img src="characterPortraits/deviljin.webp" alt="Devil Jin">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToDragunov">
+        <img src="characterPortraits/dragunov.webp" alt="Dragunov">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToEddy">
+        <img src="characterPortraits/eddy.webp" alt="Eddy">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToFeng">
+        <img src="characterPortraits/feng.webp" alt="Feng">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToHwoarang">
+        <img src="characterPortraits/hwoarang.webp" alt="Hwoarang">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToJack8">
+        <img src="characterPortraits/jack8.webp" alt="Jack-8">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToJin">
+        <img src="characterPortraits/jin.webp" alt="Jin">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToJun">
+        <img src="characterPortraits/jun.webp" alt="Jun">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToKazuya">
+        <img src="characterPortraits/kazuya.webp" alt="Kazuya">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToKing">
+        <img src="characterPortraits/king.webp" alt="King">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToKuma">
+        <img src="characterPortraits/kuma.webp" alt="Kuma">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLars">
+        <img src="characterPortraits/lars.webp" alt="Lars">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLaw">
+        <img src="characterPortraits/law.webp" alt="Law">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLee">
+        <img src="characterPortraits/lee.webp" alt="Lee">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLeo">
+        <img src="characterPortraits/leo.webp" alt="Leo">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLeroy">
+        <img src="characterPortraits/leroy.webp" alt="Leroy">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToLili">
+        <img src="characterPortraits/lili.webp" alt="Lili">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToNina">
+        <img src="characterPortraits/nina.webp" alt="Nina">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToPanda">
+        <img src="characterPortraits/panda.webp" alt="Panda">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToPaul">
+        <img src="characterPortraits/paul.webp" alt="Paul">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToRaven">
+        <img src="characterPortraits/raven.webp" alt="Raven">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToReina">
+        <img src="characterPortraits/reina.webp" alt="Reina">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToShaheen">
+        <img src="characterPortraits/shaheen.webp" alt="Shaheen">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToSteve">
+        <img src="characterPortraits/steve.webp" alt="Steve">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToVictor">
+        <img src="characterPortraits/victor.webp" alt="Victor">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToXiaoyu">
+        <img src="characterPortraits/xiaoyu.webp" alt="Xiaoyu">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToYoshimitsu">
+        <img src="characterPortraits/yoshimitsu.webp" alt="Yoshimitsu">
+      </a>
+    </div>
+    <div class="character-icon">
+      <a id="goToZafina">
+        <img src="characterPortraits/zafina.webp" alt="Zafina">
+      </a>
+    </div>
+    <!-- Temporary divs for future characters -->
+    <div class="character-icon temp"></div>
+    <div class="character-icon temp"></div>
+    <div class="character-icon random">?</div>
+  </div>
+
+  <audio id="backgroundMusic" src="t8select.m4a" loop></audio>
+  <button id="musicControlButton">Pause Music</button>
+
+
+  <script>
+    const audio = document.getElementById('backgroundMusic');
+    const button = document.getElementById('musicControlButton');
+
+    // Play music when the page loads
+    window.addEventListener('load', () => {
+        audio.play();
+      });
+
+    
+          // Toggle play/pause on button click
+    button.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            button.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            button.textContent = 'Play Music';
+        }
+        });
+    
+    const characterIcons = document.querySelectorAll('.character-icon:not(.temp):not(.random)');
+    characterIcons.forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        characterIcons.forEach(icon => icon.classList.remove('selected'));
+        icon.classList.add('selected');
+      });
+      icon.addEventListener('mouseout', () => {
+        icon.classList.remove('selected');
+      });
+    });
+  </script>
   <script src="preload.js"></script>
 </body>
 </html>
