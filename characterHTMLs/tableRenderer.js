@@ -31,3 +31,41 @@ window.electronAPI.requestData();
             tableBody.appendChild(tr);
         });
     });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Function to filter table rows based on search input
+    function filterTable() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toUpperCase();
+        const table = document.getElementById('data-table');
+        const tbody = table.getElementsByTagName('tbody')[0];
+        const rows = tbody.getElementsByTagName('tr');
+
+        // Loop through all table rows
+        for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let found = false;
+            // Loop through all cells in the row
+            for (let j = 0; j < cells.length; j++) {
+                const cell = cells[j];
+                if (cell) {
+                    const textValue = cell.textContent || cell.innerText;
+                    // Check if the cell content contains the search filter
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                        found = true;
+                        break; // Exit loop if a match is found in any cell
+                    }
+                }
+            }
+            // Show or hide the row based on the search result
+            rows[i].style.display = found ? '' : 'none';
+        }
+    }
+
+    // Listen for changes in the search input
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', filterTable);
+    }
+});
+
