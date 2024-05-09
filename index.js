@@ -325,6 +325,20 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
         }});
 });
 
+// Inside the code where you create the BrowserWindow for Kazuya.html
+
+// Assuming you have an instance of the Database object named 'db'
+db.all('SELECT * FROM moves', (err, moves) => {
+    if (err) {
+        // Handle error
+        console.error('Error fetching moves from database:', err.message);
+    } else {
+        // Send moves data to the renderer process
+        mainWindow.webContents.send('moves-data', moves);
+    }
+});
+
+
 // Handle data request from renderer
 function fetchData(event) {
     const query = 'SELECT * FROM moves ORDER BY isFavorite DESC, moveID ASC';  // Adjust ordering as necessary

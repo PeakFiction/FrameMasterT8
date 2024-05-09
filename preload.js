@@ -29,14 +29,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     function createCharacterButtonListener(characterName) {
-      const button = document.getElementById(`goTo${characterName}`);
-      if (button) {
-        button.addEventListener('click', () => {
-          console.log(`goTo${characterName} IPCRenderer in preload.js called Current time is:`, new Date());
-          ipcRenderer.send('asynchronous-message', `goTo${characterName}`);
-        });
+        const button = document.getElementById(`goTo${characterName}`);
+        if (button) {
+          button.addEventListener('click', () => {
+            console.log(`goTo${characterName} IPCRenderer in preload.js called Current time is:`, new Date());
+            window.location.href = `characterHTMLs/${characterName.toLowerCase()}MoveList.html`;
+          });
+        }
       }
-    }
+      
 
     const characterList = [
       'Alisa', 'Asuka', 'Azucena', 'Bryan', 'Claudio', 'DevilJin', 'Dragunov', 'Eddy',
