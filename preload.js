@@ -1,5 +1,14 @@
+const { contextBridge, ipcRenderer } = require('electron');
+
+contextBridge.exposeInMainWorld(
+  'electronAPI', {
+      requestData: () => ipcRenderer.send('request-data'),
+      receiveData: (callback) => ipcRenderer.on('data-response', (event, ...args) => callback(...args)),
+  }
+);
+
 window.addEventListener('DOMContentLoaded', () => {
-  const { ipcRenderer } = require('electron');
+  
 
   function initializeEventListeners() {
     const b1 = document.getElementById('goToHomePage');

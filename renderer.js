@@ -1,3 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+  window.electronAPI.requestData();
+
+  window.electronAPI.receiveData((rows) => {
+      const tableBody = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+      tableBody.innerHTML = '';  // Clear existing rows
+
+      rows.forEach(row => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+              <td>${row.moveName}</td>
+              <td>${row.notation}</td>
+              <td>${row.startupFrames}</td>
+              <td>${row.framesOnHit}</td>
+              <td>${row.framesOnBlock}</td>
+              <td>${row.stringProperties}</td>
+              <td>${row.damage}</td>
+              <td>${row.throwBreak}</td>
+              <td>${row.notes}</td>
+          `;
+
+          tableBody.appendChild(tr);
+      });
+  });
+});
+
+
 function addButtonEventListener(buttonId, characterName) {
    const button = document.getElementById(buttonId);
    if (button) {
@@ -53,4 +80,4 @@ function addButtonEventListener(buttonId, characterName) {
  addButtonEventListener('goToXiaoyu', 'Xiaoyu');
  addButtonEventListener('goToYoshimitsu', 'Yoshimitsu');
  addButtonEventListener('goToZafina', 'Zafina');
- 
+

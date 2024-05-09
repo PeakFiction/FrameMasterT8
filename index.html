@@ -248,6 +248,26 @@
   <audio id="backgroundMusic" src="t8select.m4a" loop></audio>
   <button id="musicControlButton">Pause Music</button>
 
+  <h1>Data from SQLite Database</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Move Name</th>
+                <th>Notation</th>
+                <th>Startup Frames</th>
+                <th>Frames On Hit</th>
+                <th>Frames On Block</th>
+                <th>String Properties</th>
+                <th>Damage</th>
+                <th>Throw Break</th>
+                <th>Notes</th>
+                <th>Favorite</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="renderer.js"></script>
 
   <script>
     const audio = document.getElementById('backgroundMusic');
@@ -280,7 +300,8 @@
         icon.classList.remove('selected');
       });
     });
+    
   </script>
-  <script src="preload.js"></script>
+  <script src="preload.js"></script
 </body>
 </html>
