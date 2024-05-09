@@ -1,10 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Calculator Window</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekken 8 Air Combo Damage Calculator</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #fff;
+    }
+
+    .calculator {
+        width: 300px;
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .display {
+        margin-bottom: 20px;
+    }
+
+    .display input {
+        width: 100%;
+        padding: 10px;
+        font-size: 24px;
+        text-align: right;
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+        background-color: #2b2b2b;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #3b3b3b;
+    }
+
+    #counterHitStatus {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+</style>
 </head>
 <body>
-  <h1>This is the Calculator Window</h1>
-  <script src="preload.js"></script>
+  <div class="calculator">
+    <h1>Tekken 8 Air Combo Damage Calculator</h1>
+    <div class="display">
+      <input type="text" id="result" disabled>
+    </div>
+    <div class="buttons">
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="clearAll()">Clear All</button>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="toggleCounterHit()">Toggle Counter Hit</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+    <p id="counterHitStatus"></p>
+  </div>
+
+  <script>
+    let expression = '';
+let isCounterHit = false;
+
+function appendNumber(number) {
+  expression += number;
+  updateDisplay();
+}
+
+function appendOperator(operator) {
+  expression += operator;
+  updateDisplay();
+}
+
+function toggleCounterHit() {
+  isCounterHit = !isCounterHit;
+  const counterHitStatusElement = document.getElementById('counterHitStatus');
+  counterHitStatusElement.textContent = isCounterHit ? 'Counter Hit Mode' : 'Normal Hit Mode';
+  updateDisplay();
+}
+
+function clearAll() {
+  expression = '';
+  isCounterHit = false;
+  const counterHitStatusElement = document.getElementById('counterHitStatus');
+  counterHitStatusElement.textContent = 'Normal Hit Mode';
+  updateDisplay();
+}
+
+function updateDisplay() {
+  const displayInput = document.getElementById('result');
+  displayInput.value = expression;
+}
+
+function calculateResult() {
+  const hits = expression.split('+').map(Number);
+  const maxHits = 4;
+  let totalDamage = 0;
+
+  hits.forEach((hit, index) => {
+    let damageMultiplier;
+
+    if (isCounterHit) {
+      if (index === 0) {
+        damageMultiplier = 1.2; // Counter Hit, 1st hit
+      } else if (index === 1) {
+        damageMultiplier = 0.7; // Counter Hit, 2nd hit
+      } else if (index === 2) {
+        damageMultiplier = 0.5; // Counter Hit, 3rd hit
+      } else {
+        damageMultiplier = 0.3; // Counter Hit, 4th hit and after
+      }
+    } else {
+      if (index === 0) {
+        damageMultiplier = 1; // No Counter Hit, 1st hit
+      } else if (index === 1) {
+        damageMultiplier = 0.7; // No Counter Hit, 2nd hit
+      } else if (index === 2) {
+        damageMultiplier = 0.5; // No Counter Hit, 3rd hit
+      } else {
+        damageMultiplier = 0.3; // No Counter Hit, 4th hit and after
+      }
+    }
+
+    const scaledDamage = hit * damageMultiplier;
+    totalDamage += scaledDamage;
+  });
+
+  expression = totalDamage.toFixed(2);
+  updateDisplay();
+
+  function updateButtonColors() {
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        if (isCounterHit) {
+            button.style.backgroundColor = '#8b0000'; // Crimson red
+        } else {
+            button.style.backgroundColor = '#2b2b2b'; // Dark gray
+        }
+    });
+}
+
+updateButtonColors();
+}
+  </script>
 </body>
 </html>

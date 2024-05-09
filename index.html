@@ -5,13 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Select</title>
   <style>
+    body {
+      background: linear-gradient(135deg, black, crimson, purple);
+      background-size: 600% 600%;
+      animation: gradientAnimation 30s ease infinite;
+    }
+ 
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .title {
+      font-family: 'Bebas Neue', sans-serif;
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      margin-bottom: 20px;
+    }
+ 
     .character-select {
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 10px;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 1200px;
     }
-
+ 
     .character-icon {
       position: relative;
       width: 100%;
@@ -22,7 +51,7 @@
       border: 2px solid #666;
       border-top-left-radius: 15px;
     }
-
+ 
     .character-icon img {
       position: absolute;
       top: 0;
@@ -31,7 +60,7 @@
       height: 100%;
       object-fit: cover;
     }
-
+ 
     .character-icon::before {
       content: "";
       position: absolute;
@@ -43,15 +72,15 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-
+ 
     .character-icon:hover::before {
       opacity: 1;
     }
-
+ 
     .character-icon.selected::before {
       background-color: rgba(255, 0, 0, 0.5);
     }
-
+ 
     .random {
       display: flex;
       justify-content: center;
@@ -63,7 +92,7 @@
       border: 2px solid #666;
       border-top-left-radius: 15px;
     }
-
+ 
     .temp {
       background-color: #333;
       border: 2px solid #666;
@@ -72,6 +101,7 @@
   </style>
 </head>
 <body>
+  <h1 class="title">CHARACTER SELECT</h1>
   <div class="character-select">
     <!-- Add more character icons here -->
     <div class="character-icon">
@@ -272,24 +302,23 @@
   <script>
     const audio = document.getElementById('backgroundMusic');
     const button = document.getElementById('musicControlButton');
-
+  
     // Play music when the page loads
     window.addEventListener('load', () => {
-        audio.play();
-      });
-
-    
-          // Toggle play/pause on button click
+      audio.play();
+    });
+  
+    // Toggle play/pause on button click
     button.addEventListener('click', () => {
-        if (audio.paused) {
-            audio.play();
-            button.textContent = 'Pause Music';
-        } else {
-            audio.pause();
-            button.textContent = 'Play Music';
-        }
-        });
-    
+      if (audio.paused) {
+        audio.play();
+        button.textContent = 'Pause Music';
+      } else {
+        audio.pause();
+        button.textContent = 'Play Music';
+      }
+    });
+  
     const characterIcons = document.querySelectorAll('.character-icon:not(.temp):not(.random)');
     characterIcons.forEach(icon => {
       icon.addEventListener('mouseover', () => {
