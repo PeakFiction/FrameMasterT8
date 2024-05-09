@@ -19,6 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
               <td>${row.notes}</td>
           `;
 
+          // Add toggle favorite button
+          const toggleBtn = document.createElement('button');
+          toggleBtn.textContent = row.isFavorite ? '★' : '☆';
+          const favoriteCell = tr.insertCell();
+          favoriteCell.appendChild(toggleBtn);
+
+          toggleBtn.addEventListener('click', () => {
+              window.electronAPI.toggleFavorite(row.moveID);
+          });
+
           tableBody.appendChild(tr);
       });
   });
