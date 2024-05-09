@@ -1,1 +1,0 @@
-console.log("Render Process of Window 2")
