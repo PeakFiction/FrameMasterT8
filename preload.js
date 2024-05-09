@@ -2,11 +2,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const { ipcRenderer } = require('electron');
 
   function initializeEventListeners() {
-    const b1 = document.getElementById('goToPageButton');
+    const b1 = document.getElementById('goToHomePage');
     if (b1) {
       b1.addEventListener('click', () => {
         console.log("goToPage IPCRenderer in preload.js called Current time is:", new Date());
-        ipcRenderer.send('asynchronous-message', 'goToPage');
+        ipcRenderer.send('asynchronous-message', 'goToHomePage');
       });
     }
 
