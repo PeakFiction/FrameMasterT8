@@ -1,49 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  window.electronAPI.requestData();
-
-  window.electronAPI.receiveData((rows) => {
-      const tableBody = document.getElementById('data-table').getElementsByTagName('tbody')[0];
-      tableBody.innerHTML = '';  // Clear existing rows
-
-      rows.forEach(row => {
-          const tr = document.createElement('tr');
-          tr.innerHTML = `
-              <td>${row.moveName}</td>
-              <td>${row.notation}</td>
-              <td>${row.startupFrames}</td>
-              <td>${row.framesOnHit}</td>
-              <td>${row.framesOnBlock}</td>
-              <td>${row.stringProperties}</td>
-              <td>${row.damage}</td>
-              <td>${row.throwBreak}</td>
-              <td>${row.notes}</td>
-          `;
-
-          // Add toggle favorite button
-          const toggleBtn = document.createElement('button');
-          toggleBtn.textContent = row.isFavorite ? '★' : '☆';
-          const favoriteCell = tr.insertCell();
-          favoriteCell.appendChild(toggleBtn);
-
-          toggleBtn.addEventListener('click', () => {
-              window.electronAPI.toggleFavorite(row.moveID);
-          });
-
-          tableBody.appendChild(tr);
-      });
-  });
-});
-
-
-function addButtonEventListener(buttonId, characterName) {
+function addButtonEventListener(buttonId, htmlFileName) {
    const button = document.getElementById(buttonId);
    if (button) {
      button.addEventListener('click', () => {
        console.log(`${buttonId} Event Listener in renderer called Current time is:`, new Date());
-       createWindowForCharacter(characterName);
+       if(htmlFileName) {
+           window.location.href = htmlFileName;
+       }
      });
    }
  }
+
+
  
  const button1 = document.getElementById('goToHomePage');
  button1.addEventListener('click', () => {
@@ -70,7 +37,7 @@ function addButtonEventListener(buttonId, characterName) {
  addButtonEventListener('goToJack8', 'Jack8');
  addButtonEventListener('goToJin', 'Jin');
  addButtonEventListener('goToJun', 'Jun');
- addButtonEventListener('goToKazuya', 'Kazuya');
+ addButtonEventListener('goToKazuya', 'Kazuya', 'Kazuya.html');
  addButtonEventListener('goToKing', 'King');
  addButtonEventListener('goToKuma', 'Kuma');
  addButtonEventListener('goToLars', 'Lars');
