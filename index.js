@@ -338,3 +338,16 @@ function fetchData(event) {
     });
 }
 
+//////////////////////////////////////////// FAVORITE FUNCTION ////////////////////////////////////////////
+
+ipcMain.on('toggle-favorite', (event, moveId) => {
+    const query = `UPDATE moves SET isFavorite = NOT isFavorite WHERE moveID = ?`;
+    db.run(query, [moveId], function(err) {
+        if (err) {
+            console.error('Error updating favorite status:', err);
+            return;
+        }
+        console.log(`Rows affected: ${this.changes}`);
+        fetchData(event);  // Refetch and send updated data
+    });
+});
