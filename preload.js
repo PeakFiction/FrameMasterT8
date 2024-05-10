@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (button) {
           button.addEventListener('click', () => {
             console.log(`goTo${characterName} IPCRenderer in preload.js called Current time is:`, new Date());
-            window.location.href = `characterHTMLs/${characterName.toLowerCase()}MoveList.html`;
+            ipcRenderer.send('asynchronous-message', `goTo${characterName}`);
           });
         }
       }
