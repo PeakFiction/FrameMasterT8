@@ -1,3 +1,4 @@
+
 window.electronAPI.requestData();
 
     window.electronAPI.receiveData((rows) => {
@@ -9,13 +10,14 @@ window.electronAPI.requestData();
             tr.innerHTML = `
                 <td>${row.moveName}</td>
                 <td>${row.notation}</td>
-                <td>${row.startupFrames}</td>
-                <td>${row.framesOnHit}</td>
-                <td>${row.framesOnBlock}</td>
                 <td>${row.stringProperties}</td>
                 <td>${row.damage}</td>
-                <td>${row.throwBreak}</td>
+                <td>${row.startupFrames}</td>
+                <td>${row.framesOnBlock}</td>
+                <td>${row.framesOnHit}</td>
+                <td>${row.framesOnCounter}</td>
                 <td>${row.notes}</td>
+                <td>${row.throwBreak}</td>
             `;
 
             // Add toggle favorite button
