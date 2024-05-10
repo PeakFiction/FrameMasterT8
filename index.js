@@ -225,9 +225,7 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
         framesOnCounter TEXT,
         stringProperties TEXT,
         damage TEXT,
-        throwBreak TEXT,
         notes TEXT,
-        userNotes TEXT,
         isFavorite BOOLEAN NOT NULL DEFAULT 0
     )`, (err) => {
         if (err) {
@@ -236,7 +234,7 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
             console.log('Table created or already exists.');
         // Insert dummy data (!) ONLY USE THIS WHEN INSERTING NEW DATA OR DB IS EMPTY (!)
         // const moves = [];
-        // const stmt = db.prepare('INSERT INTO moves (moveID, characterID, moveName, notation, stringProperties, damage, startupFrames, framesOnBlock, framesOnHit, framesOnCounter, notes, throwBreak, userNotes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        // const stmt = db.prepare('INSERT INTO moves (moveID, characterID, moveName, notation, stringProperties, damage, startupFrames, framesOnBlock, framesOnHit, framesOnCounter, notes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
         // for (const move of moves) {
         //     stmt.run(move);
         // }

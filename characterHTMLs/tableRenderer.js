@@ -16,7 +16,6 @@ window.electronAPI.receiveData((rows) => {
             <td>${row.framesOnHit}</td>
             <td>${row.framesOnCounter}</td>
             <td><input type="text" class="note-input" value="${row.notes}"></td>
-            <td>${row.throwBreak}</td>
         `;
 
         // Add toggle favorite button
