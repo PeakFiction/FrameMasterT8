@@ -277,39 +277,5 @@
 
   <audio id="backgroundMusic" src="t8select.m4a" loop></audio>
   <button id="musicControlButton">Pause Music</button>
-
-
-  <script>
-    const audio = document.getElementById('backgroundMusic');
-    const button = document.getElementById('musicControlButton');
-  
-    // Play music when the page loads
-    window.addEventListener('load', () => {
-      audio.play();
-    });
-  
-    // Toggle play/pause on button click
-    button.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-        button.textContent = 'Pause Music';
-      } else {
-        audio.pause();
-        button.textContent = 'Play Music';
-      }
-    });
-  
-    const characterIcons = document.querySelectorAll('.character-icon:not(.temp):not(.random)');
-    characterIcons.forEach(icon => {
-      icon.addEventListener('mouseover', () => {
-        characterIcons.forEach(icon => icon.classList.remove('selected'));
-        icon.classList.add('selected');
-      });
-      icon.addEventListener('mouseout', () => {
-        icon.classList.remove('selected');
-      });
-    });
-  </script>
-  <script src="preload.js"></script>
 </body>
 </html>

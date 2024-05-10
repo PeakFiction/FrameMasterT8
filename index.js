@@ -1,8 +1,15 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
-const { ipcMain } = require('electron');
+const sqlite3 = require('sqlite3').verbose();
+
 
 let mainWindow; // Declare a variable to store the current window instance
+let currentCharacterID = "";
+
+ipcMain.on('request-data', (event) => {
+    console.log(currentCharacterID);
+    fetchData(event);
+});
 
 ipcMain.on('asynchronous-message', (event, arg) => {
     switch (arg) {
@@ -153,13 +160,23 @@ app.whenReady().then(() => {
 });
 
 app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') app.quit();
+    db.close((err) => {
+        if (err) {
+            console.error(err.message);
+        }
+        console.log('Closed the database connection.');
+    });
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
 });
 
 //////////////////////////////// CHARACTER WINDOW LOGIC BELOW ////////////////////////////////
 
 const createCharacterWindow = (character) => {
     console.log(`create${character}Window() function in index.js called Current time is:`, new Date());
+    currentCharacterID = character.toLowerCase();
+    console.log(currentCharacterID);
     if (mainWindow) {
         mainWindow.close(); // Close the current window
     }
@@ -184,5 +201,99 @@ const characterList = [
 characterList.forEach(character => {
     ipcMain.on(`asynchronous-message-goTo${character}`, () => {
         createCharacterWindow(character);
+    });
+});
+
+//////////////////////////////////////////// DATABASE CONNECTION ////////////////////////////////////////////
+
+// Open database connection
+let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite3.OPEN_CREATE, (err) => {
+    if (err) {
+        console.error(err.message);
+    }
+    console.log('Connected to the mydatabase.db.');
+
+    // Creating the 'moves' table
+    db.run(`CREATE TABLE IF NOT EXISTS moves(
+        moveID TEXT,
+        characterID TEXT,
+        moveName TEXT,
+        notation TEXT,
+        startupFrames TEXT,
+        framesOnHit TEXT,
+        framesOnBlock TEXT,
+        framesOnCounter TEXT,
+        stringProperties TEXT,
+        damage TEXT,
+        throwBreak TEXT,
+        notes TEXT,
+        userNotes TEXT,
+        isFavorite BOOLEAN NOT NULL DEFAULT 0
+    )`, (err) => {
+        if (err) {
+            console.error('Error creating table:', err.message);
+        } else {
+            console.log('Table created or already exists.');
+        // Insert dummy data (!) ONLY USE THIS WHEN INSERTING NEW DATA OR DB IS EMPTY (!)
+        // const moves = [];
+        // const stmt = db.prepare('INSERT INTO moves (moveID, characterID, moveName, notation, stringProperties, damage, startupFrames, framesOnBlock, framesOnHit, framesOnCounter, notes, throwBreak, userNotes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        // for (const move of moves) {
+        //     stmt.run(move);
+        // }
+        // stmt.finalize();
+        // console.log('Dummy data inserted into the moves table.');
+        }});
+});
+
+// Inside the code where you create the BrowserWindow for Kazuya.html
+
+// Assuming you have an instance of the Database object named 'db'
+db.all('SELECT * FROM moves', (err, moves) => {
+    if (err) {
+        // Handle error
+        console.error('Error fetching moves from database:', err.message);
+    } else {
+        // Send moves data to the renderer process
+        mainWindow.webContents.send('moves-data', moves);
+    }
+});
+
+
+// Handle data request from renderer
+function fetchData(event) {
+    const query = 'SELECT * FROM moves WHERE characterID = ? ORDER BY isFavorite DESC, moveID ASC';  // Adjust ordering as necessary
+    db.all(query, [currentCharacterID], (err, rows) => {
+        if (err) {
+            console.error('Database read error:', err);
+            event.reply('data-response', []);
+        } else {
+            event.reply('data-response', rows);
+        }
+    });
+}
+
+//////////////////////////////////////////// FAVORITE FUNCTION ////////////////////////////////////////////
+
+ipcMain.on('toggle-favorite', (event, moveId) => {
+    const query = `UPDATE moves SET isFavorite = NOT isFavorite WHERE moveID = ?`;
+    db.run(query, [moveId], function(err) {
+        if (err) {
+            console.error('Error updating favorite status:', err);
+            return;
+        }
+        console.log(`Rows affected: ${this.changes}`);
+        fetchData(event);  // Refetch and send updated data
+    });
+});
+
+ipcMain.on('update-note', (event, moveId, newNote) => {
+    const query = `UPDATE moves SET notes = ? WHERE moveID = ?`;
+    db.run(query, [newNote, moveId], function(err) {
+        if (err) {
+            console.error('Error updating note:', err);
+            return;
+        }
+        console.log(`Note updated for moveID: ${moveId}`);
+        fetchData(event);  // Refetch and send updated data
     });
 });

@@ -1,0 +1,2688 @@
+No.,CharID,Move Name,Notation,String Properties,Damage,Startup Frames,Frames On Block,Frames On Hit,Frames On Counter,Notes,Throw Break,isfavorite
+1,alisa,Heat Burst,2+3,m,12 (12),i16,+1,+2c,,"* Heat Burst
+* Cancel to r45 with b,b
+Power crush 8~",,
+2,alisa,Emergency Destructive Form,H.d+1+2,sp,,,,,,"* Transition to DES
+* partially consumes Heat
+Power crush",,
+3,alisa,Emergency Dual Boot,H.f+1+4,sp,,,,,,"* Transition to DBT
+* partially consumes Heat",,
+4,alisa,Quick-fix Protocol,H.2+3,m,50 (28),i20~21,+8,KND,,"* Alternate input: H.DES.2+3
+* Heat Smash
+* Transition to SBT with H.2+3,3_4 or H.DES.2+3,f+3_f+4",,
+5,alisa,Radiant Pegasus Bomb,R.df+1+2,m,,,,,,"* Alternate input: R.DES.df+1+2
+* [[:Template:RageArt]]
+* Erases opponent's recoverable health on hit
+Power crush",,
+6,alisa,,1,h,5,i10,+1,+8,,,,
+7,alisa,Stop Bit,"1,1","h,h","5,18 (0)",",i21",-3,+5,,"* Transition to DES with 1,1,1+2",,
+8,alisa,Typing Combo,"1,2","h,h","5,10 (0)",",i12",-3,+8,,*Jails,,
+9,alisa,Liftoff Combo,"1,2,2","h,h,h","5,10 (0),20",",i20~35",-9,+21 (+6),,"* Tornado
+* chip damage on block",,
+10,alisa,Coil Punch Combo,"1,2,d+2","h,h,h","5,10 (0),17",",i27~28",-11,+2,,* Can be delayed,,
+11,alisa,Uninstall,1+2,m,22,i19~20,-4,+15,,"* Balcony Break
+* Heat Engager
+
+* chip damage on block",,
+12,alisa,Taunt 1,1+2+3,sp,,,,,,,,
+13,alisa,Taunt 2,1+2+4,sp,,,,,,,,
+14,alisa,Right Jab,2,h,10,i12,-6,+2,,,,
+15,alisa,Troubleshooting,"2,2","h,h","10,22",",i20~35",-13,+15 (+5),,* Balcony Break,,
+16,alisa,Down Time (1),"2,3","h,m","10,8",",i22~23",-10,+1,,,,
+17,alisa,Down Time,"2,3,3","h,m,m","10,8,25",",i20~22",-11,+16 (-7),,"* Balcony Break
+Airborne",,
+18,alisa,Down Link,"2,3,4","h,m,l","10,8,20",",i42~45",-13,+13,,Airborne,,
+19,alisa,Quick Starter,3,m,10,i13~14,-12,-1,,,,
+20,alisa,Quick Trim,"3,2","m,h","10,20",",i26~27",-2,+20 (+11),,"* Balcony Break
+* Heat Engager
+
+* Homing
+* chip damage on block
+* Transition to DES (does not transition when using Heat Dash)",,
+21,alisa,Quick Access,"3,f+2","m,m","10,20",,-12,+5,,"* chip damage on block
+* Transition to DES",,
+22,alisa,Accelerator,4,h,24,i13~14,-5,+14g,,"* Balcony Break
+* Homing",,
+23,alisa,Overflow,f+1+2,m,25 (0),i14~15,-12,+14,,"* Transition to SBT with f+1+2,3_4
+* Transition to DBT with f+1+2,f+3_f+4",,
+24,alisa,Session Starter,f+2,m,12,i17~18,-4,+7,,,,
+25,alisa,Dual Session,"f+2,1","m,m","12,20",",i24~25",-10,+14,,"* Balcony Break
+* Heat Engager
+
+* chip damage on block
+* Transition to DES with f+2,1+2 (does not transition when using Heat Dash)",,
+26,alisa,,"f+2,3","m,h","12,8",",i22",-8,+4,,,,
+27,alisa,Triple Session,"f+2,3,3","m,h,m","12,8,22",",i35~36",-10,+12 (-3),,"* Balcony Break
+* Transition to DES with f+2,3,1+2",,
+28,alisa,Transmission Starter,f+3,h,10,i14~15,-14,-3,,,,
+29,alisa,Automatic Transmission,"f+3,1+2","h,m","10,25",",i24~25",-13,+8,,"* Balcony Break
+* Transition to DES
+* chip damage on block",,
+30,alisa,Lost Access,"f+3,2","h,h","10,20",",i25",-4,+39 (+31),,"* Balcony Break
+* Transition to DES
+* chip damage on block",,
+31,alisa,Boot,f+3+4,sp,,,,,,"* Transition to SBT
+* Transition to BKP with input SBT.D or SBT.B",,
+32,alisa,Boot,f+3+4,sp,,,,,,"Airborne dash. Can use Thruster Left, Thruster Right-Burst, Eject Slider, Upstream, Thruster Drill, Heartbeat Disabler, or Shut Down during Boot.",,
+33,alisa,Logic Bomb (2),f+4,m,14,i16,-9,+1,,"* Homing
+* Transition to DES with f+4,1+2",,
+34,alisa,Logic Bomb (1),"f+4,1","m,h","14,14",",i25~26",-9,+15 (+7),,* Balcony Break,,
+35,alisa,Logic Bomb,"f+4,1,4","m,h,m","14,14,19 (13)",",i35",-12,-1 (-9),,"i25-26 bounce, i25-26 travel, 
+(---)/i35(27-65) travel then explosion , 
+-3(-11) and -1(-9) for explosion then hit, respectively",,
+36,alisa,Cyclone Starter,df+1,m,10,i13,-6,+5,,,,
+37,alisa,Cyclone Mixer (1),"df+1,1","m,h","10,20",",i30~31",+1,+8,,,,
+38,alisa,Cyclone Mixer,"df+1,1,2","m,h,h","10,20,48",",i22~25",+6,+8,,"* chip damage on block
+* Transition to DES",,
+39,alisa,Cyclone Hacker,"df+1,4","m,m","10,17",",i26~27",-11,+3c,+13c,,,
+40,alisa,Pickup,df+2,m,16,i16~17,-9,+32a (+22),,,,
+41,alisa,Double Socket (1),df+3,m,14,i16,-9,+1,,,,
+42,alisa,Double Socket,"df+3,3","m,l","14,17",",i23~24",-12c,+1,,,,
+43,alisa,Right Kick,df+4,m,13,i12,-7,+4,,,,
+44,alisa,Destructive Form,d+1+2,sp,,,,,,* Cancel DES with DES.d+1+2 or DES.DB,,
+45,alisa,Destructive Form,d+1+2,sp,,,,,,"* Cancel DES with DES.d+1+2 or DES.DB
+* Transition to DBT with input DES.f+3_f+4",,
+46,alisa,Deadlock (1),d+2,m,14,i24~26,-12,+2c,,,,
+47,alisa,Deadlock,"d+2,4","m,m","14,24",",i18~21",-9,+28 (+13),,"Airborne
+* Transition to DES with input d+2,4,1+2",,
+48,alisa,Quick Slider,d+3,l,17,i23~32,-10,-1,,"Goes into Airborne then standing
+* Transition to BKP",,
+49,alisa,Harpoon Sweep,d+3+4,l,20,i27~i28,-37,+67 (+51),,"* Homing
+* Transition to DES with input d+3+4,1+2",,
+50,alisa,Optimizer (1),d+4,l,15,i17~18,-12,-1,,,,
+51,alisa,Optimizer,"d+4,1+2","l,h","15,20",",i20~21",0,+11 (+2),,* Balcony Break,,
+52,alisa,Backup,db+1,sp,,,,,,,,
+53,alisa,Daisy Chain (1),db+2,m,10,i18~19,-18,-5,,,,
+54,alisa,Daisy Chain,"db+2,2","m,m","10,10",",i19~20",-9,+5,,"* Transition to DES with input db+2,2,1+2",,
+55,alisa,Deep Link,db+3,l,11,i16,-13,-2,,,,
+56,alisa,Deep Web,db+4,l,23,i24~25,-17,+9,,,,
+57,alisa,Gadget Found (1),b+1,m,15,i15~16,-5,+8,,,,
+58,alisa,Gadget Found,"b+1,1+2","m,sl,m","15,1,30",",i25~40,i26~28",-16,+71,,* Tornado,,
+59,alisa,Transmission,b+1+2,m,25,i19~20,-13,+8,,"* Balcony Break
+* Alternate input: DES.b+1+2
+* chip damage on block
+Power crush",,
+60,alisa,Model Change,b+1+3,sp,,,,,,"* Alternate input: b+2+4
+Parry state",,
+61,alisa,Trance Hammer (1),b+2,m,12,i18,-9,+1,,,,
+62,alisa,Trance Hammer,"b+2,1","m,m","12,17",",i25~26",-13,+3c,,,,
+63,alisa,Trance Generator,"b+2,3","m,m","12,22",",i23~24",-15,+9 (-8),,"Airborne
+* Balcony Break
+* Tornado",,
+64,alisa,Trance Accelerator Kick,"b+2,4","m,h","12,20",",i16~17",-7,+12g,,* Balcony Break,,
+65,alisa,Hang Up,b+2+3,ub (m),50,i75~76,+44,+44,,* Balcony Break,,
+66,alisa,Spinning Top,b+3,m,22,i20~22,-8,+5 (-4),,"* Balcony Break
+* Homing",,
+67,alisa,Dynamic Range (1),b+3+4,m,22,i18~19,-17,+32 (+22),,* Tornado,,
+68,alisa,Dynamic Range,"b+3+4,3+4","m,m","22,25",",i56~61",+6c,+27 (-8),,* Spike,,
+69,alisa,Double Threading (1),b+4,m,17,i15~16,-13,-4,,,,
+70,alisa,Double Threading,"b+4,3","m,m","17,20",",i29~30",-11,+6c,,"Airborne
+* Transition to DES with input b+4,3,1+2",,
+71,alisa,Double Override,"b+4,4","m,m","17,17",",i25~27",-37,+9 (-1),,"Airborne
+* Transition to SBT with input b+4,4,3_4
+* Transition to DBT with input b+4,4,f+3_f+4
+* Tornado",,
+72,alisa,Overload,ub+2,h,26,i16~24,-8,+38 (-20),,"* Balcony Break
+Power crush",,
+73,alisa,Docking Bay (1),ub+3+4,m,25,i37~39,+2c,+25 KND,,,,
+74,alisa,Docking Bay,"ub+3+4,1+2","m,m","25,20",",i26~27",-14,+32 (+22),,,,
+75,alisa,Jump Right Kick,ub+4,m,10,i18,-9,+7,,Low crush,,
+76,alisa,Gigabyte Hammer,u+1+2,m,21,i33~34,-5,+56,,,,
+77,alisa,Brute Force Attack,uf+1,mmm,"20,14 (9),10 (7)","i19~20,i25,i17",-13,+68 (+52),,"* Tornado
+* Transition to SBT on hit with uf+1,3_4
+* Transition to DBT on hit with uf+1,f+3_f+4
+Low crush",,
+78,alisa,Image Cutter,uf+2,h,22,i16~17,-2,+20 (+11),,"* Balcony Break
+* Heat Engager
+
+* Homing
+* chip damage on block
+* Transition to DES on hit (does not transition when using Heat Dash)",,
+79,alisa,,uf+3,m,15,i17~18,-52,-25,,"* Transition to SBT with input uf+3,3_4
+* Transition to DBT with input uf+3,f+3_f+4",,
+80,alisa,Cradle Star,"uf+3,2","m,m","15,30",",i17~22",-14,+32 (-26),,* Balcony Break,,
+81,alisa,Downstream,uf+3+4,m,28,i38~41,0,+4,,,,
+82,alisa,,uf+4,m,8,i15~16,-15,-4,,,,
+83,alisa,Inbound Kick,"uf+4,4","m,m","8,8",",i24~26",-13,+45 (+37),,,,
+84,alisa,Ki Charge,1+2+3+4,sp,,,,,,"* Transition to DES with input 1+2+3+4,1+2
+* Transition to charged state",,
+85,alisa,Killer Worm Virus,"CH f,F+1+2",m,28,i17~18,,+13,,,,
+86,alisa,Double Rocket Punch,"b,B+1+4",ub(h),50,i68,,+42 (-15),,* Balcony Break,,
+87,alisa,Wall Jump,"b,b,UB",sp,,,,,,Invulnerable during wall climb until Alisa begins to turn and pushes off into Airborne.,,
+88,alisa,Worm Virus,"f,F+1+2",mm,"5,10","i17~18,i12~13",-9,+4,,,,
+89,alisa,Jumper Switch (1),"f,F+2",m,18,i16~17,-18,+5,,* Balcony Break,,
+90,alisa,Jumper Switch,"f,F+2,3","m,m","18,17 (11)",",i22~24",-13,+5 (+4),,* Balcony Break,,
+91,alisa,Cutover (2),"f,F+3",m,12,i18~19,-14,-6,,Airborne,,
+92,alisa,Cutover (1),"f,F+3,4","m,h","12,15",",i19~20",-10,+20 (+11),,"* Balcony Break
+* Transition to DES with input f,F+3,4,1+2
+*Jails",,
+93,alisa,Cutover,"f,F+3,4,4","m,h,m","12,15,17 (11)",",i27~29",-10,+21 (+14),,"* Balcony Break
+* Transition to DES with input f,F+3,4,4,1+2",,
+94,alisa,Sandbox,"f,F+4",mm,"14,22","i22~29,i34~39",-9,+9 (+0),,"* Balcony Break
+* Transition to hit throw on front hit
+* Alternative input: f,F+4:1 to power up",,
+95,alisa,Thruster Double Punch,"f,f,F+1+2",m,24,i18~36,-3,-17 (-26),,* Balcony Break,,
+96,alisa,Linear Punch,"f,f,F+2",h,30,i13~15,+5,+28 (+20),,"* Balcony Break
+* chip damage on block
+* Transition to DES with input f,f,F+2,1+2",,
+97,alisa,Linear Dropkick (1),"f,f,F+3",m,15,i18~19,-4,+6,,,,
+98,alisa,Linear Dropkick,"f,f,F+3,4","m,m","15,20",",i20~22",-7,+31 (+5),,* Balcony Break,,
+99,alisa,Spear Fishing (2),ws1,m,12,i13~14,-12,+1,,,,
+100,alisa,Spear Fishing (1),"ws1,2","m,h","12,12",",i24~25",-5,+6,,"* Transition to DES with input ws1,2,1+2",,
+101,alisa,Spear Fishing,"ws1,2,3","m,h,m","12,12,23",",i25~26",-10,+33 (+23),,"* Transition to DES with input ws1,2,3,1+2",,
+102,alisa,Cute But Deadly,ws1+2,m,20,i20~21,-8,+21,,"* Homing
+* Hold to power up",,
+103,alisa,Digital Lift,ws2,m,24,i17~18,-13,+33 (+23),,"* Tornado
+* Transition to SBT with input ws2,3_4
+* Transition to DBT with input ws2,f+3_f+4",,
+104,alisa,Clockwork,ws3,m,18,i19~20,+4,+15,,"* Cancel with input ws3,B",,
+105,alisa,Clockwork Spring Middle,"ws3,3","m,m",1820,i13~14,-9,+12g,,"* Balcony Break
+* Power up after 2 or more rotations",,
+106,alisa,Clockwork Spring Low,"ws3,d+3","m,l",1820,i30~31,-12,+73 (+57),,,,
+107,alisa,Key Smash,ws4,m,15,i11~12,-5,+6,,"* Balcony Break
+* Power up after 2 or more rotations",,
+108,alisa,Happy Propeller (1),SS.4,l,15,i24~25,-12,+2,,,,
+109,alisa,Happy Propeller,"SS.4,1+2","l,hm","15,20",",",,,,,,
+110,alisa,Sad Hound,FC.1+2,"l,l","10,16","i21~23,i6~8",-11c,+5c,,"* Transition to DES with input FC.1+2,n,1+2",,
+111,alisa,Recovery Hook,BKP.1,h,31,i11~13,+4,+27 (+1),,"* Balcony Break
+* chip damage on block",,
+112,alisa,Rocket Punch,BKP.1+2,ub(h),20,i34~71,+58,+58,,,,
+113,alisa,Rapid Rocket Punch,BKP.2,h,34,i11~33,-9,+21 (+6),,"-4/less negative on block when farther away. +25 (+10) on hit when far.
+* Tornado
+* chip damage on block",,
+114,alisa,Meteor Kick,BKP.3,m,30,i24~27,-9,+72,,* Balcony Break,,
+115,alisa,Uplink Knee,BKP.4,m,30,i19,-9,+32 (+22),,"Spacing affects advantage on hit and block.
+* Tornado",,
+116,alisa,Goody Two Shoes,BT.4,m,20,i16~17,-3,+19 (+2),,* Balcony Break,,
+117,alisa,Thruster Left,DBT.1,h,30,i24,+9,+11g,,"* Transition to DES
+* chip damage on block",,
+118,alisa,Thruster Drill,DBT.1+2,m,35,i12,0,+21 (+0),,"* Balcony Break
+* Transition to DES
+* chip damage on block",,
+119,alisa,Thruster Right - Burst (2),DBT.2,m,25,i16,-14,+32 (+14),,* chip damage on block,,
+120,alisa,Thruster Right - Burst,"DBT.2,1",mh,2513 (5),i26~28,-11c,+18 (-17),,"-28 on whiff.
+* Spike
+* Transition to DES
+* chip damage on block",,
+121,alisa,Eject Slider,DBT.3,l,17,i6~20,-14c,+4c,+28 KND,,,
+122,alisa,Upstream,DBT.4,m,22,i17~19,-27,+68,,,,
+123,alisa,Heartbeat Disabler,DBT.f+1,m,49,i19~21,-11,+0 KND,,"* chip damage on block
+* throw on front hit",,
+124,alisa,Shut Down (1),DBT.f+2,l,16,i19~20,-16c,-6,,,,
+125,alisa,Shut Down,"DBT.f+2,2","l,m","16,14 (9)",i35~37,-33,-6 (-13),,"* Balcony Break
+* chip damage on block",,
+126,alisa,Shredder,DES.1,m,35,i13,-9,+23,,"* Transition to DES
+* chip damage on block",,
+127,alisa,Death Marionette,DES.1+2,"h,h,h","7,7,20","i16~18,i5~7,i9~11",+4,+15g,,"* Balcony Break
+* Homing
+* Transition to DES
+* chip damage on block
+* Jails",,
+128,alisa,Shredding Uppercut,DES.2,m,15,i20,-8,Launch,,"* Transition to DES
+* chip damage on block",,
+129,alisa,Shredding Sky Punch,"DES.2,(on hit)1","m,ub",1514 (9),i33,,+85 (+69),,* Tornado,,
+130,alisa,Idling,DES.3,sp,,,,,,"* Alternate input: DES.4
+* Transition to DES",,
+131,alisa,Hertz Blade - Flare,DES.BT.1,m,24,i19~22,-9,+25,,"* Alternate input: DES.BT.2
+* chip damage on block",,
+132,alisa,Move Back,"DES.b,b",sp,,,,,,* Transition to DES,,
+133,alisa,Hertz Blade - Tomahawk (1),DES.b+2,m,17,i18~20,-12,0,Launch,* chip damage on block,,
+134,alisa,Hertz Blade - Tomahawk,"DES.b+2,1","m,m","17,33",",i20~21",-3,+5,,"* Transition to DES
+* chip damage on block",,
+135,alisa,Retro Rockets,DES.b+3,sp,,,,,,"* Alternate input: DES.b+4 or DES.ub,b
+* Transition to DES",,
+136,alisa,Hertz Blade - Scud,DES.d+1,l,20,i21,-12,+4,,"* Transition to DES
+* chip damage on block",,
+137,alisa,Clock Boosting,DES.d+2,l,26,i22~23,-14,+4,,"* Homing
+* chip damage on block",,
+138,alisa,Evasive Action,DES.d+3,sp,0,,,,,"* Alternate input: DES.d+4 or DES.u+3 or DES.u+4
+* DES.d+3_4 goes to foreground, DES.u+3_4 goes to background
+* Transition to DES",,
+139,alisa,Evasive Slash,"DES.d+3,1","sp,m","0,25",",i20~21",-13,+14,,"* Balcony Break
+* Transition to DES
+* chip damage on block",,
+140,alisa,Move Forward,"DES.f,f",sp,,,,,,* Transition to DES,,
+141,alisa,Hertz Blade,DES.f+1,h,21,i11~13,+3,+9,,"* Transition to DES
+* chip damage on block",,
+142,alisa,Hertz Blade - Diablo (1),DES.f+1+2,m,12,i23~27,+5,+33,,* chip damage on block,,
+143,alisa,Hertz Blade - Diablo,"DES.f+1+2,1+2","m,m","12,20",",i20~26",-53,+41,,"* Transition to DES
+* chip damage on block",,
+144,alisa,Gigaherz Storm (2),DES.f+2,m,9,i15,-9,0,,* chip damage on block,,
+145,alisa,Gigaherz Storm (1),"DES.f+2,1",mm,9,,-12,-3,,* chip damage on block,,
+146,alisa,Gigaherz Storm,"DES.f+2,1,2",mmm,9,,-13,KND,,"* Heat Engager
+
+* chip damage on block",,
+147,alisa,Dual Boot,DES.f+3,sp,,,,,,"* Alternate input: DES.f+4
+* Cancel with input DBT.B
+* Transition to Evasive Action with input DBT.U_D",,
+148,alisa,Spindle Slash,DES.uf+1+2,m,27,i29~31,-9c,+23,,"* Transition to DES
+* chip damage on block
+* Cancel DES with input DES.uf+1+2,1+2",,
+149,alisa,Hertz Blade - Aegis,DES.uf+2,h,7,i10~14,,+25 (+18),,"* Transition to DES
+* only hits airborne opponents",,
+150,alisa,Reboot,FUFT.1+2,sp,0,,,,,,,
+151,alisa,Reboot Meteor Kick,"FUFT.1+2,3","sp,m","0,35",i22~23,-10,+60,,* Balcony Break,,
+152,alisa,Ground Rocket Punch,OTG.db+1+2,l,20 (14),i26,-14,-5 (-13),,,,
+153,alisa,Model Change,P.b+1+3,ub(m),25,i20~21,-5 (-14),-5 (-14),,* Balcony Break,,
+154,alisa,Hard Reset (3),SBT.1,m,12,i13~14,-15,0,,,,
+155,alisa,Hard Reset (2),"SBT.1,2","m,m","12,13",",i18~19",-9,+2,+7,Rest of the string is natural on counter hit.,,
+156,alisa,Hard Reset (1),"SBT.1,2,1","m,m,m","12,13,7",",i20~21",-12,-20,-12,Less safe on hit than on block without CH.,,
+157,alisa,Hard Reset,"SBT.1,2,1,3+4","m,m,m,m","12,13,7,33",",i18",-18,+4 (-13),,"* Balcony Break
+* Transition to DES with input SBT.1,2,1,3+4,1+2",,
+158,alisa,Wire Clipper,SBT.1+2,ub(h),20,i27~28,+8,+8,,"* Balcony Break
+* Transition to DES",,
+159,alisa,Linear Elbow,SBT.2,m,25,i16~17,-7,+6 (-4),,"* Balcony Break
+* Transition to DES with input SBT.2,1+2",,
+160,alisa,Eject Slider,SBT.3,l,17,i16~20,-14c,+4c,,,,
+161,alisa,Upstream,SBT.4,m,22,i17~19,-27,+68,,,,
+162,alisa,Abort,SBT.D,sp,,,,,,"* Alternate input: SBT.B
+* Transition to BKP",,
+163,alisa,Trigger Shuffle,1+3,th(h),35,i12~14,,,,"* Throw break: 1 or 2
+* Opponent recovery on hit: FDFT",,
+164,alisa,Back Door,2+4,th(h),35,i12~14,,,,"* Throw break: 1 or 2
+* Spike
+* Opponent recovery on hit: FDFT
+* Switches sides
+* Transition to DES with input 2+4,1+2",,
+165,alisa,Random Typing,Back throw,th(h),55,i12~14,,,,"* Throw break: none
+* Opponent recovery on hit: FDFA
+* Side switch
+* Spike",,
+166,alisa,Double Bull Shoot,FC.db+1+2,th(h),45,i11,,-4,,"* Throw break: 1+2
+* Opponent recovery on hit: FUFA
+* Side switch",,
+167,alisa,Compression,Left throw,th(h),40,i12~14,,-5,,"* Throw break: 1
+* Opponent recovery on hit: FDFA",,
+168,alisa,Hat Trick,Right throw,th(h),40,i12~14,,,,"* Throw break: 2
+* Opponent recovery on hit: FUFA perpendicular to Alisa
+* Spike",,
+169,alisa,w,uf+1+2,th(h),40,i12~13,,+3,,"* Throw break: 1+2
+* Opponent recovery on hit: FUFT",,
+170,asuka,Heat Burst,2+3,m,37,i16,+1,+2,,"* Heat Burst
+Power crush 8~",,
+171,asuka,Triple Ascension Kicks,H.2+3,"m,th","12,3",i16,+10,-6,,"* Heat Smash
+* Throw on hit",,
+172,asuka,Naniwa Peacemaker Knuckle,R.df+1+2,"m,th","10,49",i20,-15,KND,,"* Rage Art
+* Damage increases with lower health
+* Removes recoverable health on hit
+* Input can be held
+Power crush 8~",,
+173,asuka,Jab,1,h,6,i10,-2,+9,,,,
+174,asuka,Whiplash,"1,1","h,m","6,15",",",-7,+4,,"* Combo from 1st CH
+* Links to f+1",,
+175,asuka,,"1,1,3","h,m,m","6,15,17",",",-5,+6,+14c,,,
+176,asuka,Jab Uppercut,"1,2","h,m","6,9",",",-8,+6,,*Combo from 1st CH,,
+177,asuka,Jab Uppercut > Spinning Heel Drop,"1,2,3","h,m,m","6,9,24",",",-2,KND,,"* Chip on block
+* Link to f+4
+* Can interrupt with up to i15 if previous hit is blocked
+* Cancel with input 1,2,3,B
+* Last input can be held to power up",,
+178,asuka,Jab Uppercut > Front Kick,"1,2,4","h,m,m","6,9,20",",",-12,KND,,Combo from 2nd hit,,
+179,asuka,Jab Low Kick,"1,3","h,l","6,10",",",-11,+0,,* Combo from 1st hit,,
+180,asuka,Inner Strength,1+2,m,21,i16~17,-9,KND,KND,,,
+181,asuka,,1+4,"sl,h","5,8",i14,-19,-8,,"* Jails
+* Combo from 1st CH
+* 2nd hit when blocked is -3, on hit is +9",,
+182,asuka,,"1+4,2","sl,h,h","5,8,10",,-2,+9,,* Combo from 2nd CH,,
+183,asuka,White Heron Dance,"1+4,2,4","sl,h,h,m","5,8,10,26",,-9,+4,KND,* Combo from 3rd CH,,
+184,asuka,White Heron Lower Dance,"1+4,2,d+4","sl,h,h,l","5,8,10,15",,-23,KND,,* Combo from 3rd CH,,
+185,asuka,White Heron Spinning Heel Drop,"1+4,3","sl,h,m","5,8,25",,-2,KND,,"* Chip on block
+* Link to attack from Spinning Heel Drop (f+3)
+* Can be cancelled with input B
+* Last input can be held to power up",,
+186,asuka,,2,h,9,i12,-11,+0,,,,
+187,asuka,,"2,1","h,h","9,10",,-3,+8,,"* Combo from 1st hit
+* Jails",,
+188,asuka,Basho Cutter,"2,1,2","h,h,m","9,10,16",,-10,KND,,Tornado,,
+189,asuka,Basho Oroshi,"2,1,d+1+2","h,h,m","9,10,23",,-9,+3c,JG,"* Combo from 2nd CH
+* Cancel to standing with input 2,1,d+1+2,B
+* Cancel to FC with input 2,1,d+1+2,D",,
+190,asuka,Mizu Basho,"2,3","h,m","9,16",",",-19,KND,,Combo from 1st hit,,
+191,asuka,,3,m,17,i14,-7,+9,,,,
+192,asuka,Hyakujitsuko,"3,1","m,m","17,17",,-11,+8,KND,"* Combo from 1st hit
+* Can be delayed 14f
+* Combo can be delayed 14f from hit",,
+193,asuka,Ryuuntsui,3+4,mm,"10,21",i23,-6,KND,,"* Special effect when hitting grounded opponents
+* Cancel to FC with input 3+4,D
+Low crush 5~",,
+194,asuka,High Kick,4,h,18,i11,-7,+7,JG,,,
+195,asuka,Whiplash,f+1,m,17,i20,-7,+4,,,,
+196,asuka,Whiplash > Toe Kick,"f+1,3","m,m","17,17",",i21~22",-5,+6,,,,
+197,asuka,Whiplash Sacred Blade,"f+1,4","m,l","17,26",i25~27,-26,+24,,"* Homing
+* Combo from 1st CH
+* Can be delayed 15F
+* Combo can be delayed 5F from CH
+* Interruption 11F after 1st block
+High crush",,
+198,asuka,Exorcisor,f+1+2,h,26,i15,-9,+19a (+9)/HE,,"* Heat Engager
+
+* Balcony Break
+* Absorb an attack to power up
+* chip damage on block
+* Gain Naniwa Gusto on Heat activation
+Power crush 8~",,
+199,asuka,Demon Slayer,f+2,m,20,i17,-18,JG,,"* Can be cancelled with input f+2,D
+* Gain NWG on hit with input f+2,1",,
+200,asuka,Wheel Kick,f+2+3,h,21,i23,+0,KND,KND,"* Balcony Break
+* Sabaki
+* Absorbs Punch (H/M) during 4 to 15F
+* Stun on success punch parry
+Parry state 4~15",,
+201,asuka,Spinning Heel Drop (One Spin),f+3,m,24,i31~i33,-2~+0,KND,KND,"* Chip damage when guarded
+* Can be cancelled with input B",,
+202,asuka,Spinning Heel Drop (Three Spins),f+3*,ub(m),28,i70,KND,KND,KND,"* Balcony Break
+* Can be cancelled with input B",,
+203,asuka,Spinning Heel Drop (Two Spins),f+3*n,m,26,i52~i53,+6~+7,KND,KND,"* Chip damage when guarded
+* Can be cancelled with input B",,
+204,asuka,Spinning Heel Chop > Naniwa Gusto,f+3+4,m,27,i29~30,-1,-2(-11),,"* Balcony Break
+* Chip damage when guarded (8)
+* On hit, gain Naniwa Gusto
+* If you already have Naniwa Gusto it's 18a(+9) on hit",,
+205,asuka,Back Spin Kick,f+4,h,21,i19,+3,+28,KND,* Homing,,
+206,asuka,,df+1,m,10,i13,-3,+8,,,,
+207,asuka,Falling Tower,"df+1,2","m,h(,th)","10,13(,25)",,-1,Th,Th,"* Spike
+* Combo from 1st CH
+* Can be delayed 7F
+* Damage () is Throw bonus",,
+208,asuka,Kyara Boku,"df+1,4","m,m","10,22",,-12,KND,KND*,"* Balcony Break
+* Combo from 1st CH
+* Can be delayed 7F",,
+209,asuka,Rising Palm,df+2,m,14,i15,-6,LNC,LNC,+5 upon crouch hit,,
+210,asuka,Kagamino,df+3,m,23,i20,-8,KND,KND,Balcony Break,,
+211,asuka,Sacred Blade,df+3+4,l,22,i28,-26,KND,KND*,"* Homing
+* Alternate input: 3~4
+* Cancel to FC with input df+3+4,DB
+High crush 6~",,
+212,asuka,Front Kick,df+4,m,16,i12,-9,+2,,,,
+213,asuka,Sashiro,d+1+2,l,20,i20,-18,KND,KND,"Same move as FC.1+2
+High crush 10~",,
+214,asuka,Heaven's Hammer,d+2,m,18,i18,-4c,+9c,KND,"* Heat Engager
+
+* Gain Naniwa Gusto on Heat activation",,
+215,asuka,Double Lift Kicks,d+3+4,"l,h","5,20",i14,-25,LNC,LNC,"* Block frame is blocked 1st attack
+* -6F upon 2nd block
+Low crush 5~",,
+216,asuka,Swallow Slice,db+1,m,13,i14,-10,+7,,High crush 6~,,
+217,asuka,Swallow Vortex,"db+1,2","m,h","13,20",,-9,KND,KND*,"* Heat Engager
+
+* Balcony Break
+* Gain Naniwa Gusto on Heat activation
+* Combo from 1st hit
+* Can be delayed 9F
+* Combo can be delayed 9F from hit",,
+218,asuka,Swallow Torrent,"db+1,4","m,m","13,25",,-15,KND,,"Tornado
+Low crush",,
+219,asuka,Raging Storm,db+1+2,"m,m","10,20",i42,+10,KND,,"* Balcony Break
+*
+Wall Crush  +25g on block 
+
+
+* Parries lows
+Parry state",,
+220,asuka,Funeral Palm,db+2,m,22,i20,-11,LNC,LNC,"Tornado
+High crush 3~",,
+221,asuka,Enchanted Circle,db+3,l,17,i20,-12,+4c,+14g,,,
+222,asuka,,db+4,l,14,i21,-11,+0,+3,"Cancel to FC with input D
+High crush 6~",,
+223,asuka,,"db+4,4","l,l","14,15",,-7,+4,KND,"Cancel to FC with input D
+High crush",,
+224,asuka,Leg Cutter,"db+4,4,4","l,l,l","14,15,16",,-7,+4,KND,"Cancel to FC with input D
+High crush",,
+225,asuka,Violet,b+1,"l(,th)","17(,22)",i29,-10,+6,Th,"* Connect to Sumiregari upon CH
+* Damage () is Throw bonus
+* Can be cancelled into FC with input D
+High crush 6~",,
+226,asuka,Attack Reversal,b+1+3,,25,,-6,,,"* Does 25 + 50% of reversed attack as damage
+* Opp. Position on hit: Reverse Pos Foot-sd. Face-up
+* Reverses limb-based h/m attacks
+Parry state 3~12",,
+227,asuka,Attack Reversal (Hold),b+1+3*,,25,,-6,,,"* Does 25 + 50% of reversed attack as damage
+* Opp. Position on hit: Reverse Pos Foot-sd. Face-up
+* Reverses limb-based h/m attacks
+Parry state 3~54",,
+228,asuka,,b+1+4,"h,l","15,8",i12,-8,+5,+7,Combo from 1st hit,,
+229,asuka,Reverse Narcissus,"b+1+4,3","h,l,l","15,8,18",,-13,-2,KND,Combo from 2nd CH,,
+230,asuka,Narcissus,"b+1+4,4","h,l,m","15,8,23",,-14,+5b,+5b,* Combo from 2nd CH,,
+231,asuka,Swallow Mallet,b+2,m,12,i15,-4c,+1c,,,,
+232,asuka,Swallow Mallet Lunging Mist Thrust,"b+2,1","m,m","12,14",,-7,+4,,"* Combo from 1st CH
+* Link to attack from Lunging Mist Thrust ()",,
+233,asuka,,"b+2,1+2","m,h","12,7",i36,-9,+2,,"* Jails
+* Combo from 1st hit
+* Can be delayed 12F
+* Combo can be delayed 9F from CH
+* Can be cancelled with input D",,
+234,asuka,Swallow Mallet Combo,"b+2,1+2,4","m,h,m","12,7,20",,-13,KND,KND,* Combo from 2nd CH,,
+235,asuka,Swallow Mallet Leg Cutter,"b+2,4","m,l","12,14",,-11,+0,+3,"* Link to attack from Leg Cutter ()
+* Can be cancelled with input D
+High crush",,
+236,asuka,Azalea,b+2+3,m,23,i24,-9,+6,,"Sabaki absorbs kicks
+Parry state 4~15",,
+237,asuka,Dragon Wheel Kick,b+3,m,15,i16,-19,LNC,LNC,Low crush 10~,,
+238,asuka,Dragon Wheel Kick Demon Slayer,"b+3,2","m,m","15,20",,-20,LNC,LNC,"* Interruption 23F after 1st block
+* Can be cancelled with input D
+* on hit, gain NWG with input 1",,
+239,asuka,Dragon Wheel Leg Cutter,"b+3,4","m,l","15,14",,-11,+0,+3,"* Link to attack from Leg Cutter ()
+* Can be cancelled into FC with input D
+High crush",,
+240,asuka,,b+4,m,17,i15,-7,+8,KND,,,
+241,asuka,,"b+4,2","m,m","17,12",,-12,+4c,,* Can be delayed 15F,,
+242,asuka,Tsuyababuki,"b+4,2,3","m,m,m","17,12,21",,-16,KND,KND,"* Combo from 2nd hit
+* Can be delayed 10F
+* Combo can be delayed 10F from hit
+* on hit, can gain NWG with input 1",,
+243,asuka,Sumiyoshi Plunge,u+1+2,m,20,i31~i32,-13~-12,KND,,"* Chip damage when guarded
+Low crush",,
+244,asuka,Rangetsu,uf+2,"h(,th)","20(,25)",i14,-7,Th,Th,Damage () is Throw bonus,,
+245,asuka,Iwato,uf+3,m,17,i20~21,-3,+8,KND,Low crush 11~,,
+246,asuka,Night Sky,uf+4,m,25,i20,-13,LNC,LNC,Low crush 9~,,
+247,asuka,Ki Charge,1+2+3+4,,,,,,,"* Cannot block for 5 seconds
+* CH state for 5 seconds",,
+248,asuka,Naniwa Ultimate Tackle,"1+2+3+4,1+2",",t(m)",",5,5",i61,-6,LNC,,"* Break: 1+2
+* Opp. Position on break: Reverse Pos.
+* Opp. Position on hit: Foot sd. FU
+* Left slap is auto-attack
+* Throw breaks 16f later (1f)",,
+249,asuka,Eternal Punishment,"1+2+3+4,1+2,1,2,1,2",",t(m)",",5,5,5,5,5,10",,,,,"* Break: none
+* Opp. Position on break:
+* Opp. Position on hit: Foot sd. FU",,
+250,asuka,Kariashi Hakuro,"(During Leg Cutter),1+4","sl,h","5,8",,-19,+9,,"*Jails
+* Link to attack to White Heron ()
+* Block frame is blocked 1st attack
+* -3F upon 2nd block",,
+251,asuka,Kariashi Shiranui,"(During Leg Cutter),3",h,21,,-3,LNC,LNC,CH combo from Leg Cutter,,
+252,asuka,Burning Lantern,"f,F+1",m,30,i23,+5,+14,,,,
+253,asuka,Tenjin Upward Strike,"f,F+1+2",m,20,i19,-6,KND,,"* Chip damage when guarded
+* Tornado",,
+254,asuka,,"f,F+2",m,16,i15,-13,-3,,,,
+255,asuka,Hiboko no Kagami,"f,F+2,1","m,h","16,21",,-5,KND,KND,"* Combo from 1st hit
+* Can be delayed 13F
+* Combo can be delayed 8F from hit
+* Combo can be delayed 11F from CH",,
+256,asuka,Higata no Kagami,"f,F+2,1+2","m,m,sp","16,25",,-13,KND,,"* Balcony Break
+* Gain Naniwa Gusto on hit",,
+257,asuka,Yata Kagami,"f,F+2,3","m,m","16,22",,-8,KND,KND,"* Combo from 1st CH
+* Can be delayed 13F
+* Combo can be delayed 5F from CH",,
+258,asuka,Matoi Hiragi,"f,F+3",m,23,i20,-9,+11g,KND,"* Balcony Break
+* Homing",,
+259,asuka,Leaping Spin Kick,"f,F+4",h,28,i20,-3,KND,KND*,"* Balcony Break
+* Causes Strong Aerial Tailspin
+Low crush 6~",,
+260,asuka,Aizen Swing,"f,f,F+1+2",h,30,i17,+4,KND,,"* Chip damage when guarded
+* Homing",,
+261,asuka,Ame-no-Uzume,"f,f,F+3",m,32,i24~28,+3~+7,KND,KND*,"* Chip damage when guarded
+* Alternate input: ub,b+3
+Low crush 3~",,
+262,asuka,,ws1,m,12,i14,-7,+4,,,,
+263,asuka,Shikeitai,"ws1,4","m,h","12,20",,-8,KND,KND,"* Combo from 1st hit
+* Can be delayed 7F",,
+264,asuka,Sudare Nagashi,ws1+2,m,20,i21,-2,+13g,KND,"* Wall Crush  +25g on hit
+
+
+* Crumple state 17F upon CH
+* Cancel into FC with input D",,
+265,asuka,,ws2,m,18,i13,-8,+8,,,,
+266,asuka,,"ws2,1",mh,"18,10",,-2,+9,,"* Combo from 1st hit
+* Continuation into ten string",,
+267,asuka,Kohaku,"ws2,1+2","mh,th","18,4",,,Th,,"* Combo from 1st hit
+* Link to attack from Destablilizer (f+1+3 or f+2+4)",,
+268,asuka,Moon Scent,ws3,m,20,i18,-16,LNC,LNC,"Tornado
+Low crush 18~",,
+269,asuka,Toe Smash,ws4,m,15,i11,-3,+8,,,,
+270,asuka,Mist Palm Thrust,SS.2,m,23,i13,-13,KND,KND*,"* Heat Engager
+
+* Gain Naniwa Gusto on Heat activation",,
+271,asuka,Camellia,SS.4,h,18,i17,-6,+7,KND,Meaty 2F,,
+272,asuka,,FC.3+4,mm,"10,10",i21,-6,+5c,+5c,Low crush 13~,,
+273,asuka,Twin Cloud Kicks,"FC.3+4,3","mm,mm","10,10,10,10",,+0c,KND,KND,"* Interruption 11F after 2nd block
+* Cancel into FC with input D
+Low crush",,
+274,asuka,Grace,FC.df+2,l,10,i16,-11,+0,+25g,"* Crumple State 17F upon CH
+High crush",,
+275,asuka,Minazuki,FC.df+3,m,20,i17,-9,KND,KND*,Balcony Break,,
+276,asuka,Wall Jump Attack,"(Back to wall).b,b,UB",m,21,i39,+4c,KND,,fs5~13,,
+277,asuka,Tenjin Festival Upward Strike,"NWG.f,F+1+2",m,24,i19,+2,KND,,"* Chip damage when guarded
+* Consumes Naniwa Gusto
+* During Heat, remaining Heat is consumed
+* Tornado",,
+278,asuka,Aizen Festival Swing,"NWG.f,f,F+1+2",h,42,i17,+6,KND,,"* Balcony Break
+* Chip damage when guarded
+* Consumes Naniwa Gusto
+* During Heat, remaining Heat is consumed
+* Homing",,
+279,asuka,Sumiyoshi Festival Plunge,NWG.u+1+2,m,24,i31~i32,+8~+9,KDN,,"* Chip damage when guarded
+* Consumes Naniwa Gusto
+* During Heat, remaining Heat is consumed
+Low crush",,
+280,asuka,Crouch Jab,hFC.1,sl,5,i10,-5,+6,,"* Transition to Standing with f
+High crush 1~",,
+281,asuka,Crouch Straight,hFC.2,sl,8,i11,-4,+7,,,,
+282,asuka,Crouch Spin Kick,hFC.3,l,10,i16,-17,-6,,,,
+283,asuka,Crouch Shin Kick,hFC.4,l,6,i12,-15,-4,,,,
+284,asuka,Aiki Nage,1+3,t,35,i12~14,-2,+0d,,"* Throw break 1 or 2
+* Opp. Position on break: CCW
+* Opp. Position on hit: Reverse Pos., F Sd. FU",,
+285,asuka,Katanuki,2+4,t,35,i12~14,-3,+0d,,"* Throw break 1 or 2
+* Opp. Position on break: CCW
+* Opp. Position on hit: Head Sd. FD",,
+286,asuka,Twisted Limbs,Back throw,t,50,,,+0d,,"* Throw break: none
+* Opp. Position on break: -
+* Opp. Position on hit: Head Sd. Face D",,
+287,asuka,Falling Rain,FC.db+1+2,t(h),"15,15,15",i11,-6,LNC,,"* Break: 1+2
+* Opp. Position on break: Reverse Pos.
+* Opp. Position on hit: Reverse Pos. Foot sd. FD
+* 2nd dmg is on landing
+* 3rd dmg is non-ukemi bonus",,
+288,asuka,Cloud Taste,Left throw,t,40,,-3,-3d,,"* Throw break 1
+* Opp. Position on break: CCW
+* Opp. Position on hit: F Sd. FD",,
+289,asuka,Wind Wheel,Right throw,t,40,,-3,+0d,,"* Throw break 2
+* Opp. Position on break: 
+* Opp. Position on hit: FD F Sd.",,
+290,asuka,White Mountain,df+2+3,t(h),40,i12,-6,,,"* Break: 2
+* Opp. Position on break:
+* Opp. Position on hit: CCW. Head sd. FU",,
+291,asuka,Destabilizer,f+1+3,t(h),0,i19,,+8,,"* Break: none
+* Opp. Position on break: 
+* Opp. Position on hit:",,
+292,asuka,Compulsory Reform,"f+1+3,2","t(h),m","0,20",i19,-9,+8a/HE,,"* Heat Engager
+
+* Gain Naniwa Gusto on Heat Activation",,
+293,asuka,Inescapable Tirade,"f+1+3,4","t(h),l","0,19",i19,-18,+11d,,,,
+294,asuka,Cherry Blossom,uf+1+2,t(h),40,i12,-3,,,"* Break: 1+2
+* Opp. Position on break: Reverse Pos.
+* Opp. Position on hit: Head sd. FU",,
+295,azucena,Heat Burst,2+3,m,12 (12),i16,+1,+2c,,"* Heat Burst
+* Cancel to r45 with b,b
+Power crush 8~",,
+296,azucena,Groovy Strike,"H.3,2~F",,,,-18,-7,,"High crush 4~15
+Parry state 11~",,
+297,azucena,Puño de Fuego Evitacion,"H.LIB,P (High)",m,25,i17~18,,+32a,,"* Regenerates heat
+* Restores recoverable health
+is1~",,
+298,azucena,One Drip Cielo Evitacion,"H.LIB,P (Low)",m,20,i16~18,,+58a (+42),,"* Tornado
+* Regenerates heat
+* Restores recoverable health
+is1 fs2~48",,
+299,azucena,Blend Tempestad > Nuevo Libertrador,"H.LIB.1,2,F",,,,+7,+54a (+34),,"*Chip damage on block
+,fs15~33",,
+300,azucena,Golpe Cappucino > Heat Dash,"H.LIB.2,F",,,,+5~+6,+36a (+26),,,,
+301,azucena,One Drip Cielo ,H.LIB.d+3+4,m,27,i16~18,-9~-7,+58a (+42),,"* Tornado
+* Regenerates heat
+* Restores recoverable health
+fs2~48",,
+302,azucena,Double Blend Tempestad > Nuevo Libertrador,"H.b+1,1,2,F",,,,+7,+54a (+34),,"*Chip damage on block
+,fs15~33",,
+303,azucena,Mil Nudillo > Nuevo Libertrador,"H.b+2,F",,,,+7,+54a (+34),,"* Balcony Break
+* Homing
+* Chip damage on block
+,Low crush 15~30 fs31~33",,
+304,azucena,Tacón Plunger > Heat Dash,"H.b+3,F",,,,+5,+67a (+50),,,,
+305,azucena,Aero Press Pegar > Heat Dash,"H.f+1+2,F",,,,+5~+6,+43a (+35),,,,
+306,azucena,Libertador Revolución,H.f+3+4,,,,,,,"* Parries all high/low attacks
+* Cancel to r20 with DB
+High crush 4~20 Parry state 17~",,
+307,azucena,Tifón Patear > Heat Dash,"H.f+4,4,F",,,,+5~+6,+62a (+42),,,,
+308,azucena,Azucena Speciality,H.2+3,"m,m,t","15,9,29",i15~16,+6~-7,+0a,,"* Heat Smash
+* Balcony Break
+* Throw on hit",,
+309,azucena,Azuna Speciality (block),H.2+3,"m,h,m","15,15,30",i15~16 i24~25 i53~54,+6~-7,+15a,,"* Heat Smash
+* Spike
+Low crush 18~57 fs58~60",,
+310,azucena,Coffee Break,H.2+3+4,h!,0,i45,,+35a,,,,
+311,azucena,Alegría del Café,R.df+1+2,m,55+,i20,-15,+0d,,"* Rage Art
+* Damage increases with lower health
+* Removes recoverable health on hit
+Power crush 8~",,
+312,azucena,Jab,1,h,5,i10,+1,+8,,,,
+313,azucena,High Mountain Combo,"1,1","h,m","5,15",",i24~25",-9~-8,+8,,"* Combo from 1st hit
+* Transition to LIB on hit only",,
+314,azucena,High Roast Combo,"1,2","h,h","5,23",",i20~21",-14~-13,+8~+9,,"* Balcony Break
+* Combo from 1st hit with 4f delay
+* Can transition to BT with B",,
+315,azucena,Boomerang Scythe,1+2,h,20,i15,-8,+13g,+56a,"Balcony Break
+High crush 8~15",,
+316,azucena,Taunt,1+3+4,,,,,,,,,
+317,azucena,Shuffle Recital,1+3+4*,,,,,,,"* Regenerates heat
+* Heat meter won't disappear, even if it fully depletes",,
+318,azucena,Right Jab,2,h,9,i10,+0,+9,,,,
+319,azucena,Andes Mountain Uppercut Combo (1),"2,1","h,m","9,11",",i17~18",-3~-2,+7~+8,,"Combo from 1st hit with 4f delay
+Jails from 1st hit",,
+320,azucena,Andes Mountain Uppercut Combo,"2,1,2","h,m,h","9,11,21",",i24~25",-5~-4,+20a (+3),,"* Tornado
+* Balcony Break
+* Combo from 2nd CH with 5f delay
+* Input can be delayed 10f",,
+321,azucena,Coffee Break,2+3+4,h!,0,i45,,-1,,,,
+322,azucena,Left Kick,3,m,11,i14,-7,+4,,,,
+323,azucena,Groovy Strike,"3,2","m,m","11,18",",i23~24",-12~-11,+6~+7,+33d (+25),"* Combo from 1st hit with 5f delay
+* Input can be delayed 10f delay",,
+324,azucena,Groovy Strike > Libertador,"3,2~F",m,11,,-18,-7,,",Parry state 13~",,
+325,azucena,Groovy Punalada,"3,3","m,h","11,23",",i24~25",-1~+0,+43a (-15),,"* Balcony Break
+* Combo from 1st hit with 6f delay",,
+326,azucena,Right Kick,4,h,15,i12~13,-8~-7,+3~+4,+8,,,
+327,azucena,Guapuño,"4,1","h,h","15,11",",i21~22",-2~-1,+4~+5,+6~+7,Combo from 1st hit,,
+328,azucena,Delfin Patadas,"4,3","h,M","15,17",",i26~27",-11~-10,+19c~+20c,+37a,"* Balcony Break on CH
+* Combo from 1st CH with 8f delay
+* Input can be delayed 12f",,
+329,azucena,Aero Press Pegar,f+1+2,h,25,i16~17,-8~-7,+41a (+17),,"* Heat Engager
+
+* Balcony Break
+* Frame advantage is +0 if an attack is absorbed
+Power crush 7~",,
+330,azucena,Danza Del Cóndor (2),f+2,h,14,i17~18,-10~-9,+1~+2,,,,
+331,azucena,Danza Del Cóndor (1,"f+2,1","h,m","14,17",",i22~23",-10~-9,+5~+6,,"* Combo from 1st hit with 7f delay
+* Input can be delayed 8f",,
+332,azucena,Danza Del Cóndor,"f+2,1,4","h,m,m","14,17,17",",i24~25",-14~-13,+19a (+9),,"* Balcony Break
+* Combo from 2nd CH with 10f delay
+,Low crush 18~38 fs39~41",,
+333,azucena,,f+3,m,15,i18,-4,+5,,,,
+334,azucena,Sumatra Back Knuckle,"f+3,2","m,h","15,20",",i22~23",-4~-5,+22a,,"* Balcony Break
+* Combo from 1st hit with 8f delay",,
+335,azucena,Libertador,f+3+4,,,,,,,"* Parries all high/low attacks
+* Cancel to r20 with DB
+Parry state 18~",,
+336,azucena,Shuffle Jamboree,f+3+4*,,,,,,,"* Regenerates heat
+* Heat meter won't disappear, even if it fully depletes",,
+337,azucena,Tifón Patear (1),f+4,m,16,i17~18,-8~-7,+1~+2,,"*
+Homing",,
+338,azucena,Tifón Patear,"f+4,4","m,h","16,21",",i24~25",-7~-6,+19a (+10),,"* Heat Engager
+
+* Balcony Break
+* Combo from 1st hit
+,Low crush 15~23 fs24~26",,
+339,azucena,Tifón Trueno,"f+4,4~2","m,h","16,23",",i23~24",+1~+2,+52a,,Chip damage on block,,
+340,azucena,Tifón Cañón,"f+4,4~3","m,m","16,24",",i21~22",-9~-8,+15a (+6),+70a (+54),"Balcony Break
+,Low crush 1~6 fs7~9",,
+341,azucena,Tifón Cañón > Backturn,"f+4,4~B",m,16,,-19,-10,,",Low crush 15~23 fs24~26",,
+342,azucena,Mid Check,df+1,m,11,i13~14,-3~-2,+8~+9,,,,
+343,azucena,Grande Combo (1),"df+1,4","m,h","11,17",",i17~18",-7~-6,+4~+5,,"* Combo from 1st hit with 8f delay
+* Jail from 1st block with 1f delay",,
+344,azucena,Grande Combo,"df+1,4,1","m,h,h","11,17,20",",i22~23",-5~-4,+44d (-14),+56a,"* Balcony Break
+* Combo from 2nd CH with 7f delay
+* Input can be delayed 8f delay",,
+345,azucena,Full Body Grande Combo,"df+1,4,1~2","m,h,M","11,17,23",",i18~19",-10~-9,+23d,,Spike,,
+346,azucena,Full Body Grande Combo > Libertador,"df+1,4,1~F","m,h","11,17",,-17~-16,-6~-5,,,,
+347,azucena,Mount Rainier,df+2,m,12,i15~16,-13~-12,+28a (+18),,Launches crouching opponent,,
+348,azucena,Rodilla Shot,df+3,m,17,i17~18,-5~-4,+5~+6,+59a,Knee,,
+349,azucena,Blue Mountain Combo (1),df+4,m,15,i16~17,-7~-6,+2~+3,,,,
+350,azucena,Blue Mountain Combo,"df+4,1","m,h","15,23",i23~24,-5~-4,+20a (+3),,"* Tornado
+* Balcony Break
+* Combo from 1st hit with 6f delay
+* Input can be delayed 10f",,
+351,azucena,Hand Drip Hammer,d+1,m,20,i20~21,-2~-1,+4c~+5c,+45a,Spike,,
+352,azucena,UFO Roll,d+1+2,l,21,i25~26,-4,+0d,,"* Transition to throw on front hit only
+* 18 damage to Azucena when blocked
+* r41 FC on whiff
+High crush 8~",,
+353,azucena,Smell the Coffee,d+1+3,mt,30,i12~13,,+0d,,"* Heat Engager
+
+* Crouch throw
+* Unbreakable",,
+354,azucena,La Niña Kick Combo (1),d+2,m,15,i18~19,-9~-8,+5~+6,,,,
+355,azucena,La Niña Kick Combo,"d+2,3","m,h","15,20",",i24~25",+1~+2,+16g~+17g,,"* Balcony Break
+* Combo from 1st hit with 7f delay",,
+356,azucena,Passionate Kick Combo (2),d+3,L,10,i15,-14,-3,,,,
+357,azucena,Passionate Kick Combo (1),"d+3,3","L,m","10,14",",i23",-13,+1,,"* Combo from 1st CH with 7f delay
+* Input can be delayed 10f",,
+358,azucena,Passionate Kick Combo,"d+3,3,4","L,m,m","10,14,21",",i25~26",-14~-13,+15a (-2),,"* Tornado
+* Balcony Break
+* Combo from 2nd CH with 10f delay",,
+359,azucena,Roast Knuckle Combo (1),d+4,L,13,i15~16,-13~-12,-2~-1,,,,
+360,azucena,Roast Knuckle Combo,"d+4,1","L,h","13,5",",i27~28",-1~+0,+3~+4,,"* Combo from 1st CH with 2f delay
+* Input can be delayed 10f",,
+361,azucena,Full City Roast Knuckle Combo,"d+4,1~2","L,m","13,20",",i17~18",-8~-7,+10g~+11g,+59a,* Wall Crush on hit,,
+362,azucena,Crouch Jab,db+1,sl,5,i10,-5,+6,,"Can recover standing with F
+High crush 4~",,
+363,azucena,Kilimanjaro Uppercut,db+1+2,M,23,i20~21,-21~-20,+33a (+23),,High crush 6~21,,
+364,azucena,Crouch Straight,db+2,sl,8,i11,-4,+7,,High crush 4~,,
+365,azucena,Borrasca Kick Combo (1),db+3,L,12,i16~17,-7~-6,+4~+5,,,,
+366,azucena,Borrasca Kick Combo,"db+3,4","L,h","12,20",i24~25,-13~-12,+66a (+50),,"* Tornado
+* Balcony Break
+* Combo from 1st CH",,
+367,azucena,El Cóndor Pasa,db+3+4,m,30,i26~30,-16~-12,+15a (+5),,"* Balcony Break
+* Backswing blow
+Low crush 20~35 fs36~38",,
+368,azucena,Bitter Low Kick,db+4,L,17,i19,-14,-3,+12g,High crush 6~20,,
+369,azucena,Double Blend Tempestad (2),b+1,h,14,i14~15,-8~-7,+3~+4,,,,
+370,azucena,Double Blend Tempestad (1),"b+1,1","h,h","14,16",",i23",+3,+8,,Combo from 1st hit with 6f delay,,
+371,azucena,Double Blend Tempestad,"b+1,1,2","h,h,h","14,16,20",",i24~25",-5~-4,+17a (+8),,"* Balcony Break
+* Combo from 2nd CH with 6f delay
+* Input can be delayed 9f
+* Chip damage on block",,
+372,azucena,Double Blend Tempestad > Backturn,"b+1,1,2~B","h,h","14,16",,-15,-10,,,,
+373,azucena,Mil Nudillo,b+2,h,21,i18~19,+2~+3,+22a (+13),,"* Balcony Break
+* Homing
+* Chip damage on block",,
+374,azucena,Tacón Plunger,b+3,m,21,i22,+4c,+8c,,"*
+Heat Engager
+
+*
+Spike
+*Chip damage on block",,
+375,azucena,Hopping Turn,b+3+4,,,,,,,Low crush 8~19 fs20~22,,
+376,azucena,Shuffle Carnival,b+3+4*,,,,,,,Regenerates heat,,
+377,azucena,Seattle Skipper (3),b+4,m,10,i15~16,-9~-8,+2~+3,,Knee,,
+378,azucena,Seattle Skipper (2),"b+4,3","m,m","10,10",",i23~24",-10~-9,+4~+5,,"* Knee
+* Combo from 1st hit with 6f delay",,
+379,azucena,Seattle Skipper (1),"b+4,3,4","m,m,m","10,10,16",",i23~24",-10~-9,-2~-1,,"* Knee
+* Combo from 2nd CH with 10f delay",,
+380,azucena,Seattle Skipper,"b+4,3,4,3","m,m,m,h","10,10,16,23",",i27~28",-7~-6,+39d (-19),,"* Knee
+* Balcony Break
+* Combo from 2nd CH with 6f delay
+* Combo from 3rd hit with 2f delay
+* Input can be delayed 6f",,
+381,azucena,Eye Opener,uf+1,h,18,i18~19,-9~-8,+7~+8,,"* Punch Sabaki
+* Wall Crush on hit
+
+
+* Alternate input: ub+1, u+1
+Parry state 3~10",,
+382,azucena,Rhythmic Hook,uf+2,h,23,i17~18,-6~-7,+15 (+6),+51a,"* Balcony Break
+* Alternate input: ub+2, u+2",,
+383,azucena,Daylight Disk (1),uf+3,h,20,i21~22,-16~-15,+36a,,"Alternate input: ub+3, u+3
+Low crush 10~30 fs31~65",,
+384,azucena,Daylight Disk,"uf+3,4","h,m","20,17",",i20~21",-14~-13,+15a (+6),+55a,"* Balcony Break
+* Alternate input: ub+3,4, u+3,4",,
+385,azucena,Tacones Drip,uf+4,M,22,i24~26,-8~-6,+21a~+23a,,"* Spike
+* Alternate input: ub+4, u+4
+Low crush 9~26",,
+386,azucena,Ki Charge,1+2+3+4,,,,,,,"* Cannot block for 5 seconds
+* CH state for 5 seconds",,
+387,azucena,Black Ivory Talon,"1+2+3+4,3+4",m!,54,i75,,-8,,,,
+388,azucena,Crema Petalo,"LIB,P (High)",,25,,,+7,,"Restores recoverable health
+is1~",,
+389,azucena,Flush Valve Garcia,"LIB,P (Low)",m,35,i7~8 i19~20,,+8~+9,,"Restores recoverable health
+is1~ fs7 Low crush 8~19 fs20~22",,
+390,azucena,Volterador,"UB,b",,,,,,,"Transition to r28 LIB with F
+Low crush 18~37 fs38~40",,
+391,azucena,Luna Llena,"f,F+3",M,20,i15~17,-14~-12,+35a (+25),,"Tornado
+Low crush 17~37 fs38~40",,
+392,azucena,Ortiz Molino,"f,F+3+4","m,M","10,18",i21~22 i32~34,+4~+6,+5~+7,,"* Spike
+* Chip damage on block
+* Can recover BT with B
+Low crush 16~36 fs37~39",,
+393,azucena,Demitasse Molino,"f,F+4",M,21,i25~27,+0~+2,+13~+15,,"* Spike
+* Chip damage on block",,
+394,azucena,Espresso Agresión (1),"f,f,F+3",m,10,i15~19,-9~-5,-4~+0,,"Knee
+Low crush 9~36 fs37~39",,
+395,azucena,Espresso Agresión,"f,f,F+3,2","m,h","10,10",",i10~12",+5~+7,+28a (+2),,"* Balcony Break
+* Jail from 1st attack
+* Chip damage on block
+* Does not go into 2nd attack if first attack misses
+,Low crush 1~24 fs25~27",,
+396,azucena,Gold Mountain Fist,ws1,m,17,i13~14,-8~-7,+6~+7,+32a (+26),Only hits grounded up close,,
+397,azucena,Rainbow Mountain Swing,ws2,m,14,i15~16,-13~-12,+32 (+22),,,,
+398,azucena,Viento Fuerte,ws3,m,23,i20~21,+4~+5,+16c~+17c,,"* Balcony Break
+* Chip damage on block",,
+399,azucena,Combo de Cantuta (2),ws4,m,13,i11~12,-6~-5,+5~+6,,,,
+400,azucena,Combo de Cantuta (1),"ws4,1","m,h","13,10",",i21~22",-2~-1,+6~+7,,Combo from 1st hit with 6f delay,,
+401,azucena,Combo de Cantuta,"ws4,1,3","m,h,m","13,10,23",",i22~23",-14~-13,+10a (+1),+27a,"* Balcony Break
+* Combo from 2nd CH with 7f delay
+* Input can be delayed 10f",,
+402,azucena,Combo de Cantuta > Backturn,"ws4,1,3~B","m,h","13,10",,-16~-15,-8~-7,,,,
+403,azucena,Cosecha Látigo,FC.df+3,L,6,i18~19,-13~-12,+3c~+4c,+13c~+14c,High crush 1~,,
+404,azucena,Crouch Jab,FC.d+1,sl,5,i10,-5,+6,,"Can recover standing with F
+High crush 1~",,
+405,azucena,Crouch Straight,FC.d+2,sl,8,i11,-4,+7,,High crush 1~,,
+406,azucena,Crouch Spin Kick,FC.d+3,L,10,i16,-17,-6,,High crush 1~,,
+407,azucena,Crouch Shin Kick,FC.d+4,l,6,i12,-15,-4,,High crush 1~,,
+408,azucena,Wall Jump Attack,"(Back to wall).b,b,UB",m,25,i27~33,+1~+7,+7a (-3),,"Balcony Break
+fs5~13 Low crush 14~26 fs27~54",,
+409,azucena,Mocha Attaque Matari (1),BT.1,h,9,i10~11,+0~+1,+6~+7,+8~+9,,,
+410,azucena,Mocha Attaque Matari,"BT.1,2","h,h","9,23",",i22~23",-7~-6,+19a (+10),,"* Balcony Break
+* Combo from 1st hit with 2f delay
+* Combo from 1st CH with 4f delay
+* Input can be delayed 10f",,
+411,azucena,Mocha Attaque Matari > Libertador,"BT.1,2~F",h,9,,-19~-18,-13~-12,,,,
+412,azucena,Mocha Attaque Sidamo,"BT.1,4","h,m","9,21",",i24~25",-11~-10,+8~+9,+52a,"* Combo from 1st hit
+* Combo from 1st CH with 2f delay
+* Input can be delayed 10f
+* Will not combo if the kick impacts on i25",,
+413,azucena,Golpe Affogato,BT.1+2,m,17,i14~15,-11~-10,+3~+4,+58a,,,
+414,azucena,Qhapaq Ñan (1),BT.2,m,15,i17~18,-8~-7,+3~+4,,,,
+415,azucena,Qhapaq Ñan,BT.2:2,"m,t","15,23",,,+0d,,Transitions to attack throw on front hit only,,
+416,azucena,Calf Reaper,BT.3,L,23,i19~20,-13,+4~+5,+14c~+16c,,,
+417,azucena,Foo Fighter,BT.3+4,M,23,i27~29,-5c~-3c,+20a,,"Spike
+Low crush 9~29",,
+418,azucena,Upbeat Patadas (1),BT.4,m,15,i15~16,-5~-4,+6~+7,,,,
+419,azucena,Upbeat Patadas,"BT.4,3","m,m","15,21",",i23~24",-14~-13,+16a (-1),,"* Tornado
+* Balcony Break
+* Combo from 1st hit with 6f delay
+* Input can be delayed 10f
+* Only hits grounded up close",,
+420,azucena,Runaway,BT.b+1+2,,,,,,,"Parries all mids
+Parry state 2~8",,
+421,azucena,Shuffle Walk,BT.b+3,,,,,,,,,
+422,azucena,Hide Turn,BT.b+3+4,,,,,,,High crush 6~20,,
+423,azucena,Libertrador,BT.f+3+4,,,,,,,Low crush 9~21 fs22~24,,
+424,azucena,Blend Tempestad (1),LIB.1,h,14,i13,+3,+8,,Chip damage on block,,
+425,azucena,Blend Tempestad,"LIB.1,2","h,h","14,20",",i24~25",-5~-4,+17a (+8),,"* Balcony Break
+* Combo from 1st hit with 6f delay
+* Input can be delayed 9f
+* Chip damage on block",,
+426,azucena,Blend Tempestad > Backturn,"LIB.1,2~B",h,14,,-15,-10,,,,
+427,azucena,Rana Barista,LIB.1+2,M,23,i18~19,-14~-13,+38a (+28),,"* Tornado
+* Cancel to r20 BT with B
+&lt;div class=&quot;plainlist&quot;&gt;
+Low crush 20~30
+fs31~33&lt;/div&gt;",,
+428,azucena,Golpe Cappucino,LIB.2,m,18,i14~15,-8~-7,+11g~+12g,,"* Heat Engager
+
+* Balcony Break
+* Wall Crush  on hit",,
+429,azucena,Acerbic Low Kick,LIB.3,L,15,i16~17,-9~-8,+2~+3,,,,
+430,azucena,Blend Reganar,"LIB.3,1","L,m","15,20",",i22~23",-10~-9,+7c~+8c,+21d,"* Spike
+* Combo from 1st CH with 7f delay
+* Input can be delayed 8f",,
+431,azucena,El Niño High Kick,LIB.3+4,h,25,i16~17,-5~-4,+32a,,"* Balcony Break
+* Homing
+* Chip damage on block
+* Frame advantage is +0 if an attack is absorbed
+Power crush 8~",,
+432,azucena,Blend Asaltar (2),LIB.4,m,14,i15~16,-6~-5,+7~+8,+7a,,,
+433,azucena,Blend Asaltar (1),"LIB.4,1","m,h","14,10",",i23~24",-2~-1,+4~+5,+9~+10,Combo from 1st hit with 9f delay,,
+434,azucena,Blend Asaltar,"LIB.4,1,2","m,h,m","14,10,23",",i28~29",-10~-9,+67a (+51),,"* Tornado
+* Balcony Break
+* Combo from 2nd CH with 1f delay
+* Input can be delayed 10f",,
+435,azucena,Blend Martillo,"LIB.4,2","m,M","14,21",",i25~26",-13~-12,+16a,,"* Balcony Break
+* Spike
+* Combo from 1st hit with 5f delay",,
+436,azucena,Salida Castillo,LIB.B,,,,,,,"Parries all high/low attacks
+Parry state 1~",,
+437,azucena,Azucena Admission,LIB.F,,,,,,,"* Parries all high/low attacks
+* Regenerates heat with each step
+Parry state 1~",,
+438,azucena,Milagros Show,LIB.U,,,,,,,"* Parries all high/low attacks
+* Regenerates heat with each step
+Parry state 1~",,
+439,azucena,Caer Back Funnel,"LIB.b,b",,,,,,,,,
+440,azucena,Hopping Turn,LIB.b+3+4,,,,,,,Low crush 8~19 fs20~22,,
+441,azucena,Blend Cortar (1),LIB.d+4,L,14,i19~20,-31,-2~-1,,,,
+442,azucena,Blend Cortar,"LIB.d+4,4","L,h","14,27",",i30~31",-7~-6,+14 (+5),,"* Balcony Break
+* Combo from 1st hit",,
+443,azucena,Libertador (Varios),"LIB.f,f",,,,,,,,,
+444,azucena,Eye Opener,LIB.uf+1,h,18,i18~19,-9~-8,+7~+8,,"* Punch Sabaki
+* Wall Crush on hit
+
+
+* Alternate Input: LIB.b,b+1
+Parry state 3~10",,
+445,azucena,Close Encounter,"LIB.uf+1,P","h,t","18,25",,,-4d,,Opponent recovers FUFA,,
+446,azucena,Rhythmic Hook,LIB.uf+2,h,23,i17~18,-6~-7,+15 (+6),+51a,Balcony Break,,
+447,azucena,Amaru Head Squeeze,1+3,t,35,i12~14,-3,+0d,,* Throw break 1 or 2,,
+448,azucena,El Dorado Neck Snap,2+4,t,35,i12~14,-3,+0d,,"* Throw break 1 or 2
+* Side switch",,
+449,azucena,Caffeine Abduction,Back throw,t,50,,,+0d,,"* Unbreakable
+* Side switch",,
+450,azucena,Ultimate Tackle,FC.1+2,t,0,i26,-5,+3,,* Throw break 1+2,,
+451,azucena,Arm Breaker,"FC.1+2,1+2","t,t","0,25",,-9,+1d,,* Throw break 1+2,,
+452,azucena,Ultimate Punch,"FC.1+2,2,1,2,1","t,t","0,5,5,5,15",,,+0d,,"* Throw break 1 or 2
+* Alternate Input: 1,2,1,2",,
+453,azucena,Smell the Coffee,LIB.d+1+3,t,30,i12~13,,+0d,,"* Heat Engager
+
+* Crouch throw",,
+454,azucena,Inti Raymi Necklace,LIB.uf+1+2,t,40,i11,+0,-3d,,"* Throw break 1+2
+* Side switch",,
+455,azucena,Urubamba Neck Lock,Left throw,t,40,,-3,+0d,,* Throw break 1,,
+456,azucena,Giratorio Sleeper Throw,Right throw,t,40,,-3,-3d,,* Throw break 2,,
+457,azucena,Close Encounter,"uf+1,P",t,25,,,-4d,,Opponent recovers FUFA,,
+458,azucena,Inti Raymi Necklace,uf+1+2,t,40,i11,+0,-3d,,"* Throw break 1+2
+* Can side switch on hit",,
+459,bryan,Heat Burst,2+3,m,12 (12),i16,+1,+2c,,"* Heat Burst
+Power crush",,
+460,bryan,Notorious Monster,H.2+3,"m,m,t","20,20,20",i16,+9,-1d,,"* Heat Smash
+* Floor Break
+** 2nd and 3rd hit
+* Throw on hit
+* Wall Crush on block
+Low crush",,
+461,bryan,Total Vandalization,R.df+1+2,m,55+,i20,-15,+0d,,"* Rage Art
+Power crush",,
+462,bryan,Jab,1,h,5,i10,+1,+8,,,,
+463,bryan,Left Right Combo,"1,2","h,h","5,8",",i12",-3,+8,+9,"Combo from 1st hit
+Jails",,
+464,bryan,One Two Body Blow,"1,2,1","h,h,m","5,8,18",",i19",-6,+6,+64a,,,
+465,bryan,One Two Low Kick,"1,2,3","h,h,L","5,8,15",",i24",-12,+2,+14d,Combo from 1st and 2nd CH,,
+466,bryan,One Two Neck Breaker,"1,2,4","h,h,h","5,8,24",",i20",-5,+20a (+11),,"* Heat Engager
+
+* Heat Dash +5g +34a
+
+* Balcony Break",,
+467,bryan,Lair's Dance (3),"1,4","h,h","5,14",",i15",-7,+4,,"Jails
+Combo from 1st hit",,
+468,bryan,Lair's Dance (2),"1,4,2","h,h,h","5,14,18",",i24",-7,+4,+53a,"* Cancel last hit into 1,4,2,1 with f+1
+* Cancel last hit into 1,4,2,4 with f+4
+* Alternate input b+2",,
+469,bryan,Lair's Dance (1),"1,4,2,1","h,h,h,h","5,14,18,16",",i19",+0,+55a,,"* Cancel last hit to SS with u_d
+* Enter SLS with f
+* Alternate input:
+** b+2,1
+** qcf+4,1",,
+470,bryan,Lair's Dance,"1,4,2,1,2","h,h,h,h,h","5,14,18,16,22",",i24",-8,+41d (-17),,"* Balcony Break
+* Alternate input:
+** b+2,1,2
+** qcf+4,1,2",,
+471,bryan,Cremation,"1,4,2,1,4","h,h,h,h,m","5,14,18,16,21",",i30-31",-5,+40a (+14),,"* Tornado
+* Alternate input:
+** b+2,1,4
+** qcf+4,1,4
+* Special? effect on airborne hit +38a (+31)",,
+472,bryan,Whipping Fury,"1,4,2,4","h,h,h,m","5,14,18,21",,,,,"* Balcony Break
+* Alternate input b+2,4",,
+473,bryan,Jab > Double Spin Kick,"1,4,3","h,h,m","5,14,15",",i21",-10,+1,,,,
+474,bryan,Running Blind,"1,4,3,3","h,h,m,h","5,14,15,18",",i23",-7,+7,+14d,Combo from 3rd hit,,
+475,bryan,Snake Starter,1+2,m,15,i17~18,-7,+6,,Homing,,
+476,bryan,Snake Bite,"1+2,1","m,h","15,15",",i23~24",-1,+6,,"* Combo from 1st hit
+* Enter SWA +0 +7 with b",,
+477,bryan,Snake Pit,"1+2,2","m,m","15,20",",i26~27",-14,+51d (+20),,* Combo from 1st hit with delay,,
+478,bryan,Taunt,1+3+4,m!,0,i28~31,,+16,,,,
+479,bryan,Right Jab,2,h,10,i10,+1,+7,,,,
+480,bryan,PK Combination,"2,3","h,m","10,14",",i16",-10,+6,+16a (+7),"* Combo from 1st hit
+* CH frames also apply to combo from 1st CH",,
+481,bryan,Mid Kick,3,m,14,i16,-4,+7,,,,
+482,bryan,Mid Kick > Rush (2),"3,2","m,m","14,11",",i22",-10,+1,,Combo from 1st CH,,
+483,bryan,Mid Kick > Rush (1),"3,2,1","m,m,m","14,11,10",",i20",-9,+2,,Combo from 2nd hit,,
+484,bryan,Mid Kick > Rush,"3,2,1,2","m,m,m,m","14,11,10,14",",i20",-10,+14a (+10),,Balcony Break,,
+485,bryan,Gatling Combination,"3,2,1,4","m,m,m,L","14,11,10,12",",i22",-11,+0,,,,
+486,bryan,Anaconda Starter,"3,3","m,h","14,13",",i23",-6,+6,,,,
+487,bryan,Anaconda Bite,"3,3,2","m,h,h","14,13,20",",i22~23",-7,+43 (+33),,Tornado,,
+488,bryan,Anaconda Rage,"3,3,4","m,h,h","14,13,25",",i28",-12,+37d (-21),,Balcony Break,,
+489,bryan,Middle Side Kick,3+4,m,20,i18,-13,+8,+59a,,,
+490,bryan,Neo Soul Eraser,"3+4,SNE.2","m,m","20,20",i14~15,-1,+35a (+9),,"* Combo from 1st hit
+* Consumes SNE
+* Chip damage on block (8)",,
+491,bryan,Neo Soul Eraser Exceed,"3+4,SNE.2*","m,m","20,30",i55~56,+9,+66a (+50),,"* Tornado
+* Balcony Break
+* Consumes SNE
+* Chip damage on block (12)
+* Causes a wall splat on block
+* Instant Tornado launcher",,
+492,bryan,Double Spin Tomahawk (2),4,h,15,i12,-7,+6,,,,
+493,bryan,Double Spin Tomahawk (1),"4,3","h,m","15,12",",i24~25",-10,+2,,Combo from 1st hit,,
+494,bryan,Double Spin Tomahawk,"4,3,4","h,m,m","15,12,16",",i24~25",-10,+2,,"* Balcony Break
+* Hold to power up and deal more chip damage on block",,
+495,bryan,Triple Spin Kick,"4,3,f+4","h,m,h","15,12,18",",i24~25",-5,+6,+31a (+21),Combo from 2nd CH,,
+496,bryan,Sidestep Elbow,f+1+2,h,22,i20~21,-6,+44d (-14),,"* Balcony Break
+* Elbow
+* Absorb an attack to power up and deal more chip damage on block
+Power crush",,
+497,bryan,Right Left,f+2,m,10,i15,-10,+1,,,,
+498,bryan,Right Left > Spin Kick,"f+2,1","m,m","10,12",i10,-10,+1,,Combo from 1st hit,,
+499,bryan,Right Left > Spin Kick > Snake Eyes,"f+2,1,4","m,m,m","10,12,20",i18~19,-13,+3a,,"* Combo from 1st hit
+* Gain SNE on hit with 1+2",,
+500,bryan,Neo Incinerator (2),"f+2,1,SNE.2","m,m,m","10,12,5",i14~15,-12,+3c,,"* Elbow
+* Combo from 1st hit
+* Consumes SNE
+* Chip damage on block (1)",,
+501,bryan,Neo Incinerator (1),"f+2,1,SNE.2,3","m,m,m,m","10,12,5,7",",i22",-15,+14a (+7),,"* Knee
+* Combo from 1st hit
+* Chip damage on block (2)",,
+502,bryan,Neo Incinerator,"f+2,1,SNE.2,3,2","m,m,m,m,m","10,12,5,7,20",i35~36,-10,+0a (-1),,* Chip damage on block (8),,
+503,bryan,Knee Strike,f+3,m,18,i16~18,+0,+4,+50a,Knee,,
+504,bryan,Boa Crusher (1),f+4,m,10,i18,-9,+0,,,,
+505,bryan,Boa Crusher,"f+4,1","m,m","10,10",i25~26,-13c,+40a (+32),,Combo from 1st hit,,
+506,bryan,Vulcan Cannon (3),DF+1,m,8,i15,-5,+1,,"* Alternate input df+1
+* DF+1,1... extension available only with DF+1 input, not df+1",,
+507,bryan,Vulcan Cannon (2),"DF+1,1","m,m","8,2",i10,-10,-4,,Combo from 1st hit,,
+508,bryan,Vulcan Cannon (1),"DF+1,1,1","m,m,m","8,2,2",i10,-10,-4,,Combo from 1st hit,,
+509,bryan,Vulcan Cannon,"DF+1,1,1,1","m,m,m,m","8,2,2,2",i10,-10,-4,,Combo from 1st hit,,
+510,bryan,Double Body Blow,"DF+1,2","m,m","8,20",i23,-15,+1,+14a (+5),"* Combo from 1st hit
+* Alternate input:
+** DF+1,2
+** DF+1,1,2
+** DF+1,1,1,2
+** DF+1,1,1,1,2
+* Balcony Break on air hit & if it hits without the first hits",,
+511,bryan,Blackout Combo (1),df+2,m,12,i13,-6,+5,,Elbow,,
+512,bryan,Blackout Combo,"df+2,1","m,h","12,11",i6,-4,+5,,"* Combo from 1st hit
+* Enter SWA -1 +8 with b",,
+513,bryan,Blackout Trap,"df+2,3","m,m","12,20",i23,-13,+8,+59a,,,
+514,bryan,Snake Edge,df+3,L,20,i29~30,-26,+70a (+54),,"* Homing
+* Insta Tornado launch",,
+515,bryan,Wolf's Tail,df+4,m,23,i22~24,-6,+19d,,* Homing,,
+516,bryan,Hammer Driver Hatchet (1),d+1+2,"m,m","10,15",i17,-10,+3,,"* Combo from 1st hit
+* Enter SLS -3 +10g with f
+* Enter SWA -5 +8 with b",,
+517,bryan,Hammer Driver Hatchet,"d+1+2,3","m,m,l","10,15,20",i27~28,-13,+5,+25a,,,
+518,bryan,Snake Bomb,d+1+2~2,m,24,i30,+7,+53a,,Chip damage on block,,
+519,bryan,Python Crush (1),d+2,m,17,i14~15,-2,+8c,,Elbow,,
+520,bryan,Python Crush,"d+2,3","m,m","17,21",i22,-10,+16a (-1),+32a (+18),* Balcony Break,,
+521,bryan,Quick Low Screw Punch,d+3,l,10,i16,-11,+0,,,,
+522,bryan,Quick Low Screw Punch > Snake Eyes,"d+3,2","l,h","10,22",i21,-7,+35a(+9),,"* Balcony Break
+* Gain SNE on hit during combo",,
+523,bryan,Side Low Knuckle Whip (1),d+3+4,l,16,i19,-12,-1,+4,,,
+524,bryan,Side Low Knuckle Whip,"d+3+4,2","l,m","16,25",i19,-12,+14a(-3),,"* Balcony Break
+* Tornado",,
+525,bryan,Low Kick,d+4,L,13,i15,-11,+0,,,,
+526,bryan,Crash Impact,db+1+2,"m,h","8,16",i15,-9,+4,,"* Jails
+* Heat Engager
+
+* Heat Dash +5g +43a(+35)",,
+527,bryan,Stomach Blow,db+2,m,13,i15~17,-6,+8,,,,
+528,bryan,Sweeper Kick,db+3,l,11,i16~17,-12,-1,,,,
+529,bryan,Chopping Elbow,b+1,m,21,i20~21,+4,+7c,+78a(+58),Elbow,,
+530,bryan,Parry,b+1+3,,,,,,,"* Alternate input b+2+4
+Parry state",,
+531,bryan,Parry > Mach Breaker > Snake Eyes,"b+1+3,P.2",h,30,,,,,"* Balcony Break
+* Gain SNE on hit
+* Chip damage on block",,
+532,bryan,Gravity Blow,b+1+4,m,26,i28,-9,+7c,,,,
+533,bryan,Meteor Smash,b+1+4*,m!,45,i53,,+7a,,,,
+534,bryan,Hands of Doom (2),b+2,h,18,i17,-7,+4,+53a,"* Cancel into b+2,1 with f+1
+* Cancel into b+2,4 with f+4
+* Alternate input 1,4,2",,
+535,bryan,Hands of Doom (1),"b+2,1","h,h","18,16",i19,+0,+55,,"* Jails
+* Cancel last hit to SS with u_d
+* Enter SLS with f
+* Alternate input:
+** 1,4,2,1
+** qcf+4,1",,
+536,bryan,Hands of Doom,"b+2,1,2","h,h,h","18,16,22",i24,-9,+41d(-17),,"* Balcony Break
+* Alternate input:
+** 1,4,2,1,2
+** qcf+4,1,2",,
+537,bryan,Kickass Combo,"b+2,1,4","h,h,m","18,16,20",i25-26,-10,+37a,,"* Tornado
+* Alternate input:
+** 1,4,2,4
+** qcf+4,1,4",,
+538,bryan,Wolff Call,"b+2,4","h,m","18,21",i30-31,-5,+40a(+14),,"* Balcony Break
+* Causes Strong Aerial Tailspin
+* Alternate input 1,4,2,4
+Low crush",,
+539,bryan,Front Kick,b+3,m,12,i19,-7,+4,,Enter SLS +6 +17g f,,
+540,bryan,Front Kick > Double Hammer,"b+3,1+2","m,m","12,25",i22,-6,+4c,+20d,Combo from 1st CH with delay,,
+541,bryan,Front Kick > Rush (2),"b+3,2","m,h","12,12",i16,-4,+7,,,,
+542,bryan,Front Kick > Rush (1),"b+3,2,1","m,h,m","12,12,10",i20,-9,+2,,"* Combo from 2nd hit
+* Alternate input 3,2,1",,
+543,bryan,Front Kick > Rush,"b+3,2,1,2","m,h,m,m","12,12,10,14",i19,-10,+19a(+10),,"* Alternate input 3,2,1,2
+* Balcony Break",,
+544,bryan,Run for Cover,"b+3,2,1,4","m,h,m,l","12,12,10,12",i22,-11c,+0,,"* Alternate input 3,2,1,4",,
+545,bryan,Knee Break,b+4,m,18,i16,-10,+15,,Knee,,
+546,bryan,Gatling Rush (10),ub+1+2,"m,m","5,2",i15,-16,-6,,"* Combo from 1st hit
+* Chip damage on block",,
+547,bryan,Gatling Rush (9),"ub+1+2,1","m,m,m","5,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+548,bryan,Gatling Rush (8),"ub+1+2,1,2","m,m,m,m","5,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+549,bryan,Gatling Rush (7),"ub+1+2,1,2,1","m,m,m,m,m","5,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+550,bryan,Gatling Rush (6),"ub+1+2,1,2,1,2","m,m,m,m,m,m","5,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+551,bryan,Gatling Rush (5),"ub+1+2,1,2,1,2,1","m,m,m,m,m,m,m","5,2,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+552,bryan,Gatling Rush (4),"ub+1+2,1,2,1,2,1,2","m,m,m,m,m,m,m,m","5,2,2,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+553,bryan,Gatling Rush (3),"ub+1+2,1,2,1,2,1,2,1","m,m,m,m,m,m,m,m,m","5,2,2,2,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+554,bryan,Gatling Rush (2),"ub+1+2,1,2,1,2,1,2,1,2","m,m,m,m,m,m,m,m,m,m","5,2,2,2,2,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+555,bryan,Gatling Rush (1),"ub+1+2,1,2,1,2,1,2,1,2,1","m,m,m,m,m,m,m,m,m,m,m","5,2,2,2,2,2,2,2,2,2,2",,,,,"* Combo from 1st hit
+* Chip damage on block",,
+556,bryan,Gatling Rush,"ub+1+2,1,2,1,2,1,2,1,2,1,4","m,m,m,m,m,m,m,m,m,m,m,m","5,2,2,2,2,2,2,2,2,2,2,14",,-35,-15a (-24),,"* Knee
+* Balcony Break
+* Combo from 1st hit
+* Chip damage on block",,
+557,bryan,Bloody War (3),uf+2,m,6,i13,-10,+1,,,,
+558,bryan,Bloody War (2),"uf+2,2","m,m","6,4",i10,-10,+1,,Combo from 1st hit,,
+559,bryan,Bloody War (1),"uf+2,2,2","m,m,m","6,4,4",i10,-10,+1,,Combo from 1st hit,,
+560,bryan,Bloody War,"uf+2,2,2,3","m,m,m,m","6,4,4,20",i22~23,-15,+30a (+12),,"* Knee
+* Combo from 1st hit",,
+561,bryan,Neo Bloody War (2),"uf+2,2,2,SNE.2","m,m,m,m","6,4,4,?",i10,-12,+21a (+14),,"* 6 (4) damage on airborne opponent at 70% scaling - 9 damage?
+* Consumes SNE
+* Chip damage on block (2)",,
+562,bryan,Neo Bloody War (1),"uf+2,2,2,SNE.2,2","m,m,m,m,m","6,4,4,?,?",i10,-12,,,"* 4 (2) damage on airborne opponent at 50% (70%) scaling
+* Chip damage 2 (22%) on block",,
+563,bryan,Neo Bloody War,"uf+2,2,2,SNE.2,2,3","m,m,m,m,m,m","6,4,4,?,?,?",i22~23,-15,,,"* 9 (6) damage on airborne opponent at 40% (70%) scaling
+* Chip damage 9 (39%) on block",,
+564,bryan,Rolling Driver,uf+3,m,15,i27~28,-2,+15,,"Alternate input u+3
+Low crush",,
+565,bryan,Bullet Knee > Snake Eyes,uf+3+4,m,22,i16~17,-7,+8a,,"* Tornado
+* Knee
+* Gain SNE on hit
+Low crush",,
+566,bryan,Orbital Heel Kick,uf+4,m,20,,,,,"Alternate input u+4
+Low crush",,
+567,bryan,Ki Charge,1+2+3+4,,,,,,,"* Cannot block while still in effect
+* Automatic counter hit",,
+568,bryan,Flying Knee Kick,"b,B+4",m,24,i21~33,-19,-7,,,,
+569,bryan,Wedge Driver,"b,df+4",l,25,i29,-13,+14g,,* Cancel with B,,
+570,bryan,Mach Breaker,"f,F+2",h,29,i13,-9,+41d(-17)/HE,,"* Heat Engager
+
+* Heat Dash +5g +36a(+26)
+
+* Balcony Break
+* Chip damage on block (8)",,
+571,bryan,Slash Kick > Snake Eyes,"f,F+3",m,25,i24~25,-13,+28a(-8),+39a(-8),"* Balcony Break
+* Gain SNE on hit with 1+2
+* Chip damage on block 7",,
+572,bryan,Charged Slash Kick > Snake Eyes,"f,F+3*",m,33,i34~35,+8 +14w,+71a,,"* Balcony Break
+* Gain SNE on hit with 1+2
+* Chip damage on block (9)",,
+573,bryan,Mach Kick,"f,F+4",h,32,i16~19,-9,+15a,,"* Homing
+* Chip damage on block (9)",,
+574,bryan,Jet Uppercut,"f,n,b+2",h,20,i14~15,-7,+43a (+33),,* Tornado,,
+575,bryan,Sway (SWA),qcb,,,,,,,Lapses to standing,,
+576,bryan,Slither Step,qcf,SLS,,,,,,"* Alternate input d,df
+* Enter FC with DF
+* Lapses to standing",,
+577,bryan,Delayed Rising Toe Kick,"uf,n,4",m,20,i23~25,-13,+32a (+22),,Low crush,,
+578,bryan,Snake Slash,"f,f,F+3",m,30,i22~25,+6,+13a (+3),,Chip damage on block (9),,
+579,bryan,Left Upper,ws1,m,20,i15~16,-14,+35a (+25),,Alternate input SLS.1,,
+580,bryan,Fisherman's Slam,ws2,"m,t","10,20",i19,-10,+50a,,"* Throw only on hit
+* Powerup with f+2 or b+2 (perfect) - additional 5 damage",,
+581,bryan,High Knee Kick,ws3,m,17,i12,-10,+4,+33a (+27),* Alternate input SLS.3,,
+582,bryan,Double High Knee Kick,"ws3,4","m,m","17,21",i28,-10,+4,+29g,"* Alternate input SLS.3,4
+* Move can be delayed",,
+583,bryan,Toe Kick,ws4,m,16,i11~12,-6,+5,,,,
+584,bryan,Hellraiser,ss1,h,23,i17~18,-5,+8,+15,,,
+585,bryan,Snake Fang (1),ss2,m,15,i17~18,-9,+1,,,,
+586,bryan,Snake Fang,"ss2,1","m,h","15,20",i21~22,-5,+43d (-15),,"* Heat Engager
+
+* Balcony Break
+* Combo from 1st hit with delay
+* Move can be delayed",,
+587,bryan,Snake Rampage (1),FC.df+2,m,12,i13,-9,+4,,,,
+588,bryan,Snake Rampage,"FC.df+2,1","m,h","12,25",i22~23,-8,+34a(+8),,"* Balcony Break
+* Combo from 1st hit with delay
+* Move can be delayed",,
+589,bryan,Northern Cross,FC.df+4,m,21,i15~16,-10,+13g,,"Ballerina spin on hit
+High crush 1~",,
+590,bryan,Requiem,SLS.1+2,m,28,i15~16,-9,+23a (+13),,"* Heat Engager
+
+* Balcony Break
+* Chip damage 8 (28%) on block",,
+591,bryan,Cross Bazooka (1),SLS.2,h,16,i15~16,-6,+2,,,,
+592,bryan,Cross Bazooka,"SLS.2,1","h,m","16,23",i15~16,-11,+33a (+18),,Combo from 1st hit,,
+593,bryan,Cross Grenade,"SLS.2,2","h,m","16,25",i25,-7,+14a,,"* Balcony Break
+* Combo from 1st hit",,
+594,bryan,Cross Bullet > Snake Eyes,"SLS.2,4","h,m","16,22",i16~17,,+5a,,"* Tornado
+* Combo from 1st hit
+* Gain SNE on hit -12a",,
+595,bryan,Snake Spin Mach Breaker (2),SLS.4,m,13,i18,-5,+1,,,,
+596,bryan,Snake Spin Mach Breaker (1),"SLS.4,1","m,h","13,13",,,,,"* Combo from 1st CH
+* Enter SS with u_d
+* Alternate input:
+** 1,4,2,1
+** b+2,1",,
+597,bryan,Snake Spin Mach Breaker,"SLS.4,1,2","m,h,h","13,13,22",,,,,"* Alternate input:
+** 1,4,2,1,2
+** b+2,1,2",,
+598,bryan,Snake Spin Kickass,"SLS.4,1,4","m,h,m","13,13,20",,,,,"* Tornado
+* Alternate input:
+** 1,4,2,1,4
+** b+2,1,4",,
+599,bryan,Neo Mach Breaker,"SNE.f,F+1+2",h,36,i13,+5,+33a (+7),,"* Consumes SNE
+* Chip damage 14 (38%) on block
+* Transition into Immortal Payback on opponent attack absorb
+Power crush",,
+600,bryan,Immortal Payback,"SNE.f,F+1+2 (on absorb)",m,20,,,,,"* Balcony Break
+* Consumes SNE (again?)[[[Template:Untested|untested]]]",,
+601,bryan,Cannonball Straight,SWA.1,h,22,i13~14,+5,+36d (+28),+72a (+56),"* Tornado
+* Balcony Break
+* Insta Tornado launcher on CH
+* Chip damage 6 (27%) on block",,
+602,bryan,Smash,SWA.2,m,16,i15~16,-9,+6,,,,
+603,bryan,Smash and Mach Kick,"SWA.2,4","m,h","16,25",",i22~25",-9,+15a,,"* Combo from 1st hit with delay
+* Chip damage on block",,
+604,bryan,Hatchet Kick,SWA.3,l,23,i19~20,-13,+5,+25d,,,
+605,bryan,Kickoff,SWA.4,m,23,i17~18,-12,+31a (+21),,,,
+606,bryan,Gravity Brain Buster,1+3,t,35,i12~14,,-2d,,"* Floor Break
+* Throw break 1 or 2",,
+607,bryan,Guillotine,2+4,t,35,i12~14,,+0d,,"* Floor Break
+* Throw break 1 or 2
+* Side switch",,
+608,bryan,Neck Throw,Back throw,t,60,,,-1d,,,,
+609,bryan,Chains of Misery,FC.db+1+2,t,45,i11,,+1d,,* Throw break 1+2,,
+610,bryan,Gravity Throw,Left throw,t,40,,,+1d,,"* Floor Break
+* Throw break 1
+* Side switch",,
+611,bryan,Knee Blast,Right throw,t,40,,,+6d,,* Throw break 2,,
+612,bryan,Neck Throw,uf+1+2,t,40,i12,,-5d,,"* Floor Break
+* Throw break 1+2",,
+613,claudio,Heat Burst,2+3,m,15,i16,+1,+2,,* Heat Burst,,
+614,claudio,Stella Cadente,H.2+3,"l,th","12,40",i18,-14,th,,"* Heat Smash
+* Balcony Break",,
+615,claudio,La Luce Di Sirio,R.df+1+2,"m,th","10,45",,,,,* Rage Art,,
+616,claudio,Jab,1,h,5,i10,+1,+8,,,,
+617,claudio,Scattered Ashes,"1,2","h,h","5,12",",i13~14",-3,+6,,"Jails
+Combo from 1st hit",,
+618,claudio,Absolve,"1,3","h,l","5,11",",i22",-12,-1,,Combo from 1st CH,,
+619,claudio,Crimson Delta Edge,1+2,m,20,i17,-14,+2,,,,
+620,claudio,Crimson Delta Edge,"1+2,1+2","m,th","20,10",",i17",,+0,,Only comes out on hit,,
+621,claudio,Crimson Delta Edge to Starburst,"1+2,1+2,2","m,thth,sp","20,10,18",",i17",,th,th,"* Grants STB on hit
+* Only comes out on hit
+* Deals 20 damage with the input b,f+2
+* Foot-side & Face-up & -5F from Not Starburst
+* Head-side & Face-up & +0F during Starburst",,
+622,claudio,Right Jab,2,h,10,i12,-3,+3,,,,
+623,claudio,Circle of Judgement (1),"2,1","h,m","10,13",",i20",-6,+5,,Combo from 1st hit,,
+624,claudio,Circle of Judgement,"2,1,2","h,m,m","10,13,25",",i16~18",-13,,,"* Heat Engager
+
+* Balcony Break
+* Combo from 2nd CH
+* Grants STB on hit",,
+625,claudio,Requiescat (1),3,m,14,i14,-10,+1,,,,
+626,claudio,Requiescat,"3,2","m,h","14,22",",i22~23",-6,+15,,"* Heat Engager
+
+* Balcony Break
+* Grants STB on hit",,
+627,claudio,Rolling Strike,3+4,m,20,i24~26,-10,KND,KND,Low crush 13~,,
+628,claudio,High Kick,4,h,13,i12,-11,+5,LNC,,,
+629,claudio,Battle Scars,"4,3","h,h","13,14",",i25~26",+0,+15Sp,KND,"* Homing
+* Balcony Break
+* Combo from 1st hit
+* Can be delayed 11F
+* Combo can be delayed 5F from hit
+Low crush",,
+630,claudio,Cross Arm Strike,f+1+2,m,8,i16,-18,-7,,,,
+631,claudio,Cross Arm Impact,"f+1+2,1+2","m,m","8,16",",i18",-14,KND,KND,"* Combo from 1st hit
+* Can be delayed",,
+632,claudio,Trinity of Pain (2),f+2,h,9,i12,+0,+6,,,,
+633,claudio,Trinity of Pain (1),"f+2,1","h,m","9,12",",i15~16",-10,+6c,,* Combo from 1st hit,,
+634,claudio,Trinity of Pain,"f+2,1,1+2","h,m,m","9,12,25",",i21~22",-18,KND,KND,"* Balcony Break
+* Can be delayed 14F
+* Combo from 1st or 2nd CH",,
+635,claudio,Deadly Sin,"f+2,2","h,m","9,20",",i14",-27,KND,KND,"* Grants STB on hit
+* Combo from 1st hit",,
+636,claudio,Sacred Edge,f+3,h,18,i18,+0,+15Sp,KND,"* Homing
+* Balcony Break on air hit
+Low crush 9~",,
+637,claudio,Above the Storm,f+3+4,h,18,i17,+2,KND,KND,Homing,,
+638,claudio,Into the Abyss,f+4,m,23,i22~23,+4c,,KND,,,
+639,claudio,Quick Upper,df+1,m,10,i15,-2,+9,,,,
+640,claudio,Sky's Arc,"df+1,2","m,m","10,15",",i23~24",-15,LNC,LNC,* Combo from 1st hit,,
+641,claudio,Chaos Fist,df+2,m,19,i14,-13,+5,KND,,,
+642,claudio,Dispel Magic (1),df+3,m,12,i14,-7,+4,,,,
+643,claudio,Dispel Magic,"df+3,1","m,m","12,18",",i17~19",-12,KND,KND,"* Tornado
+* Combo from 1st hit
+* Can be delayed 14F",,
+644,claudio,Dispel Force,"df+3,2","m,h","12,10",",i15",-2,+4,,"* Combo from 1st hit
+* Can be delayed 14F",,
+645,claudio,Front Kick,df+4,m,14,i13,-8,+3,,,,
+646,claudio,Axion,d+1,m,14,i17,-8,+2,,,,
+647,claudio,Superbia,d+1+2,m,28,i13~14,-18,KND,KND,"* Balcony Break
+* Same move as BT.1+2",,
+648,claudio,Gravity Hole (1),d+2,l,6,i20,-12,-1,,High crush 6~,,
+649,claudio,Gravity Hole,"d+2,2","l,l","6,8",",i16~17",-13,-1,,,,
+650,claudio,Crouch Side Kick,d+3,l,12,i16,-17,-3,,High crush 4~,,
+651,claudio,Crouch Shin Kick,d+4,l,7,i12,-13,-2,,High crush 4~,,
+652,claudio,Crouch Jab,db+1,sm,5,i10,-5,+6,,"* Returns to standing when input F
+High crush 4~",,
+653,claudio,Blue Moon,db+1+2,m,20,i17,,KND,,"* Tornado
+* Balcony Break",,
+654,claudio,Crouch Straight,db+2,sm,8,i11,-4,+7,,High crush 4~,,
+655,claudio,Twin Claws,"db+2,1","sm,m","8,12",",i18",-9,+3,,"* Combo from 1st CH
+* Same move as FC.2,1
+High crush",,
+656,claudio,Acedia,db+3,l,23,i24~25,-15,+3c,KND,High crush 6~,,
+657,claudio,Lagrange Needle (1),db+4,l,7,i15,-13,-2,,,,
+658,claudio,Lagrange Needle,"db+4,3","l,h","7,10",",i18",-11,+0,,Combo from 1st hit,,
+659,claudio,Vanishing Storm,b+1,m,25,i18~19,-5,KND,KND,"* Homing
+* Balcony Break",,
+660,claudio,Judgement Claw,b+1+2,m,25,i22,-13,KND,KND,"* Balcony Break
+* absorb an attack to power up
+*  - Add chip damage when guarded
+Power crush 8~",,
+661,claudio,Spinning Skies,b+2,h,25,i14,-9,KND,KND,* Tornado,,
+662,claudio,Big Bang,b+2+3,ub(m),60,i72,KND,KND,KND,Balcony Break,,
+663,claudio,Burning Core,b+3,m,14,i13,-4,+7,,,,
+664,claudio,Crescent Heel,"b+3,3","m,m","14,21",",i24~25",-12,+7c,KND,"* Combo from 1st CH
+* Can be delayed",,
+665,claudio,Eternal Moon,b+3+4,m,24,i29,-14,KND,KND,"* Homing
+* Balcony Break",,
+666,claudio,Shining Wind (1),b+4,m,10,i17,-14,-3,,,,
+667,claudio,Shining Wind,"b+4,1","m,h","10,18",",i20~21",+1,+13Sp,KND,"* Tornado
+* Combo from 1st hit
+* Can be delayed 12F
+* Combo can be delayed 10F from CH
+* Chip damage when guarded",,
+668,claudio,Shining Ray,"b+4,2","m,m","10,20",",i20",-11,KND,KND,"* Heat Engager
+
+* Balcony Break
+* Grants STB on hit
+* Combo from 1st hit",,
+669,claudio,Axial Ray,"b+4,3","m,h","10,14",",i22~23",-12,-4,+1,"* Homing
+* Combo from 1st hit
+* Can be delayed 12F",,
+670,claudio,Avaritia,"b+4,3,2","m,h,m","10,14,20",",i31~32",-13,KND,KND,"Combo from 2nd CH
+Low crush",,
+671,claudio,Lunar Ray,"b+4,4","m,m","10,16",",i28~29",,LNC,,Tornado,,
+672,claudio,Meteor Storm,u+2,m,21,i21,,,,"* Heat Engager
+
+* Balcony Break
+* Grants STB on hit
+* Alternate input: ub+2/uf+2
+Low crush",,
+673,claudio,Ground Slash Nova,u+3,m,20,i23~25,+2c,+7c,LNC,"Alternate input: ub+3, uf+3
+Low crush 9~",,
+674,claudio,Pollux,uf+3+4,mm,"10,14",i20,-11,KND,KND,"* Balcony Break
+* JS after Start-up frame
+Low crush",,
+675,claudio,Sky Slash Nova,uf+4,m,13,i15,-13,LNC,LNC,"Alternate input: ub+4, u+4
+Low crush 9~",,
+676,claudio,Ki Charge,1+2+3+4,sp,-,,,,,,,
+677,claudio,Bringer of Justice (1),"f,F+2",m,14,i14~16,-18,-7,,"* Same move as FC.df+2
+* Cannot be buffered",,
+678,claudio,Bringer of Justice,"f,F+2,1+2","m,m","14,20",",i18~19",-13,KND,KND,"* Balcony Break
+* Grants STB on hit
+* Can be delayed
+* Combo from 1st NH",,
+679,claudio,Dual Guns,"f,F+2,2","m,h","14,20",",i14~15",-2c,,KND,"* Combo from 1st hit
+* Can be delayed
+* Same move as FC.df+2,2",,
+680,claudio,Invidia,"f,F+4",m,20,i15~17,-1,+5,+13,Low crush 11~,,
+681,claudio,Ira,"f,f,F+2",h,40,i13~16,+7,KND,KND,"* Heat Engager
+
+* Grants STB on hit
+* Wall Crush +21g at the wall
+
+
+* Balcony Break
+* Chip damage when guarded
+Low crush 3~",,
+682,claudio,Noble Step (1),ws1,m,12,i12~13,-4,+7,,,,
+683,claudio,Noble Step,"ws1,1","m,h","12,15",",i20",-12,+9,,Combo from 1st hit,,
+684,claudio,Malefic Draw,"ws1,2","m,m","12,12",",i28~29",-9,+4,,Tornado,,
+685,claudio,Sylvia,ws2,m,20,i15~16,-14,LNC,LNC,Grants STB on hit,,
+686,claudio,Piercing Wind,ws3,m,20,i16,-8,KND,KND,Balcony Break,,
+687,claudio,Holy Smash,ws4,m,18,i11~12,-6,+5,,,,
+688,claudio,Luxuria,SS.4,l,20,i20,-12,+6c,KND,,,
+689,claudio,Dual Guns (1),FC.df+2,m,14,i14~16,-18,-7,,"* Same move as f,F+2",,
+690,claudio,Dual Guns,"FC.df+2,2","m,h","14,20",",i14~15",-2c,,KND,"* Combo from 1st hit
+* Can be delayed
+* Same move as f,F+2,2",,
+691,claudio,Wall Jumping Attack,"(back to wall).b,b,ub",m,21,i36,+0c,KND,KND,"* Air Status 5F
+is8~13",,
+692,claudio,Aurora Pactum,"STB.4,2","h,sm","13,32",i28-36,-17,+27(+1),,"* Tornado
+* Chip damage when guarded",,
+693,claudio,Avaritia Burst,"STB.b+4,3,2","m,h,m","10,14,38",i17,-1,LNC,LNC,"* Combo from 2nd CH
+* Chip damage when guarded
+Low crush",,
+694,claudio,Blue Moon Burst,STB.db+1+2,m,25,i17,-1,Launch,,"* Tornado
+* Chip damage when guarded",,
+695,claudio,Mystic Ray Burst,"STB.d+1,2","m,m","16,23",i28,+6,+28(+13),,"* Tornado
+* Chip damage when guarded",,
+696,claudio,Gravity Zone,"STB.d+2,2","l,l","7,8",i20,-13,-1,,"Combo from 1st CH
+High crush",,
+697,claudio,Anima,"STB.f,f,F+1+2",h,45,i13,+8,KND,,"* Chip damage when guarded
+Low crush",,
+698,claudio,Cross Arm Impact Burst,"STB.f+1+2,1+2","m,m","8,16",i16,-9,+64,+64,"* Balcony Break
+* Combo from 1st hit
+* Can be delayed
+* Chip damage when guarded",,
+699,claudio,Malefic Draw Burst,"STB.ws1,2","m,m","12,23",i12,+6,KND,,"* Tornado
+* Chip damage when guarded",,
+700,claudio,Punishment,1+3,th(h),35,i12~14,-2,+0d,,"* Break: 1 or 2
+* Opp. Position on break: Reverse Pos.
+* Opp. Position on hit: Foot-sd. Face-up",,
+701,claudio,Roche Limit,2+4,th(h),35,i12~14,-3,+0d,,"* Break: 1 or 2
+* Opp. Position on break: Reverse Pos.
+* Opp. Position on hit: Reverse Pos. Head-sd. Face-up",,
+702,claudio,Sudden Shadow,Back throw,th(h),50,,,+0d,,"* Break: none
+* Opp. Position on break: -
+* Opp. Position on hit: Foot-sd. Face-down",,
+703,claudio,Avalaunche Throw,Left throw,th(h),40,,-3,-3d,,"* Break: 1
+* Opp. Position on break: 
+* Opp. Position on hit: Right-sd. Face-up",,
+704,claudio,Prayer into the Void,Right throw,th(h),40,,-3,+0d,,"* Break: 2
+* Opp. Position on break: 
+* Opp. Position on hit: Foot-sd. Face-up",,
+705,claudio,Gula,uf+1+2,th(h),40,,-6,,,"* Break: 1+2
+* Opp. Position on break:
+* Opp. Position on hit: Reverse Pos. Head-sd. Face-up",,
+706,deviljin,Heat Burst,2+3,m,[12;12],i16,+1,+2c,,"* Only does recoverable damage(?)
+* Heat Burst
+* Alternate input: R1
+* 3 chip damage on block
+Parry state 8~",,
+707,deviljin,Inner Purgatory,H.MCR.2+3,ub(m),"23,16",i20,Th,Th,Th,"* Heat Smash
+* Alternate input: R1",,
+708,deviljin,Vindictive Helix,H.2+3,"m,h,th","20,22,10",i18,+11 MCR,Th,Th,"* Heat Smash
+* Alternate input: R1",,
+709,deviljin,Jab,1,h,5,i10,+1,+8,,,,
+710,deviljin,Flash Punch Combo (2),"1,1","h,h","5,6",",i15",-1,+8,,"* Jails
+* Combo from 1st hit",,
+711,deviljin,Flash Punch Combo (2),"1,1,2","h,h,m","5,6,14",",i13",-17,+18a(+13),,"* Balcony Break on air hit
+* Combo from 1st hit",,
+712,deviljin,One Two Strike,"1,2","h,h","5,8",",i10",-3,+8,,"* Jails
+* Combo from 1st hit",,
+713,deviljin,Back Fist Combo,"1,2,2","h,h,h","5,8,12",",i17",-12,+4,,"* Jails
+* Combo from 1st hit",,
+714,deviljin,"Jab, Hook, Kick","1,2,3","h,h,m","5,8,25",",i29~31",+4,+24a,,Spike,,
+715,deviljin,Shoot the Works,"1,2,3,4","h,h,m,m","5,8,25,30",",i36~38",+0,+12c,,Spike,,
+716,deviljin,One Two Knee,"1,2,4","h,h,m","5,8,10",",i11",-10,+4,,Combo from 1st hit,,
+717,deviljin,Tsujikaze,1+2,"m,m","12,25",i17,-12,+7,,"* 1st hit
+Homing
+* 2nd hit
+Balcony Break",,
+718,deviljin,Hook,2,h,9,i10,+0,+9,,,,
+719,deviljin,Demon Backhand Spin,"2,2","h,h","9,20",",i17",-13,-2,,"* Jails
+* Combo from 1st hit",,
+720,deviljin,Kick,3,m,16,i17~19,-12,-6,,,,
+721,deviljin,"Kick, Jab ","3,1","m,h","16,11",",i29~30",+2,+8,,Combo from 1st hit,,
+722,deviljin,Hell Cyclone,"3,1,2","m,h,m","16,11,20",",i25~28",-11,+72(+56),,Tornado,,
+723,deviljin,Hell Spiral,"3,1,4","m,h,m","16,11,20",",i23~24",-9,+15(+6),+59a,Balcony Break,,
+724,deviljin,Demon March,"3,1,f,F","m,h","16,11",,-2,+4,,,,
+725,deviljin,Last Rites,4,h,24,i17~18,-5,+10,,"* Homing
+* Balcony Break",,
+726,deviljin,Last Rites + Jab,4+1,"sl,h","5,5",",i16",-3,+4,,Jails,,
+727,deviljin,Three Ring Alaya,"4+1,2","sl,h,m","5,5,20",",i24~25",-12,+72(+56),,Tornado,,
+728,deviljin,Wheel of Pain,4~3,m,21,i29,-7,+14,,Spike,,
+729,deviljin,Wheel of Pain > Annihilation Beam,"4~3,H.1+2","m,sm","21,15",i24~35,+2,+58a(+42),,"* Tornado
+* Chip damage on block (4)",,
+730,deviljin,893P,f+2,m,14,i17~18,-8,+3,,Spike,,
+731,deviljin,893P > Knee Kick,"f+2,4","m,m","14,17",",i15",-11,+0,,,,
+732,deviljin,Forward + Last Rites,f+4,m,10,i15~16,-12,-1,,,,
+733,deviljin,Twisted Samsara,"f+4,3","m,m","10,14",",i26~27",-22,+18(+8),,"* Tornado
+* On hit, hold ub, u or uf to transition to Fly",,
+734,deviljin,Down Forward + Jab,df+1,m,11,i13,-6,+5,+9,,,
+735,deviljin,Dark Twin Lancer,"df+1,2","m,h","11,20",",i17",-9,+44d(-14),,Balcony Break,,
+736,deviljin,Bloody Glaive,df+2,m,17,i15,-9,+6,+9,Hold F to enter MCR at +14 or at +17 on CH,,
+737,deviljin,Down Forward + Kick,df+3,m,12,i16~17,-9,+2,,,,
+738,deviljin,Down Forward + Kick > Hook,"df+3,2","m,m","12,10",",i19",-13,-7,,,,
+739,deviljin,Rengoku,"df+3,2,4","m,m,m","12,10,20",",i29",-22,+18(+8),,"* Tornado
+* On hit hold ub, u or uf to shift to FLY at +36(+26)",,
+740,deviljin,Down Forward + Last Rites,df+4,m,10,i13~14,-9,+2,,,,
+741,deviljin,Tsunami Kick,"df+4,4","m,m","10,16",",i13~14",-15,-4,,Spike,,
+742,deviljin,Corpse Thrust,d+1,m,25,i18~19,-14,+20(+10),,"* Balcony Break
+* Absorb an attack to power up
+* Add chip damage when guarded
+Parry state 8~",,
+743,deviljin,Broken Plate,d+3,L,12,i18~19,-12c,-1,+7c,,,
+744,deviljin,Double Lift Kicks,d+3+4,"m,m","5, 20",i15~16,-15,+30(+20),,,,
+745,deviljin,Demon's Spear,db+1+2,m,15,i23~25,-9,+4,,"* Hold F during startup to feint into MCR
+* Balcony Break on air hit",,
+746,deviljin,Demon's Spear,db+1+2*,m,25,i26~60,+17g +24w,+7,,"* Hold F during startup to feint into MCR
+* Balcony Break on air hit",,
+747,deviljin,Demon's Lance,db+1+2**,m,42,i61~63 (Full Charge),[[Devil Jin combos#Mini-combos|+10]],+37,,"* Balcony Break
+* Guard Break
+* Chip Damage on block (16)
+* hold F during startup to feint into MCR",,
+748,deviljin,Malicious Mace,db+2,L,15,i21~22,-13c,+3c,+26d,Chip damage on block,,
+749,deviljin,Back + Jab,b+1,h,10,i12,-6,+5,,,,
+750,deviljin,Brimstone Strike,"b+1,2","h,m","10,10",",i23",-14,+23a(+13),,"* Balcony Break
+* Hold B to cancel",,
+751,deviljin,Aratama Strike,b+1+2,m,21,i20~21,-1c,+7c,+24d,"* Spike
+* Chip Damage on block (6)",,
+752,deviljin,Lightning Screw Uppercut,b+1+4,ub(m),60,i63,LNC,LNC,LNC,,,
+753,deviljin,Back + Hook,b+2,h,11,i14~16,-13,-2,,,,
+754,deviljin,Rakshasa's Rampage,"b+2,1","h,m","11,21",",i30",-16,+29(+19),,Tornado,,
+755,deviljin,Rakshasa's Fury,"b+2,3","h,m","11,23",",i25~127",-14,+8(-1)/HE,,"* Heat Engager
+
+* Heat Dash +62a(+42) on hit
+* Balcony Break
+* Combo from 1st hit",,
+756,deviljin,Wicked Jambu Spear,b+3,m,24,i29~32,-18,+10/HE,,"* Heat Engager
+
+* Heat Dash +17d on hit
+* Balcony Break",,
+757,deviljin,Demon Steel Pedal,b+4,m,20,i17~18,-8,+6,+30(+24),,,
+758,deviljin,Hellfire Blast,ub+1+2,h,40,i47,KND,KND,KND,"* Balcony Break
+* Chip damage when guarded
+* Jack-8 or Alisa can recovery 20 by input 1+2",,
+759,deviljin,Hellfire Cannon,u+1+2,,,,,,,Air laser,,
+760,deviljin,Samsara,u+4,m,22,i20,-25,+15(+5),,"* Tornado
+* On hit hold ub, u or uf to transition to fly at +35(+25)",,
+761,deviljin,Infernal Shackle,uf+1,h,10,i21~23,+11,+16,,"* Balcony Break on air hit
+* Weapon
+* Shifts to MCR on hit or block
+* 2 Chip damage on block",,
+762,deviljin,Decapitating Sword,uf+2,h,25,i20~23,-4,+25a,,* Homing,,
+763,deviljin,Reaper's Scythe,uf+3,m,21,i28~29,+3c,+7c,+19a,Spike,,
+764,deviljin,Hisour,uf+3+4,"m,m","8,20",i16,-16,+33a(-25),,* Balcony Break,,
+765,deviljin,Hissour > Annihilation Beam,"uf+3+4,H.1+2","m,m,sm","8,20,20",i25~50,-15,+0,,"* Chip damage on block (6)
+* Transitions into throw on hit",,
+766,deviljin,Wraith Kick,uf+4,m,21,i18,-8,+11/HE,,"* Heat Engager
+
+* Heat Dash +62a(+42) on hit
+* Balcony Break",,
+767,deviljin,"Back, Forward + Jab + Hook","b,f+1+2",m,17,i25,-17,+31a(-2),,Chip damage on block,,
+768,deviljin,Gates of Hades,"b,f+1+2,2","m,m","17,30",",i28~31",-31,-5(-12),,Combos from first hit,,
+769,deviljin,"Back, Forward + Hook","b,f+2",m,12,i15~17,-9,-1,,,,
+770,deviljin,"Back, Forward + Hook, Jab","b,f+2,1","m,m","12,12",",i14~15",-10,+1,,Combos from first hit,,
+771,deviljin,Laser Cannon,"b,f+2,1,2","m,m,m","12,12,24",",i22~23",-8,+15a(+6),+45a(+0),"* Balcony Break
+* Chip damage on block (7)",,
+772,deviljin,Laser Crush,"b,f+2,1,4","m,m,m","12,12,21",",i26~29",-7c,+14a,,,,
+773,deviljin,Laser Scraper,"b,f+2,1,df+2","m,m,m","12,12,20",",i18~19",-13,+25a(+8),,"* Tornado
+* Balcony Break on grounded hit only",,
+774,deviljin,Laser Slice,"b,f+2,3","m,h","12,24",",i19~20",-9,+9,,Combos from first hit,,
+775,deviljin,Demon's Paw,"f,F+2",m,24,i15~16,-8,+15a(+6)/HE,,"* Heat Engager
+
+* Heat Dash +36a(+26) on hit
+* Balcony Break
+* 7 Chip damage on block",,
+776,deviljin,Demon's Shaft,"f,F+4",m,22,i20~21,-6,+16c,+55a,Balcony Break,,
+777,deviljin,Demon's Hoof,"f,n,d,DF+3",l,24,i33~34,-23c,-2d,,Leaves opponent Face Down/Head Towards,,
+778,deviljin,Hellsweep,"f,n,d,DF+4",L,7,i16,-23c,-5c,,,,
+779,deviljin,Spinning Demon Hellfire Beam,"f,n,d,DF+4,1+2","L,sm","7,9",",i29~40",,+58(+42),,"* Tornado
+* Only on hit
+* Turns the back to you, limiting combos",,
+780,deviljin,Spinning Demon Scythe,"f,n,d,DF+4,4","L,m","7,28",",i25",-16,+4c,,Spike,,
+781,deviljin,Electric Wind God Fist,"f,n,d,df#2",h,23,i14,+5,+39a(+29),,Chip Damage on block (4),,
+782,deviljin,Thunder God Fist,"f,n,d,df+1",m,30,i22~24,-16,+29a(+19),,,,
+783,deviljin,Heaven's Door,"f,n,d,df+1,UF","m,th","30,10",,,-4,,"* Floor Break
+* Only on hit",,
+784,deviljin,Spiral of Madness,"f,n,d,df+1+2",m,25,i26~27,-9,+12a(+3),+33a,"* Homing
+* Balcony Break
+* Chip Damage on block (7)
+* Leaves opponent Face Up/Head Towards on CH",,
+785,deviljin,Wind God Fist,"f,n,d,df+2",h,20,i15,-10,+39a(+29),,Consumes meter & acts as EWGF during Heat,,
+786,deviljin,Demon's Hoof,"f,n,d,df+3",m,25,i26~28,-8c,+16a,,"* Spike
+* Chip Damage on block (7)",,
+787,deviljin,Leaping Side Kick,"f,f,F+3",m,30,i22~25,+6,+13a(+3),,"* Balcony Break
+* Chip damage on block (9)",,
+788,deviljin,Solo Piston,ws1,m,12,i13~14,-6,+5,+9,,,
+789,deviljin,Infernal Shackle,"ws1,1","m,h","12,10",",i30~32",+11,+16,,"* Balcony Break On air hit
+* Weapon
+* Combo on 1st CH
+* Shifts to MCR on hit or block
+* Chip damage on block (2)",,
+790,deviljin,Bloody Glaive,"ws1,2","m,m","12,15",",i22",-11,+6,+9,"* Hold F to enter MCR on hit at +14 or +17 on CH
+* Combos from first hit",,
+791,deviljin,Alaya,ws2,m,20,i15~16,-12,+72a(+56),,"* Tornado
+* Chip Damage on block (6)",,
+792,deviljin,Organ Wrecker,ws3,m,15,i14,-11,+9,+14,Hold F on hit to enter MCR at +16 or +23 on CH,,
+793,deviljin,Wake Up Kick,ws4,m,10,i11~12,-3,+8,,,,
+794,deviljin,Wretched Heel,"ws4,4","m,m","10,20",",i27~28",-16,+4c,,Spike,,
+795,deviljin,Devil Twister,SS.2,m,25,i17~18,-22,+72a,,Hold U on hit for 69 damage combo,,
+796,deviljin,Near Death,FLY.1,h,20,i18~19,-3,+67a(+47),,Balcony Break,,
+797,deviljin,Infernal Destruction,FLY.1+2,UB,30,i50~100,,,,Balcony Break,,
+798,deviljin,Infernal Annihilation,FLY.2,"ub,th","20,20",i36,,+0,,"* Floor Break
+* Throw when hit from the front",,
+799,deviljin,Amara,FLY.3,m,30,i16~22,-14,+35d(-24),,"* Balcony Break
+* Spike",,
+800,deviljin,Flying Kick,FLY.4,m,10,i20,-29,-20,,,,
+801,deviljin,"Flying Kick, Hook","FLY.4,2","m,m","10,14",",i22",,+52(+7),,Only on hit,,
+802,deviljin,Devil Starstorm,"FLY.4,2,1+2","m,m,th","10,14,15",",i28",,-6,,Only on hit,,
+803,deviljin,Cross Infernal Destruction,FLY.f+1+2,UB,30,i32~75,,,,Balcony Break,,
+804,deviljin,Yomigaeri,FUFT.U+3+4,,,,,,,Shifts to fly can also be done from FUFA,,
+805,deviljin,Tiger Thrush,MCR.1,m,20,i22~23,+8,+20d,,"* Spike
+* Leaves opponent Face Down/Head Towards",,
+806,deviljin,Mourning Crow Hook,MCR.2,m,12,i15,-13,-5,,Homing,,
+807,deviljin,Dark Arachnid Twister,"MCR.2,2","m,m","12,20",",i15",-14c,+2/HE,,"* Heat Engager
+
+* Heat Dash +67a(+50) on hit
+* Spike",,
+808,deviljin,Venomous Torment,MCR.3,sm,26,i23,-7,+16a(-1),+70a(+54),"* Tornado
+* Balcony Break
+* Chip damage on block (7)",,
+809,deviljin,Mourning Crow Kick,MCR.4,m,10,i20,-29,-20,,,,
+810,deviljin,"Mourning Crow Kick, Hook","MCR.4,2","m,m","10,14",",i22",,+52(+7),,,,
+811,deviljin,Devil Starstorm,"MCR.4,2,1+2","m,m,th","10,14,15",",i28",,-6,,,,
+812,deviljin,Hellfire Incinerator,OTG.d+1+2,l,25,i23~31,-14c,+13d(+1),,,,
+813,deviljin,Laser Crush > Annihilation Beam,"b,f+2,1,4,H.1+2","m,m,m,sm","12,12,21,15",i24~35,+2,+59a(+43),,"* Balcony Break
+* Tornado
+* Chip damage on block (4)",,
+814,deviljin,Spiral of Madness > Annihilation Beam,"f,n,d,df+1+2,H.1+2","m,sm","25,20",i25~36,+2,+60a(+44),,"* Tornado
+* Chip damage on block (6)",,
+815,deviljin,Double High Sweep,1+3,th(h),35,i12~14,+2d,,,* Throw break: 1 or 2,,
+816,deviljin,Judgement,2+4,th(h),35,i12~14,+0d,,,* Throw break: 1 or 2,,
+817,deviljin,Pivoting Hip Throw,Back Throw,th(h),50,i12~14,+1d,,,* Throw break: None,,
+818,deviljin,Shoulder Flip,Left Throw,th(h),43,i12~14,+1d,,,* Throw break: 1,,
+819,deviljin,Over the Limit,Left Throw,th(h),40,i12~14,+0d,,,* Throw break: 2,,
+820,deviljin,White Mountain,df+2+3,th(h),40,i12~14,-6,,,"* Throw break: 2
+* Floor Break",,
+821,deviljin,Obliteration,"f,hcf+1+2",th(h),45,i12~14,+0d,,,* Throw break: 1+2,,
+822,deviljin,Complicated Wire,qcb+1+3,th(h),40,i12~14,+0d,,,* Throw break: 1,,
+823,deviljin,Stonehead,uf+1+2,th(h),35,i12~14,+25d(+7),,,"* Throw break: 1+2
+* Balcony Break",,
+824,dragunov,Heat Burst,2+3,m,12,i16,+1,+2c,,"* Heat Burst
+* 100% recoverable damage
+* Chip damage on block
+Power crush",,
+825,dragunov,Ultra Russian Sickle,H.2+3,"m,m,m","25,14,23","i15~16,i30~32,i31~35",+6,+2c,,"* Heat Smash
+* Balcony Break
+** Only 1st and 3rd hit
+* Chip damage on block
+* Throw on 1st hit - 50 damage
+Power crush",,
+826,dragunov,Ultra Russian Sickle > Ambush Tackle,"H.2+3,db+1+2","m,m,m,t","25,14,23,0",",i26",,-2d,,Heat Smash,,
+827,dragunov,Left Jab,1,h,5,i10,+1,+8,,,,
+828,dragunov,Eye Gouge,"1,1","h,h","5,8",",i20",-4,+7,,Combo from 1st hit,,
+829,dragunov,Eye Gouge > Hilt,"1,1,3","h,h,m","5,8,22",",i25~26",-9,+15a (+6),+36a (+0),"* Balcony Break
+* Combo from 2nd CH
+* Move can be delayed",,
+830,dragunov,Salvo (1),"1,2","h,m","5,8",",i18",-9,+2,,Combo from 1st hit,,
+831,dragunov,Salvo,"1,2,1","h,m,m","5,8,20",",i19~20",-14,+15gc,,"* Heat Engager
+
+* Heat Dash +5, [[Dragunov combos#Mini-combos|+43a (+35)]]
+
+* Balcony Break
+* Combo from 1st or 2nd CH",,
+832,dragunov,One Two Scud Kick,"1,3","h,h","5,14",",i16~17",-7,+1,+9,"* Jails
+* Combo from 1st hit",,
+833,dragunov,Hammer and Sickle,"1,3,2","h,h,m","5,14,20",",i22~23",-13,+41a,,"* Floor Break
+* Combo from 2nd CH",,
+834,dragunov,Feint & Catch,"1,3,2~1+2","h,h,t","5,14,40",",i29~32",+5,-2d,,"* Throw break 1+2
+** Unbreakable during Heat
+** Partially uses remaining Heat time
+* Cancel with B
+* Alternate input f,F+2~1+2",,
+835,dragunov,Bloodhound Strike,1+2,m,25,i21~22,-14,+19a,,"* Balcony Break
+* Floor Break
+* Absorb an attack to power up and deal more chip damage on block[[[Template:Untested|untested]]]
+Power crush",,
+836,dragunov,Right Jab,2,h,10,i10,+0,+9,,,,
+837,dragunov,One Two Starter,"2,1","h,h","10,10",",i12",-3,+8,,"* Jails
+* Combo from 1st hit
+* Enter SNK -1 +10 with df",,
+838,dragunov,One Two Scud Kick,"2,1,3","h,h,h","10,10,24",",i18~19",-9,+40d (-18),,* Balcony Break,,
+839,dragunov,One Two Mine Kick,"2,1,4","h,h,L","10,10,14",",i23",-12,+3,,,,
+840,dragunov,Left Kick,3,m,10,i15~16,-9,+2,,,,
+841,dragunov,Disconnector Combo Starter,"3,1","m,h","10,8",",i21~22",-2,+7,,"* Combo from 1st hit
+* Enter SNK -3 +6 with df",,
+842,dragunov,Disconnector Combo Middle,"3,1,2","m,h,m","10,8,24",",i19~21",-12,+12a (+3),,"* Balcony Break
+* Combo from 2nd CH with delay",,
+843,dragunov,Disconnector Combo High,"3,1,4","m,h,h","10,8,24",",i22~23",-9,+42d (-16),,"* Balcony Break
+* Combo from 2nd CH with delay",,
+844,dragunov,Iron Flail,3+4,h,25,i25~26,-13,+41a,,"* Tech-rollable
+Low crush",,
+845,dragunov,Karnov Starter,4,h,10,i12,-9,-1,+2,,,
+846,dragunov,Karnov Hook,"4,1","h,h","10,17",",i17~18",-4,+8,,Combo from 1st hit,,
+847,dragunov,Karnov Kick,"4,3","h,m","10,18",",i23~24",-12,+13c,,"* Floor Break
+* Combo from 1st CH",,
+848,dragunov,Karnov Avalanche,"4,4","h,m","10,23",",i25~36",+5,+29a (+20),+46a,"* Balcony Break
+* Chip damage on block
+Low crush",,
+849,dragunov,Scabbard,f+1+2,h,27,i17~18,-9,+35a,,Balcony Break,,
+850,dragunov,Stun Gun (1),f+2,h,16,i19~20,-8,+3,,,,
+851,dragunov,Stun Gun,"f+2,4","h,m","16,24",i19~20,-7,+28a (+23),+31a (+25),"* Balcony Break
+* Combo from 1st CH",,
+852,dragunov,Crushing Blizzard (1),f+3,m,11,i20,-6,+5,,Enter SNK +0 +11 with df,,
+853,dragunov,Crushing Blizzard,"f+3,1+2","m,m","11,27",",i30~31",-6,+22a,,"* Heat Engager
+
+* Heat Dash +18g, [[Dragunov combos#Staples|+67a (+50)]]
+
+* Balcony Break
+* Combo from 1st hit
+* Chip damage on block",,
+854,dragunov,Step-in Mantis,"f+3,3","m,m","11,14",",i17~20",-10,+1,,"* Floor Break
+* Combo from 1st CH
+* +20 damage throw when hit from the front in close range",,
+855,dragunov,,f+4,h,16,i14~15,-7,+8,,,,
+856,dragunov,Falcon Combination,"f+4,3","h,h","16,22",i30~32,-9,+20a,,"* Tornado
+* Balcony Break
+* Combo from 1st hit",,
+857,dragunov,,"f+4,4","h,h","16,11",i20~21,-11,+0,+22a (+15),"* Balcony Break
+** Only on CH
+* Combo from 1st hit with delay",,
+858,dragunov,Cougar Combination,"f+4,4,3","h,h,h","16,11,17",i22~23,-5,+21a (+12),,Balcony Break,,
+859,dragunov,Orca Combination,"f+4,d+4","h,L","16,12",i25,-12,+3c,,Combo from 1st hit with delay,,
+860,dragunov,,df+1,m,13,i13,-2,+7,,,,
+861,dragunov,Switchblade Ripper,"df+1,4","m,h","13,23",",i22~23",-6,+22a (+13),+58a,"* Balcony Break
+* Combo from 1st CH",,
+862,dragunov,White Angel of Death,df+1+2,m,55,i20,-15,+0d,,"* Rage Art
+* Diminishes opponent's recoverable gauge",,
+863,dragunov,Scimitar,df+2,m,14,i15~16,-12,+28a (+18),,,,
+864,dragunov,Mantis Heel,df+3,m,16,i17~20,-6,+5c,,"* Floor Break
+* +20 damage throw when hit from the front in close range",,
+865,dragunov,Reaper Kick,df+3+4,m,23,i22~24,-7,+12g,+24a,"* Homing
+* Balcony Break
+* Causes Strong Aerial Tailspin",,
+866,dragunov,Middle Right Kick,df+4,m,14,i12,-9,+2,,,,
+867,dragunov,Bunker-buster Elbow,d+1,m,18,i18~19,+1c,+8c,+13d,,,
+868,dragunov,Pit Fall,d+1+2,,40,,,+5d,,"* Parries lows
+* 100% recoverable damage",,
+869,dragunov,Razer,d+2,L,17,i18~19,-13,-1c,+13g,High crush,,
+870,dragunov,Avalanche Hammer Rush (2),d+3,L,13,i17~18,-14,-3,+1,,,
+871,dragunov,Avalanche Hammer Rush (1),"d+3,2","L,h","13,18",",i24~25",-6,+8,,Combo from 1st CH,,
+872,dragunov,Avalanche Hammer Rush,"d+3,2,1+2","L,h,m","13,18,24",",i35~36",-2c,+20a,,,,
+873,dragunov,Detached Kick,"d+3,4","L,m","13,18",",i28",-11,+5,+23g,Combo from 1st CH,,
+874,dragunov,Separator (2),d+4,L,12,i15~16,-15,-9,-4,,,
+875,dragunov,Separator (1),"d+4,1","L,h","12,8",",i14~15",-11,+5,,Combo from 1st CH,,
+876,dragunov,Separator,"d+4,1,3","L,h,h","12,8,21",",i15~16",-16,+9a (+0),,"* Balcony Break
+* Combo from 1st CH
+* Combo from 2nd hit",,
+877,dragunov,Stiletto,"d+4,4","L,h","12,23",",i22~23",-14,+16a (+6),,"* Balcony Break
+* Combo from 1st CH",,
+878,dragunov,Death's Door (2),db+2,m,12,i14~15,-7,+4,,,,
+879,dragunov,Death's Door (1),"db+2,1","m,m","12,10",",i20~21",-10,+1,+3,Combo from 1st hit with delay,,
+880,dragunov,Death's Door,"db+2,1,2","m,m,m","12,10,20",",i25",-14,+29a (+23),,Combo from 2nd CH with delay,,
+881,dragunov,Clipping Sweep,db+3,l,17,i27~29,-26,-2c,+67a (+51),"Clean hit [[Dragunov combos#Staples|+67a (+51)]]
+High crush",,
+882,dragunov,Deadly Scorpion,db+3+4,L,23,i20~21,-15,+7,+24a,,,
+883,dragunov,,b+1,m,14,i17,-10,+1,,,,
+884,dragunov,Pommel Fling,"b+1,2","m,m","14,18",",i25~26",-12,+18gc,,"* Tornado
+* Balcony Break
+* Combo from 1st hit",,
+885,dragunov,Blizzard Hammer,b+1+2,m,26,i22~23,+6,+26d,,Floor Break,,
+886,dragunov,Red Alert,b+1+3,,25,,,-5d,,"* Parries mid and high punches and kicks
+* 100% recoverable damage
+* Alternate input b+2+4
+Parry state 5~12",,
+887,dragunov,Eye Gouge (1),b+2,m,14,i15,-3,+8,,,,
+888,dragunov,Eye Gouge,"b+2,1","m,h","14,11",",i17~19",-5,+6,,Combo from 1st hit,,
+889,dragunov,Eye Gouge > Stingray,"b+2,1,3","m,h,l","14,11,17",",i29~31",-26,-2c,+1d,"* Clean hit +4
+* Shift to [[Dragunov movelist#Dragunov.FDFT.3 (Close)|Clipping Heel Hook]] on close range CH",,
+890,dragunov,Serrated Edge,b+3,h,17,i14~15,-9,+11g,,"* Homing
+* Balcony Break",,
+891,dragunov,Inertia Kick,b+3+4,h,22,i28~29,-2,+26a,,"Punch parry
+Parry state",,
+892,dragunov,Tundra Strike (1),b+4,m,15,i14,-4,+7,,,,
+893,dragunov,Tundra Strike,"b+4,2","m,m","15,15",",i21",-7,+4c,,"* Enter FC with D
+* Enter SNK with df",,
+894,dragunov,Tundra Strike > Ear Grab,"b+4,2,1","m,m,h","15,15,17",",i23~24",+1,+5,+14,"* Combo from 1st CH
+* Combo from 2nd hit with delay",,
+895,dragunov,Tundra Strike > Ambush Tackle,"b+4,2,1+2","m,m,t","15,15,17",",i40",-5,+3d,,"* Throw break 1+2
+** Recovery in BT
+** Unbreakable during Heat
+** Partially uses remaining Heat time
+* Alternate input:
+** ss2,1+2,1+2
+** ss3+4,1+2
+** (Face down).1+2,1+2
+** FC.df+1,H.1+2",,
+896,dragunov,Tundra Slash,"b+4,3","m,h","15,20",",i17~18",-9,+21a (+12),,"* Heat Engager
+
+* Heat Dash +5, [[Dragunov combos#Staples|+62a (+42)]]
+
+* Balcony Break",,
+897,dragunov,Sub-Zero,ub+1+2,m!,60,i63~64,,+26d (-32),,Balcony Break,,
+898,dragunov,Counterstrike,ub+2,h,18,i20,-5,+9,+53a,Sidesteps left,,
+899,dragunov,,ub+3,m,16,i17~21,-13,+14a (+4),,"Balcony Break
+Low crush",,
+900,dragunov,Slicing Sobat,ub+4,m,21,i22~23,-9,+17a,,Low crush,,
+901,dragunov,Breaching Charge Kick,u+3,m,16,i17~21,-17,-6,,"Balcony Break
+Low crush",,
+902,dragunov,Slicing Sobat,u+4,m,21,i22~23,-9,+21a,,Low crush,,
+903,dragunov,Eye Blast,uf+1,h,20,i15,-9,+37d (+29),,"* Tornado
+* Balcony Break
+* Alternate input:
+** ub+1
+** u+1",,
+904,dragunov,Under Pressure,uf+2,M,20,i30-31,-5,+42a,,"Alternate input u+2
+Low crush",,
+905,dragunov,Breaching Charge Kick,uf+3,m,16,i17~21,-7,+20a (+10),,"Balcony Break
+Low crush",,
+906,dragunov,Slicing Sobat,uf+4,m,21,i22~23,-9,+25a,,Low crush,,
+907,dragunov,Russian Sickle,"f,F+2",m,20,i15~16,-12,+15a,+30d (+22),"* Balcony Break
+* Floor Break",,
+908,dragunov,Stinger Kick,"f,F+3",h,35,i21~23,+5,+30a (+4),,"* Homing
+* Balcony Break
+* Chip damage on block",,
+909,dragunov,Rolling Thunder,"f,F+4",M,21,i26~28,-1,+13,,Low crush,,
+910,dragunov,Mass Elbow,qcb+2,m,23,i26~27,-15,+68a (+52),,Tornado,,
+911,dragunov,Sneak,qcf,,,,,,,"* Lapses to standing
+* Input d,DF to transition to FC instead of SNK",,
+912,dragunov,Delayed Rising Toe Kick,"uf,n,4",m,20,i23~25,-13,+32a (+22),,Low crush,,
+913,dragunov,Russian Hook Special,"f,f,F+2",m,25,i15~17,+6,+32d (-26),+44a,"* Balcony Break
+* Floor Break
+* 20% (4) Chip damage on block - 30% (9) when powered up
+* Do n,f,n,f+2 within 8 total frames (first forward doesn't matter) for powered up (bluespark) version - 30 damage",,
+914,dragunov,Russian Hook Special > Ambush Tackle,"f,f,F+2,H.1+2","m,t","25,0",",i40",,-2d,,Partially uses remaining Heat time,,
+915,dragunov,Snap Knee Assault,"f,f,F+4","m,t","20,25",i20~21,-7,+1d,,"* Throw when hit from the front
+* Alternate input wr4",,
+916,dragunov,,ws1,m,11,i12~13,-3,+4,,Enter SNK -5 +2 with df,,
+917,dragunov,Qullion,"ws1,2","m,h","11,14",",i22~23",-7,+10g,,"* Balcony Break
+* Combo from 1st hit",,
+918,dragunov,Double Hilt,"ws1,3","m,m","11,17",",i17~18",-13,+15a (+6),+36a (+0),"* Balcony Break
+* Combo from 1st hit",,
+919,dragunov,Frost Tackle,ws1+2,m,28,i12~13,-14,+19a (+9),,"* Balcony Break
+* Alternate input SNK.1+2",,
+920,dragunov,Ballistic Upper,ws2,m,15,i15~16,-12,+28a (+18),,,,
+921,dragunov,Glacial Hilt,ws3,m,21,i16~17,-9,+15a (+6),+36a (+0),Balcony Break,,
+922,dragunov,Gelid Smash,ws4,m,15,i11~12,-5,+6,,,,
+923,dragunov,,SS.2,m,16,i20~21,-10,+1,,,,
+924,dragunov,,"SS.2,1+2","m,m,m","16,8,12",",i27~29,i8~9",-4,+2,,* Combo from 1st hit,,
+925,dragunov,Integral Blitz,"SS.2,1+2,4","m,m,m,h","16,8,12,28",",i26~27",-10,+45a,,* Combo from 1st hit,,
+926,dragunov,Integral Slicer Clutch,"SS.2,3","m,h,t","16,20,20",i18,-9,+1d,,"* Throw when hit from the front
+* Side switch
+* Combo from 1st hit",,
+927,dragunov,Pigeon Roll,SS.3+4,,,,,,,High crush,,
+928,dragunov,,FC.df+1,L,8,i16~17,-13,-2,,,,
+929,dragunov,Hail Slicer,"FC.df+1,4","L,m","8,10",",i16~17",,+7,,"* Available only as combo from 1st
+* Just input to power up - 14 damage",,
+930,dragunov,Hail Slicer > Ambush Tackle,"FC.df+1,H.1+2","L,t","8,0",",i40",,-2d,,Partially uses remaining Heat time,,
+931,dragunov,Snap Knee Assault,"(During enemy wall stun).f,f,F+4","m,t","20,20,25,35",i20~21,,,,"* Tornado
+* Deals maximum 32 (20) damage due to scaling",,
+932,dragunov,Living Dead,(Face down).1+2,,,,,,,,,
+933,dragunov,Cane Stab,BT.d+3,l,20,i16,-11,+10d,,,,
+934,dragunov,Clipping Heel Hook,FDFT.3,"l,t","8,30",i19,-9,+0d,,"On close hit
+High crush",,
+935,dragunov,Six Feet Under,OTG.d+3+4,L,24,i24,-11,+0,,"* Floor Break
+* +0a (-8) on grounded",,
+936,dragunov,Cocked Hamme,SNK.1,h,20,i15~16,-3,+51a,,,,
+937,dragunov,qcf+1+2,SNK.1+2,m,28,i12~13,-14,+19,,* Balcony Break,,
+938,dragunov,Stinger Elbow,SNK.2,m,25,i18~19,-14,+36a (+26),,Tornado,,
+939,dragunov,Slay Ride,SNK.3,"L,t","17,20",i17~18,-16,+0,+1d,"* Throw when CH from the front
+** Called ""Needle Hold"" in-game",,
+940,dragunov,Snap Knee,SNK.3+4,m,20,i17~18,-13,+27g,,"* Absorb a hit to transition to [[Dragunov movelist#Dragunov-f,f,F+4|Snap Knee Assault]]
+Power crush",,
+941,dragunov,Ignition Switch,SNK.4,M,27,i19~21,+7,+18a,,"* Heat Engager
+
+* Heat Dash +5, [[Dragunov combos#Staples|+67a (+50)]]
+
+* Balcony Break
+* Floor Break
+* Chip damage on block",,
+942,dragunov,Chernobog Sweep,WR.F+3,"L,t","20,20",i17~18,-15,+1d,,"* Throw when hit from the front
+Low crush",,
+943,dragunov,Volk Clutch,1+3,t,35,i12~14,-2,+1d,,* Throw break 1 or 2,,
+944,dragunov,Purge Slam,2+4,t,35,i12~14,-2,+1d,,"* Throw break 1 or 2
+* Side switch on hit and break",,
+945,dragunov,Absolute Silence,Back throw,t,50,,,+1d,,,,
+946,dragunov,Tarantula Sting,Left throw,t,40,,-3,+1d,,* Throw break 1,,
+947,dragunov,Reverse Fracture,Right throw,t,40,,-3,+1d,,* Throw break 1,,
+948,dragunov,Frost Bite,Tackle.1,t,35,,,+0d,,"* Throw break 1
+* Diminishes opponent's recoverable gauge",,
+949,dragunov,Iron Curtain,Tackle.1+2,t,45,,,+3d,,* Throw break 1+2,,
+950,dragunov,Achilles' Hold,Tackle.2,t,40,,,+3d,,* Throw break 2,,
+951,dragunov,Feint & Low Catch,db+3~1+2,t,30,i19~20,,+1d,,"* Heat Engager
+
+* Side switch
+* Crouch throw
+* Cancel into FC with D_DB
+* Alternate input b+2,1,3~1+2
+High crush",,
+952,dragunov,Cold Fate,d+1+3,t,30,i12~14,,+1d,,"* Heat Engager
+
+* Crouch throw
+* Alternate input 2+4",,
+953,dragunov,Reverse Victor Clutch,f+1+4,t,40,i11,-2,+0d,,"* Throw break 1
+* Side switch",,
+954,dragunov,Victor Clutch,f+2+3,t,40,i11,-2,-1d,,"* Throw break 2
+* Side switch",,
+955,dragunov,Blizzard Rush,uf+1+2,t,45,i12,-6,-5d,,"* Floor Break
+* Throw break 1+2
+* Side switch",,
+956,dragunov,Scorpion Scissors,uf+3+4,t,35,i38~42,,-12d,,,,
+957,eddy,Heat Burst,2+3,m,12,i16,,+2,,Heat Burst,,
+958,eddy,Guerreiro Explosivo,H.3+4,m,20,i20~22,+9,+66a(+50),,"* Tornado
+* Shifts to HSP on block
+* 6 chip damage on block",,
+959,eddy,Rabo de Arraia Liberado,H.qcf+4,h,45,i22~23,+9,+34a(+8),,"* Balcony Break
+* 13 chip damage on block
+* Shifts to RLX",,
+960,eddy,Caveirinha Zangada,H.2+3,m,55,i18~19,+6,+0,,"* Heat Smash
+* Balcony Break
+* Shifts to RLX on block",,
+961,eddy,Enchente de Axé,R.df+1+2,,,,,,,,,
+962,eddy,,1,h,5,i10,+1,+8,,,,
+963,eddy,One Two Galopantes,"1,2","h,h","5,12",",i10",-3,+8,,"* Jail from 1st attack with 4f delay
+* Can transition to r26 HSP with input F at -8 on block & +3 on hit",,
+964,eddy,,"1,2,4","h,h","5,12",,,,,Low crush 7~37 fs38~40,,
+965,eddy,One Two Galopantes > Chute Baixo,"1,2,4~3","h,h,L","5,12,20",",i32~33",-14c,+18a,,High crush 32~65,,
+966,eddy,One Two Galopantes > Chute Alto,"1,2,4~4","h,h,h","5,12,27",",i18~20",+8~+10,+42d (-16),,"* Balcony Break
+* Tech roll to r45 FC on frames 30-31
+* Wall crush on block, +20g minimum
+* Unparryable by traditional parries, Nina, Asuka, etc
+Low crush 7~32",,
+967,eddy,Céu Gafanhoto,"1,3","h,m","5,16",",i23~24",-14,+7c,,"* Spike
+* Combo from 1st hit with 2f delay",,
+968,eddy,Faisão,1+2,m,17,i20,+0c,+5c,+13c,"* Spike
+* Elbow",,
+969,eddy,Right Jab,2,h,10,i12,-9,+2,,,,
+970,eddy,Combo Furacão (1),"2,1","h,h","10,13",",i17~18",-9,+2,,Jail from 1st attack,,
+971,eddy,Combo Furacão,"2,1,4","h,h,m","10,13,21",",i20~22",-12~-10,+17a (+8),+56a,"* Balcony Break
+* Combo from 2nd Ch with 10f delay
+* Input can be delayed 14f",,
+972,eddy,Batida de Compasso,"2,3","h,m","10,20",",i20~21",-8,+8s,,Combo from 1st hit,,
+973,eddy,Sincelo (1),3,m,12,i14~15,-9,+2,,,,
+974,eddy,Sincelo,"3,3","m,m","12,22",",i23~24",-3,+8s,,Combo from 1st CH,,
+975,eddy,Lufada (1),4,m,10,i13~14,-9,+7,,,,
+976,eddy,Lufada,"4,4","m,m","10,20",",i30~31",-7,+12g,,"* Heat Engager
+
+* Heat Dash +5g~+6g +62a (+42)
+
+* Balcony Break
+Low crush 22~33 fs34~36",,
+977,eddy,Bananeira,f+1+2,,,,,,,,,
+978,eddy,Ventania (1),f+2,m,15,i18,-9,+6,,,,
+979,eddy,Ventania,"f+2,4","m,l","15,17",",i23~24",-14c,+2,+71a(+55),,,
+980,eddy,Combo do Funâmbolo (1),f+3,h,16,i18~20,-5,+7,,Homing,,
+981,eddy,Combo do Funâmbolo,"f+3,4","h,m","16,25",",i29~31",-11,+15a(+6),+32a,"* Balcony Break
+* Combo from 1st hit
+* Can cancel to r23 HSP with F, -17 on block -5 on hit",,
+982,eddy,Xangô,f+3+4,m,25,i19~21,-9,+18a (+8),,"* Heat Engager
+
+* Heat Dash +5g~+7g +36a (+26)
+
+* Balcony Break
+* 5 chip damage on block
+fs9~18 Low crush 19~32 33~35",,
+983,eddy,Aú do Starter (1),f+4,m,13,i23~25,-8,+8c,,Spike,,
+984,eddy,Aú do Starter,"f+4,3","m,m",138,",i23~24",-13,-1c,,"* Spike
+* Combo from 1st hit with 10f delay
+* Move can be delayed 7f",,
+985,eddy,Aú do Sol,"f+4,3,3+4","m,m,M,M","138,7,20",",i24~26",-12,+8a,,"* Spike
+* Combo from 2nd CH",,
+986,eddy,Aú da Lua,"f+4,3+4","m,L","13,14",",i22~24",-24c,+12a,,,,
+987,eddy,Gêiser (1),df+1,m,10,i13~14,-3,+6,,,,
+988,eddy,Gêiser,"df+1,3","m,h","10,21",",i26~27",-7,+22a(+5),,"* Tornado
+* Balcony Break",,
+989,eddy,Elbow Uppercut,df+2,m,19,i14~15,-5,+6,+21a(+4),,,
+990,eddy,Mirage,df+3,m,17,i15~18,-18,+31a(+21),,Tornado,,
+991,eddy,Aú Reversão,df+3+4,"m,m","10,11",i18~19,-3 -2,+23a,,"* Spike
+* If only the second attack hits it launches",,
+992,eddy,Kneecap Crusher,df+4,L,14,i18,-13c,+0,,,,
+993,eddy,Palmares Giro (1),d+2,m,10,i17~18,-9,+0,,,,
+994,eddy,Palmares Giro,"d+2,3","m,m","10,20",",i24~25",-4c,+5c,,Shift to RLX,,
+995,eddy,Sismo,d+3,L,17,i21~22,-14c,+1,+25d,High crush,,
+996,eddy,Negativa,d+3+4,,,,,,,Can block with input RLX.B or RLX.DB,,
+997,eddy,Aú de Bico (1),d+4,L,10,i15~16,-16c,-5,,Shift to FC,,
+998,eddy,Aú de Bico,"d+4,3","L,m","10,20",i21~22,-13c,+12c,Launch,,,
+999,eddy,Double Arm Stinger,db+1+2,m,20,i30,-8,+12c,,,,
+1000,eddy,Twister Mirage (1),db+2,L,10,i18~19,-18c,-7,,,,
+1001,eddy,Twister Mirage,"db+2,3","L,m","10,23",",i27~28",-18,+64(+49),,"* Tornado
+* Combos from 1st CH",,
+1002,eddy,Rasteira Forte,db+3,L,21,i28~29,-14c,+5c,+21a,,,
+1003,eddy,Meia-Lua de Compasso (2),db+3+4,"m,m","12,12",i20~22,-6,+1,,Shift to FC -6 on block & +1 on hit,,
+1004,eddy,Meia-Lua de Compasso (1),"db+3+4,4","m,m,m","12,12,10",",i21~22",-8,+5,,,,
+1005,eddy,Meia-Lua de Compasso,"db+3+4,4,3","m,m,m,m","12,12,10,26",",i22~23",-14,+15a(+6),,Combos from 2nd CH,,
+1006,eddy,Rabo de Arraia (1),db+4,m,14,i17~18,-8,+2,,,,
+1007,eddy,Rabo de Arraia,"db+4,4","m,h","14,27",",i33~34",-9,+19a(-7),,"* Balcony Break
+* 8 Chip damage on block
+* Mandinga level increases by 1 on hit
+* Combos from 1st hit",,
+1008,eddy,Gato (2),b+1,m,15,i14~15,-7,+8,,Shift to FC,,
+1009,eddy,Gato (1),"b+1,4","m,m","15,10",",i25~27",-8,+8c,,Shift to HSP,,
+1010,eddy,Gato,"b+1,4,3","m,m,m","15,10,8",i23~24,-13,-1c,,,,
+1011,eddy,Gato > Aú do Sol,"b+1,4,3,3+4","m,m,m,m,m","15,10,8,7,20",",i24~26",-12,+8a,,,,
+1012,eddy,Gato > Aú da Lua,"b+1,4,3+4","m,m,L","15,10,7,7",",i22~24",-24c,+12,,Shift to RLX,,
+1013,eddy,Back Bananeira,b+1+2,,,,,,,Shift to HSP,,
+1014,eddy,Godeme,b+2,m,12,i15~16,-8,+3,,,,
+1015,eddy,Godeme > Combo Martelo (1),"b+2,3","m,m","12,13",",i22~23",-11,+4,,Combos from 1st hit,,
+1016,eddy,Godeme > Combo Martelo,"b+2,3,3","m,m,m","12,13,25",",i33~35",-14,+13a(-4),,Balcony Break,,
+1017,eddy,Godeme > Calcanheira,"b+2,4","m,h","12,23",",i25~26",-7,+14a(+5),,,,
+1018,eddy,Knee Thruster,b+3,m,10,i13~14,-9,+8,,,,
+1019,eddy,Knee Thruster > Relâmpago,"b+3,3","m,m","10,21",",i26~28",-14,+33a(+23),,"* Shift to RLX
+* Combos on 1st CH",,
+1020,eddy,Lunging Brush Fire,b+3+4,h,28,i20~21,-7,+21a(+11),,"* Heat Engager
+
+* Balcony Break
+* Heat Dash: +43a(+35) on hit
+* Absorb an attack to power up
+* Add chip damage when guarded
+Power crush",,
+1021,eddy,Leg Whip Mars Attack (2),b+4,h,14,i21~22,+0,+8,,,,
+1022,eddy,Leg Whip Mars Attack (1),"b+4,4","h,m,m","14,6,6",",i29~31",-9,+8c,,"* Balcony Break
+* Can cancel into HSP with input b+4,4,F",,
+1023,eddy,Leg Whip Mars Attack,"b+4,4,3","h,m,m,m","14,6,6,10",",i28~30",+4c,+14a,,3 Chip damage on block,,
+1024,eddy,Perna da Lua,ub+3,m,25,i31~33,+4c,+13a,,7 Chip damage on block,,
+1025,eddy,Satellite Moon,ub+4,m,12,i19~21,-17,-6,,,,
+1026,eddy,Vassoura,u+1+2,h,20,i16~17,+0,+18d,,,,
+1027,eddy,Acrobacia,u+3,m,30,i38~42,+0,+5a(-5),,"*
+Balcony Break
+* 9 chip damage on block",,
+1028,eddy,Back Summy,u+4,sp,,,,,,Shift to FC,,
+1029,eddy,Back Summy > Chute Baixo,u+4~3,L,20,i32~33,-14c,+18,,"* Balcony Break
+* Shift to RLX on hit",,
+1030,eddy,Back Summy > Chute Alto,u+4~4,h,27,i18~20,+8,+42d(-16),,Balcony Break,,
+1031,eddy,Asfixiante,uf+2,m,21,i22~23,-13,+32a(+24),,Balcony Break,,
+1032,eddy,Jumping Jacks Mirage (1),uf+3,m,15,i26~28,-10c,-8c,+12a,Can shift to HSP with input F -14 -12 +8a,,
+1033,eddy,Jumping Jacks Mirage,"uf+3,3","m,m","15,20",",i21~24",-18,+31a(+21),,Tornado,,
+1034,eddy,Armada Pulada > Baixo,"uf+3,4","m,L","15,10",i24~25,-14c,+7,+73a(+57),,,
+1035,eddy,Meia-Lua Pulando,uf+3+4,"m,h","10,20",i17~18,-13,+17a,,Balcony Break on air hit,,
+1036,eddy,Chapa Giratória,uf+4,m,20,i22~24,-9,+12,,"* Homing
+* Balcony Break
+* Shift to RLX on hit",,
+1037,eddy,Ki Charge,1+2+3+4,,,,,,,,,
+1038,eddy,Fruit Picker,"b,B+2+3",m!,"25,30",i77~79,,-37a(-46),,"* Balcony Break
+* Can cancel with input b,B+2+3,b,b",,
+1039,eddy,Flic Flac,"b,ub",,,,,,,Shift to RLX,,
+1040,eddy,Terremoto,"f,F+3",L,20,i21~22,-13c,+6c,+15c,"Shift to RLX on hit
+High crush",,
+1041,eddy,Roda Gigante,"f,F+3+4","m,m","10,20",i23~24,+3c,+17a,,"* Balcony Break
+* Can cancel into HSP with input f,F+3+4,n,f
+* 6 Chip damage on block",,
+1042,eddy,Folha Ataque,"f,F+4",m,25,i19~20,-12,+37a(+27),,"* Tornado
+* Shift to HSP",,
+1043,eddy,Delayed Rising Toe Kick,"uf,n,4",m,20,i23~25,-13,+32a(+22),,,,
+1044,eddy,Trovão,"f,f,F+3",m,30,i25~27,+8,+14a,,"* Shift to HSP on block
+* 9 Chip damage on block",,
+1045,eddy,Fuzilação / Chapeu de Couro Starter,ws1,h,6,i13~14,-6,+5,,,,
+1046,eddy,Fuzilação,"ws1,3","h,m","6,14",",i19~21",-14,+38a(+20),,"* Shift to RLX
+* Combos from 1st hit",,
+1047,eddy,Chapeu de Couro,"ws1,4","h,h","6,23",",i23~25",-7,+8,,"* Balcony Break
+* Combos from 1st hit",,
+1048,eddy,Machado,ws2,m,20,i15~16,-18,+51,,,,
+1049,eddy,Martelo,ws3,m,20,i19~21,-13,+72a(+56),,Tornado,,
+1050,eddy,Front Stinger,ws3+4,m,20,i25~27,-9c,+14d,,Shift to RLX,,
+1051,eddy,Tempestade (3),ws4,m,13,i11~13,-4,+7,,,,
+1052,eddy,Tempestade (2),"ws4,4","m,h","13,10",",i26~27",-4,+8,,Combos from 1st hit,,
+1053,eddy,Tempestade (1),"ws4,4,4","m,h,m,m","13,10,6,6",",i29~31",-9,+8c,,"Can cancel into HSP with input ws4,4,4,F",,
+1054,eddy,Tempestade,"ws4,4,4,3","m,h,m,m,m","13,10,6,6,10",",i28~30",+4c,+14a,,"* Combos from 3rd hit
+* 3 Chip damage on block",,
+1055,eddy,Hot Plate Special,SS.3,m,17,i25~26,+0,+8,,"* Shift to RLX
+* Can cancel into RLX with input SS.3,D",,
+1056,eddy,Faísca,SS.3+4,"h,h","6,10",i14~15,-7,+31a(+24),,,,
+1057,eddy,Troca Baixa,SS.4,"L,L","7,10",i21~22,-13c,+3c,,High crush,,
+1058,eddy,Gafanhoto,FC.df+3,m,20,i22~23,+6,+9c,+41a,"* Shift to RLX
+* 6 Chip damage on block",,
+1059,eddy,Tornada,FC.df+4,L,25,i24~25,-21c,+9,+30a,Shift to HSP,,
+1060,eddy,Whirling Spring Kick,FUFT.b+3+4,m,25,i16-28,-15~-27,+2a(-10~)+18a(+6),,,,
+1061,eddy,Godeme Trovoada,HSP.1,m,21,i23~25,+5,+8c,+19d,"* Shift to RLX
+* 6 Chip damage on block",,
+1062,eddy,Cabeçada Direta,HSP.1+2,m,23,i22~23,-12,+15a,,"* Balcony Break
+* Absorb an attack to power up
+* Add chip damage when guarded
+Power crush",,
+1063,eddy,Combo Escorão (1),HSP.2,m,15,i17~18,-8,+8,,,,
+1064,eddy,Combo Escorão,"HSP.2,3","m,m","15,23",",i26~27",-13,-2(-11),,"* Balcony Break
+* Combos from 1st hit
+* Mandinga level increases by 1 on hit
+* Can cancel into HSP with input HSP.2,3,F",,
+1065,eddy,Enxurrada (2),HSP.3,m,10,i17~18,-8,+7,,,,
+1066,eddy,Enxurrada (1),"HSP.3,3","m,h","10,10",",i27~28",-3,+8,,,,
+1067,eddy,Enxurrada,"HSP.3,3,3","m,h,h","10,10,23",",i30~31",-5,+13,,"* Tornado
+* Shift to RLX",,
+1068,eddy,Lança de Braço (1),HSP.4,m,10,i12~13,-3,+10,+31a,Shift to HSP,,
+1069,eddy,Lança de Braço,"HSP.4,2","m,m","10,21",",i23~24",-13,+12a(+3),,"* Tornado
+* Balcony Break
+* Combos from 1st hit",,
+1070,eddy,Salto Yotori,"HSP.4,2~3","m,m","10,20",",i28~30",+4c,+14d,,6 Chip damage on block,,
+1071,eddy,Chapa Esquivando,HSP.b+3,m,20,i36~37,-12,+13a,+58a,Balcony Break,,
+1072,eddy,Bananeira > Negativa,"HSP.n,d",,,,,,,Shift to RLX,,
+1073,eddy,Bananeira > Move Forward,"HSP.n,f",,,,,,,Shift to HSP,,
+1074,eddy,Yansan Mandinga,MD1.HSP.3+4,"L,m,m","6,6,18",i21~22,-13,+4c,,,,
+1075,eddy,Ogum Mandinga,MD1.HSP.b+4,m,25,i23~25,+6,+8c,,"* Can shift to RLX with input HSP.b+4,D
+* 7 Chip damage on block",,
+1076,eddy,Yansan Mandinga,MD2.HSP.3+4,"L,m,m","16,4,15",i21~22,-13,+18a(-17),,Spike,,
+1077,eddy,Ogum Mandinga,MD2.HSP.b+4,m,25,i23~25,+6,+9a,,"* Balcony Break
+* Can shift to RLX with input HSP.b+4,D
+* 7 Chip damage on block",,
+1078,eddy,Terra Gafanhoto (1),RLX.1,L,7,i17,-11c,+0,,"Can transition to FC with input RLX.1,D",,
+1079,eddy,Terra Gafanhoto,"RLX.1,3","L,m","7,17",",i25~26",-14c,+5c,+42a,"* Shifts to RLX
+* Combos on 1st CH",,
+1080,eddy,Cabeçada Fixa,RLX.1+2,m,25,i18~19,-8,+25a(+20),,"* Balcony Break
+* 7 chip damage on block",,
+1081,eddy,Maré Cheia (2),RLX.2,m,16,i18~19,-2,+8,,,,
+1082,eddy,Maré Cheia (1),"RLX.2,4","m,h","16,17",",i29~30",-5,+2,,"* Combos from 1st hit
+* Can shift to RLX with input RLX.2,4,D at +3 on block & +10 on hit",,
+1083,eddy,Maré Cheia,"RLX.2,4,4","m,h,m","16,17,25",",i32~33",-14,+15a(+6),,Balcony Break,,
+1084,eddy,Iemanjá (1),RLX.3,L,12,i16~17,-26c,-4,+27a,Shift to FC,,
+1085,eddy,Iemanjá,"RLX.3,3","L,m","12,27",",i25~26",-13,-2(-3),,"* Only combos on clean hit
+* Mandinga level increases by 1 on hit",,
+1086,eddy,Troca e Ataque,RLX.3+4,m,24,i17~18,-18,+29a(+19),,Tornado,,
+1087,eddy,Chibata Ardente (1),RLX.4,m,14,i15~16,-8,+8,,,,
+1088,eddy,Chibata Ardente,"RLX.4,3","m,m","14,25",",i28~30",-13,+16a/HE,,"* Heat Engager
+
+* Balcony Break
+* Heat Dash +67a(+50) on hit
+* Combos from 1st hit",,
+1089,eddy,Negative > Bananeira,"RLX.n,d",,,,,,,Shift to HSP,,
+1090,eddy,Negativa > Move Forward,"RLX.n,f",,,,,,,Shift to RLX,,
+1091,eddy,Rio Deal,1+3,th(h),35,i12~14,-5,-7,,"* Floor Break
+* Throw break: 1 or 2",,
+1092,eddy,Rio Special,2+4,th(h),35,i12~14,-6,-9,,"* Floor Break
+* Throw break: 1 or 2
+* Sideswitch on break",,
+1093,eddy,Back Rodeo Spin,Back throw,th(h),50,i12~14,,+0,,Throw break: none,,
+1094,eddy,Batucada,HSP.1+3,th(h),26,i23~24,,+6,,"* Throw break: none
+* Shift to RLX on hit",,
+1095,eddy,Missile Launcher,Left throw,th(h),40,i12~14,-3,+0,,Throw break: 1,,
+1096,eddy,Rodeo Spin,RLX.uf+1+2,th(h),40,i17~18,-6,+0,,"* Throw break: 1+2
+* Sideswitch on break",,
+1097,eddy,Shadow Dancer,Right throw,th(h),40,i12~14,-3,-6,,Throw break: 2,,
+1098,eddy,Vingativa Zanga,d+1+3,th(m),30,i12~13,,-5,,"* Heat Engager
+
+* Throw break: none",,
+1099,eddy,Vingativa Funeral,d+2+4,th(m),35,i12~13,,+0,,Throw break: none,,
+1100,eddy,Cabra Macaco Throw,uf+1+2,th(h),40,i12~14,-6,-4(-34),,Throw break: 1+2,,
+1101,feng,Heat Burst,2+3,m,12,i16,+1,+2c,,"Heat Burst
+* Cancel move with b,b
+Power crush 8~",,
+1102,feng,Jiaolong Sea Splitter,H.3+4,ub(m),30,i30~31,+12c g,+19d,,"* Partially consumes remaining Heat
+* Creates an unblockable shockwave along the ground that is +10g on hit and forces the opponent to crouch. The shockwave comes out even if the kick itself whiffs, or is parried by certain parries like Jin's or Reina's. It can be absorbed by a Power Crush.",,
+1103,feng,Essence of Iron Palm,H.b+1,h,20,i10~11,-8,+36d (+28),,"* Balcony Break
+* Partially uses remaining Heat Time",,
+1104,feng,Essence of Nian Zhang Mie Ba,"H.f,F+1+2*",m,30,i39,+11,+22a (+12),,"* Balcony Break
+* Guard Break
+* Partially uses remaining Heat Time",,
+1105,feng,Yinglong Mountain Crusher,H.2+3,"m,m","22,26","i21,24",+12,+30d (-6),,"Heat Smash
+* Chip damage on block
+* Transitions to STC on block",,
+1106,feng,Left Jab,1,h,5,i10,+1,+8,,,,
+1107,feng,Jab Spear Fist,"1,1","h,m","5,21",i25~26,-11l,+2,+61a,* Move can be delayed,,
+1108,feng,Shun Lian Quan,"1,2","h,h","5,9",i10,-3,+8,,"* Jail from 1st attack
+* Move can be delayed",,
+1109,feng,Firestorm,"1,2,2","h,h,h","5,9,12",i17,-13,+3,,"* Combo from 2nd hit
+* Transition to -11 +5 BT with B",,
+1110,feng,Jab Roundhouse Combo,"1,3","h,h","5,19",i16~17,-5,+8,,* Combo from 1st hit,,
+1111,feng,Iron Shield,1+2,m,20,i21~22,-13,+8,,"Punch sabaki
+Parry state",,
+1112,feng,Neck Twister,1+3,h,35,,,-3,,* Throw break 1 or 2,,
+1113,feng,Taunt,1+3+4,,,,,,,,,
+1114,feng,Right Jab,2,h,8,i10,-3,+5,,,,
+1115,feng,San Liang Heng (1),"2,4","h,m","8,15",i17,-12,-1,,* Jail from 1st attack,,
+1116,feng,San Liang Heng,"2,4,1","h,m,m","8,15,25",i24,-12,+24d (+14),,"Balcony Break
+* Combo from 2nd CH
+* Move can be delayed
+* Cancel to -13 -2 BT with B",,
+1117,feng,Serpent Slayer,2+4,h,35,,,0,,* Throw break 1 or 2,,
+1118,feng,Peacock Strike,3,m,15,i16,-11,0,,,,
+1119,feng,Peacock Strike,"3,1+2","m,m","15,30",i28~29,-12,+22d (+17),,"Balcony Break
+* Combo from 1st hit
+* Can be charged to power up:
+* At full charge +7 on block 14 chip damage",,
+1120,feng,Peacock Sweep (1),"3,3","m,h","15,18",i17,-9,+2,,"* Combo from 1st hit
+* Jail from 1st attack
+* Move can be delayed",,
+1121,feng,Peacock Sweep,"3,3,4","m,h,l","15,18,23",i25~26,-12,+7c,+17d,"* Combo from 2nd CH
+* Move can be delayed
+* Cancel to -13 -2 BT with B",,
+1122,feng,Leaping Whirlwind Combo (1),3~4,m,27,i34~36,-5,+19d,,"* Cancel to -7~-2 -+19~+24 BT with B
+Low crush",,
+1123,feng,Leaping Whirlwind Combo,"3~4,3","m,l","27,11",i18~20,-26,+19d (+12),,* Combo from 1st hit,,
+1124,feng,Headspring,4~3,m,25,i28~i34,-7,+1c,+16a,Low crush,,
+1125,feng,Tiger's Claw,f+1+2,h,25,i19~20,-9,+19d,,"* Heat Engager
+
+* Heat Dash +5, +35d
+
+* Balcony Break
+Power crush",,
+1126,feng,Boar's Tusk (2),f+2,m,10,i15,-8,+3,,,,
+1127,feng,Boar's Tusk (1),"f+2,1","m,m","10,10",i19,-8,+3,,"* Combo from 1st CH
+* Move can be delayed",,
+1128,feng,Boar's Tusk,"f+2,1,2","m,m,m","10,10,28",i13~14,-19,+19d (+14),,"* Balcony Break
+* Combo from 2nd hit
+* Move can be delayed",,
+1129,feng,Piercing Dragon (1),f+3,m,",10",i21,-3,+7,,,,
+1130,feng,Piercing Dragon,"f+3,2","m,h",",10,17",i21~22,-3,+8,+43d (+35),"* Combo from 1st hit
+* Move can be delayed",,
+1131,feng,Climbing Dragon,"f+3,4","m,m",",10,15",i23~24,-16,+33a (+23),,"* Combo from 1st hit
+* Tornado",,
+1132,feng,Shifting Clouds,f+3+4,,,,,,,"*Parries high and mid fist and feet moves (not elbows/knees/heads etc)
+*If 1 hit is parried, you can still do your STC move, if 2 hits are parried it launches
+Parry state",,
+1133,feng,Tornado Open Palm (1),f+4,h,19,i18~19,-9,+52a,,* Transition to -5 +56a BT with B,,
+1134,feng,Tornado Open Palm,"f+4,2","h,m","19,16",i24~25,-14,+70a (+54),,"* Combo from 1st hit
+* Tornado",,
+1135,feng,Tornado Stomp,"f+4,3","h,m","19,21",i22~24,-10,+26d (-9),,"Spike
+* Combo from 1st hit",,
+1136,feng,Tornado Sweep,"f+4,4","h,l","19,11",i33~33,-31,+27d,,* Combo from 1st hit,,
+1137,feng,Stunning Palm,df+1,m,11,i14,0,+6,+36g,,,
+1138,feng,God Fist (1),df+2,m,15,i20~21,-9,,,,,
+1139,feng,God Fist,"df+2,2","m,m","15,21",i13~14,-6,+14a (+4),,Balcony Break,,
+1140,feng,Lift Kick,df+3,m,21,i18~19,-7,+78a (+62),,* Tornado,,
+1141,feng,Ruinous Halberd,df+3+4,m,23,i24 (23~27),-7,+22d,,Homing,,
+1142,feng,Pau Lau Stinger (2),df+4,m,13,i15,-6,+5,,,,
+1143,feng,Pau Lau Stinger (1),"df+4,2","m,m","13,13",i20~21,-11,+1,,"* Combo from 1st hit
+* Move can be delayed",,
+1144,feng,Pau Lau Stinger,"df+4,2,1+2","m,m,m","13,13,21",i34~35,-19,+31a (+16),,"* Tornado
+* Move can be delayed",,
+1145,feng,Twin Dragon,"df+4,3","m,h","13,23",i23~24,-4,+15g,,"Balcony Break
+* Combo from 1st hit
+* Move can be delayed",,
+1146,feng,Mad Windmill (1),d+1+2,m,15,i20~21,-9,+8c,,,,
+1147,feng,Mad Windmill,"d+1+2,1","m,m","15,20",i22~23,-12,+18a (+11),,"* Tornado
+* Combo from 1st hit
+* Move can be delayed",,
+1148,feng,Heavy Hammer,d+2,l,16,i20~21,-12,-1,,High crush,,
+1149,feng,Parting Heavens (1),d+4,l,7,i14~15,-11,0,,,,
+1150,feng,Parting Heavens,"d+4,1+2","l,m","7,22",i26,-10,+11d (+2),,"Balcony Break
+* Combo from 1st CH",,
+1151,feng,Spear of Lu Bu (1),db+1,m,15,i16,-12,+4,,"* Transition to -9 +7 KNP with B
+* Transition to -16 +0 STC with F",,
+1152,feng,Spear of Lu Bu,"db+1,2","m,m","15,18",i23~24,-11,+3,,"* Combo from 1st hit
+* Move can be delayed",,
+1153,feng,Rampaging Lion (1),"db+1,2,4","m,m,m","15,18,30",i31,-7,-3d,,"* Floor Break
+* Combo from 2nd CH
+Low crush",,
+1154,feng,Rampaging Lion,"db+1,2,4,3+4","m,m,m","15,18,30",i39,,-,,"* Feng does a kip-up to get off the floor
+Low crush",,
+1155,feng,Spinning Neck Strike,"db+1,4","m,h","15,23",i24~25,-2,+24a (+15),,"* Balcony Break
+* Combo from 1st hit
+* Move can be delayed",,
+1156,feng,Dragon Slayer (1),db+1+2,m,13,i21~22,-4,+4,,,,
+1157,feng,Dragon Slayer,"db+1+2,2","m,l","13,10",i29~30,-12,-1,,"* Combo from 1st CH
+* Move can be delayed",,
+1158,feng,Hellwinds (2),db+2,l,10,i20~21,-11,0,,,,
+1159,feng,Hellwinds (1),"db+2,2","l,l","10,10",i28~30,-17,+20a,,"* Combo from 1st CH
+* Cancel move with B",,
+1160,feng,Hellwinds,"db+2,2,2","l,l,m","10,10,25",i28~29,-8,+13d,,"* Spike
+* Combo from 2nd hit",,
+1161,feng,Piercing Arrow,db+3,l,14,i17,-15,+4,,* Transition to throw when CH from front,,
+1162,feng,Mighty Sweep Kick,db+4,l,23,i31 (30~32),-26,+76a (+60),,"Tornado
+Homing",,
+1163,feng,Iron Palm,b+1,h,17,i10~11,-12,+1,+36d (+28),,,
+1164,feng,Iron Fortress,b+1+2,m,31,i13~14,-19,+18a (+13),,"* Heat Engager
+
+* Heat Dash +5, +43d (+35)
+
+* Balcony Break",,
+1165,feng,Hungry Tiger (3),b+2,m,15,i17,-11,+0c,,Floor Break,,
+1166,feng,Hungry Tiger (2),"b+2,3","m,l","15,10",i22~24,-11,0,,"* Combo from 1st hit 
+* Move can be delayed",,
+1167,feng,Hungry Tiger (1),"b+2,3,4","m,l,m","15,10,13",i24~25,-12,+19a (+12),,* Combo from 2nd CH,,
+1168,feng,Hungry Tiger,"b+2,3,4,2","m,l,m,m","15,10,13,22",i24~25,-6,+4,,"* Combo from 3rd hit
+* Spike",,
+1169,feng,Chin Breaker,b+3,m,21,i22~23,+6,+10d,+38a,,,
+1170,feng,Deceptive Step,b+3+4,,,,,,,* Enter STC with f,,
+1171,feng,Zhuan Shen Huan Wu,b+3~4,,,,,,,* Enter STC with F,,
+1172,feng,Fish Hook,b+4,m,10,i12~13,-9,+4,,,,
+1173,feng,Death Palm,ub+1+2,!,70,i79~82,,+50g (+19),,,,
+1174,feng,Throat Gouge,ub+2,"m,h","8,20","i16,15",-10,+10g,,,,
+1175,feng,Leaping Hammer Fist,u+2,m,25,i38~40,+2,+10,,Low crush,,
+1176,feng,Eagle Claw,uf+1,m,12,i18~19,-5,+4,,"* +12 on crouching opponent
+* Alternate input with uf or u
+Low crush",,
+1177,feng,Kunlun Avalanche,uf+1+2,h,40,,,0,,"* Spike
+* Throw break 1+2",,
+1178,feng,Evading Palm Strike,uf+2,m,18,i18,-10,+3,,,,
+1179,feng,Side Swipe,uf+3,m,20,i22~23,-1,+22d,,"* Alternate input with uf or u
+Low crush",,
+1180,feng,Assasin's Bow (1),uf+3+4,"m,h,h","10,10,7","i24,4,3",-14,+25a (+18),,"High crush , then Low crush",,
+1181,feng,Assasin's Bow,"uf+3+4,3","m,h,h,h","10,10,7,11",",i17~18",-6,+70a (+54),,"* Balcony Break
+* Tornado
+* Combo from 1st hit",,
+1182,feng,Soarig Eagle,uf+4,m,13,i15~17,-13,+33a (+23),,"* Alternate input with uf or u
+Low crush",,
+1183,feng,Ki Charge,1+2+3+4,,,,,,,,,
+1184,feng,Backfist,BT 1,h,12,i12,-3,+14g,,,,
+1185,feng,Hustle Elbow,BT 1+2,m,20,i16~17,-3,+8,+41d (+33),* Balcony Break (CH only),,
+1186,feng,Pao Lau Impaler,BT 1+4,h,45,,,-5,,* Throw break 1+2,,
+1187,feng,Slashing Tiger,BT 2,m,23,i19~21,-13,+17,,"* Heat Engager
+
+* Absorb an attack to power up and deal more damage on block
+Power crush 8~",,
+1188,feng,Tremor Stomp,BT 3,m,35,i32~33,+8c,+8c,,"* Chip damage on block
+* Transition to STC with f",,
+1189,feng,Reverse Fractured Diamond,BT d+1,l,20,i20~21,-13c,+4,+16d,,,
+1190,feng,Reverse Mighty Sweep Kick,BT d+3,l,20,i18~20,-26c,-3,+70a (+54),* Has clean hit effect,,
+1191,feng,Violent Storm,Back Throw,h,50,,,-4,,* Cannot break throw,,
+1192,feng,Spring Up,FUFT B+3+4,m,20,i30~33,,+28d (+18),,"*
+Balcony Break",,
+1193,feng,Fractured Diamond,KNP 1,l,20,i20~21,-13c,+8,+38d,,,
+1194,feng,Fel He Zhang,KNP 2,h,20,i14,-9,+17,,"* Heat Engager
+
+* Balcony Break",,
+1195,feng,Rising Swallow Kick,KNP 3,m,20,i22~23,-14,+77a (+55),,* Tornado,,
+1196,feng,,KNP 3+4,m,30,i31~34,-7,-3d,,,,
+1197,feng,Leaping Lion,"KNP 3+4,3+4","m,m",30,i39~42,,,,,,
+1198,feng,Xuan Tui Strike (1),KNP 4,l,10,i18,-31c,-4,,,,
+1199,feng,Xuan Tui Strike,"KNP 4,1+2","l,h","10,24",i28,-6,+30a (+20),,"* Balcony Break
+* Combo from 1st attack",,
+1200,feng,Jaws of Death,Left Throw,h,40,,,-6,,* Throw break 1,,
+1201,feng,Thunder Stomp,OTG d+3+4,l,19,i24~25,,-2 (-10),,,,
+1202,feng,Wandering Soul,Right Throw,h,40,,,-4,,* Throw break 2,,
+1203,feng,Bao Dan Po,STC 1,m,20,i20~21,-15,+30a,,"* Absorb an attack to power up and deal more chip damage on block
+Power crush",,
+1204,feng,Pummeling Fists,STC 1+2,m,20,i18,-9c,+17d,,,,
+1205,feng,Driller Hook Backhand,STC 2,h,15,i14~15,-3,+6,,* Enter BT with b,,
+1206,feng,Scorpion Sting,STC 3,h,25,i22~23,+3b,+23d,,"* Homing
+* Balcony Break
+* Chip damage on block",,
+1207,feng,Jin Bu Zhen,STC 4,l,20,i20,-13,+3,,,,
+1208,feng,Falcon Beak's Snare,STC F+3+4,m,21,i18,,+53a,,"* Absorbs two attacks for a follow up attack
+Parry state",,
+1209,feng,Falcon's Beak,"b,f+1",m,25,i25~26,-15,+10d (+1),+44a,,,
+1210,feng,Attack Reversal,b1+3,,25,,,,,"* Timed with opponent punch
+Parry state",,
+1211,feng,Nian Zhang Mie Ba,"f,F+1+2",m,25,i24~25,-9,+16a,,"* Balcony Break
+* Hold 1+2 to power up and deal more chip damage on block",,
+1212,feng,Nian Zhang Mie Ba (charged),"f,F+1+2*",m,30,i39,+6,+22a (+12),,"* Balcony Break
+* Wall Crush +18g
+
+
+* Becomes  Essence of Nian Zhang Mie Ba in Heat",,
+1213,feng,Exploding Dagger,"f,F+2",m,25,i18~19,-9,+16a (+7),,"* Heat Engager
+
+* Heat Dash +5, +36a (+26)
+
+* Balcony Break",,
+1214,feng,Tremor Stomp,"f,F+3",m,35,i32~33,+8c,+8c,,"* Chip damage on block
+* Transition to +4c +4c STC with f",,
+1215,feng,Spreading Wings (1),"f,F+4",m,15,i19~20,-15,+30a (+20),,,,
+1216,feng,Spreading Wings,"f,F+4,3","m,m","15,21",i20~21,-14,+32a (+25),,"* Move can be powered up by delaying input (25 damage)
+Low crush",,
+1217,feng,Lingering Shadow,qcf,,,,,,,"* D,df to enter crouching state
+High crush",,
+1218,feng,Landslide,qcf+1,l,23,i22~23,-14,+2,+31a,"Head
+High crush",,
+1219,feng,Yan Wang's Wrath,qcf+1+2,m,21,i16~17,0c,+7c,+23d,Head,,
+1220,feng,Mountain Crusher,qcf+2,m,25,i22~23,-14,+35a (+25),,* Tornado,,
+1221,feng,Shifting Clouds,qcf+3+4,,,,,,,Transitions to STC,,
+1222,feng,Delayed Rising Toe Kick,"uf,n,4",m,20,i23~25,-13,+32a (+22),,Low crush,,
+1223,feng,Severing Sword,"f,f,F+3",m,30,i20~25,+6,+13d (+3),,"* Balcony Break
+* Chip damage on block
+Low crush",,
+1224,feng,Dancing Dragon (2),ws1,m,13,i13,-3,+3,,,,
+1225,feng,Dancing Dragon (1),"ws1,2","m,m","13,16",",i9",-12,-1,,* Jail from 1st attack,,
+1226,feng,Dancing Dragon,"ws1,2,1","m,m,m","13,16,20",i17~18,-14,+12d (+3),+32d (+24),"* Balcony Break
+* Combo from 2nd CH
+* Move can be delayed",,
+1227,feng,Dancing Scorpion Sting,"ws1,3","m,h","13,20",i22~23,-6,+4c,+20d,"* Combo from 1st hit
+* Move can be delayed",,
+1228,feng,Push Hands,ws1+2,m,20,i23~24,-9,+3,,Parry state,,
+1229,feng,Adamantine Uppercut,ws2,m,17,i15~16,-7,+24d,+78a (+62),"* Balcony Break
+* Tornado (CH Only)",,
+1230,feng,Bow Kick,ws3,m,15,i15~16,-12,+33a (+23),,,,
+1231,feng,Rising Heel Kick,ws4,m,18,i11~12,-7,+7,+29d,,,
+1232,feng,Enlightened Circle,SS 1+2,m,24,i22~23,+1,+21d (+12),,"* Balcony Break
+* Chip damage on block",,
+1233,feng,Hidden Intentions,SS 2,h,18,i15,+3,+9b,+31d,* Homing,,
+1234,feng,Swift Sweep Kick,SS 4,l,19,i21~22,-31c,+8 (-8),+72a (+56),* Has a clean hit effect,,
+1235,feng,Silent Arrow,FC.df+1,l,19,i21~22,-13c,-2,+13,,,
+1236,feng,Monkey Strike,FC.df+2,m,21,i18,-14,+55a,,,,
+1237,feng,,FC.df+4,l,10,i19~20,-8c,+3b,,"* Can be input with D,df+4",,
+1238,feng,Xuan Jiao Xian Yan Shou,"FC.df+4,1","l,h","10,15",i20~21,-2,+6,,* Combo from 1st attack,,
+1239,feng,Enlightened Yellow Dragon Palm,R.df+1+2,t,55,i20,-15,+0d,,"* Rage Art
+* Erases opponent's recoverable health on hit
+* Damage increases with lower health",,
+1240,hwoarang,Heat Burst,2+3,m,12,i16,+1,+2,,"* Heat Burst
+* Cancel to r45 with b,b
+Power crush 8~",,
+1241,hwoarang,Trinity Claymore,H.2+3,"m,m,h","13,14,24(51)","i17~18, i18~19, i29",+11,+13,,"* Heat Smash
+* Jails
+* Also possible during Right Stance and Left Flamingo
+* Shifts to Right Flamingo",,
+1242,hwoarang,Sky Burial,R.df+1+2,m,55,i20,-15,,,"* Rage Art
+* Erases opponent's recoverable health on hit
+* Possible during all stances except Backturn Stance
+Power crush",,
+1243,hwoarang,,1,h,5,i10,+1,+8,,,,
+1244,hwoarang,,"1,1","h,h","5,8",i12,-3,+8,,Jails,,
+1245,hwoarang,,"1,1,3","h,h,l","5,8,10",i21,-12,-1,,,,
+1246,hwoarang,Home Surgery,"1,1,3,3","h,h,l,h","5,8,10,14",i20,-14,+4,,,,
+1247,hwoarang,Left Right Combo,"1,2","h,h","5,10",i10,-3,+6,,"* Jails
+* 1,2,3 to shift to Left Flamingo
+* 1,2,4 to shift to Right Flamingo",,
+1248,hwoarang,Rejector,"1,2,f+3","h,h,m","5,10,14",i21,-8,+9,,,,
+1249,hwoarang,Rejection,"1,2,f+4","h,h,h","5,10,20",i21,-8,+9,,"* Balcony Break
+Low crush",,
+1250,hwoarang,Disrespect,1+2,,,,,,,* Shifts to Backturn Stance,,
+1251,hwoarang,,2,h,9,i10,+8,+0,,"* 2,3 to shift to Left Flamingo 
+* 2,4 to shift to Right Flamingo",,
+1252,hwoarang,Right Jab Side Kick,"2,f+3","h,m","9,14",i21,-8,+9,,,,
+1253,hwoarang,Right Jab > Spinning Back Kick,"2,f+4","h,h","9,20",i24~25,-2,+35,,"* Balcony Break
+Low crush",,
+1254,hwoarang,,3,h,15,i14,-7,+8,,,,
+1255,hwoarang,,"3,3","h,m","15,12",i18,-13,-7,,,,
+1256,hwoarang,Siege Mortar Combo,"3,3,2","h,m,m","15,12,12",i21~22,-11,+1c,,,,
+1257,hwoarang,Left Kicks,"3,3,3","h,m,m","15,12,15",i21,-14,+32,,"* Balcony Break
+* 3,3,F to shift to Left Flamingo",,
+1258,hwoarang,Left Kicks > Right Hook Kick,"3,3,4","h,m,h","15,12,15",i21~23,+8,+19,,* Shifts to Right Flamingo,,
+1259,hwoarang,Left Kicks > Backlash,"3,3,f+4","h,m,h","15,12,20",i21~27,-1,+40 (+14),,* Balcony Break,,
+1260,hwoarang,Motion Switch,3+4,,,,,,,* Shifts to Right Stance,,
+1261,hwoarang,Flying Eagle,3~4,"m,m","11,21","i22,i7",-3,+26 (+16),,* Power up with quick input,,
+1262,hwoarang,,4,h,14,i11~12,-6,+5,,,,
+1263,hwoarang,Right Left Kick Combo,"4,3","h,m","14,16",i22,-6,+5,,"* 3,4,F to cancel and shift to Left Flamingo",,
+1264,hwoarang,,"4,4","h,h","14,13",i16,-1,+10,,"* Jails
+* Shifts to Right Flamingo",,
+1265,hwoarang,Right Kicks > Chainsaw Heel,"4,4,3","h,h,m","14,13,20",i25~31,-14c,+14,,* Shifts to Right Stance,,
+1266,hwoarang,Right Kicks > Raptor Combo (1),"4,4,4","h,h,h","14,13,17",i25~26,-2,+8,,"* Shifts to Right Stance
+* 4,4,4,F to cancel and shift to Right Flamingo
+Low crush",,
+1267,hwoarang,Right Kicks > Raptor Combo,"4,4,4,4","h,h,h,h","14,13,17,20",i31~32,+0,+36 (-22),,"* Tornado
+* Deals chip damage on hit
+Low crush",,
+1268,hwoarang,Push Hands,f+1+2,m,17,i15,-9,+2,,* Also possible during Right Stance,,
+1269,hwoarang,Rusty Knife,f+2,,15,i16,-2,+9,,* Shifts to Right Stance,,
+1270,hwoarang,Left Flamingo Feint,f+3,,,,,,,"* Shifts to Left Flamingo
+* Sidesteps to the right",,
+1271,hwoarang,Cheap Shot Snap Kick,f+3~3,m,25,i20,-16,+7 (-2),,* Sidesteps to the right,,
+1272,hwoarang,Right Hook Kick,f+4,h,21,i17~23,+7~8,+18,,* Shifts to Right Flamingo,,
+1273,hwoarang,Left Uppercut,df+1,m,10,i13~14,-1,+6,,* Also possible during Right Stance,,
+1274,hwoarang,Left Uppercut & Middle Kick,"df+1,3","m,m","10,15",i22~23,-2,+6,,* Shifts to Left Flamingo,,
+1275,hwoarang,Right Uppercut,df+2,m,13,i15,-7,+34 (+24),,* Also possible during Right Stance,,
+1276,hwoarang,Double Claymore (1),df+3,m,12,i22~23,-14,-4,,"* df+3,F/U/D to cancel and shift to Left Flamingo
+Power crush",,
+1277,hwoarang,Double Claymore,"df+3,4","m,m","12,20",i24~25,-12,+7,,,,
+1278,hwoarang,Ignition Barrage,df+3+4,"m,h,m","7,4,17","i13,i14,i24~25",-14,+4,,"* Heat Engager
+
+* Jails
+* Deals chip damage on block
+* Also possible during Right Stance",,
+1279,hwoarang,Middle Claymore,df+4,m,20,i16~17,-8,+8,,"* Homing
+* Shift to Right Stance",,
+1280,hwoarang,Smash Low Right (1),d+3,l,7,17,-13,-2,,,,
+1281,hwoarang,Smash Low Right,"d+3,4","l,h","7,10",i21~23,+8,+14,,* Shift to Right Flamingo,,
+1282,hwoarang,Firecracker (1),d+4,l,7,i19,-17,-6,,* Also possible during Right Stance,,
+1283,hwoarang,Firecracker,"d+4,4","l,h",722,i20,-13,+69 (+53),,"* Tornado
+* Also possible during Right Stance",,
+1284,hwoarang,Sweep Kick,db+3,l,12,i19,-13,-1,,* Also possible during Right Stance,,
+1285,hwoarang,Dynamite Heel,db+3+4,ub(m),40,i61~63,+17,+17,,"* Also possible during Right Stance
+* db+3+4,b,b to cancel and shift to Left Flamingo",,
+1286,hwoarang,Ankle Biter,db+4,l,14,i16,-12,-8,,"* db+4,F to shift to Right Flamingo",,
+1287,hwoarang,Ankle Biter > Crescent Kick,"db+4,4","l,h","14,21",i17~19,-28,+24,,* Natural on CH,,
+1288,hwoarang,Stealth Needle,b+1,m,15,i15,-14,-1,,* Sidesteps to the right,,
+1289,hwoarang,Left Plasma Blade,b+3,m,17,i16~17,-19,+35 (+25),,* Tornado,,
+1290,hwoarang,Nose Bleeder,b+4,h,17,i13~14,-10,+1,,* Shifts to Right Stance,,
+1291,hwoarang,Knife Hand Strike,ub+2,h,18,i13~15,-9,+15,,"* Homing
+* Also possible during Right Stance
+* Sidesteps to the left",,
+1292,hwoarang,Fade-Away Kick,ub+4,m,18,i17~20,-8,+10,,* Also possible during Right Stance,,
+1293,hwoarang,Jump Kick,u+3,h,25,i20,+5,+44 (+38),,"* Also possible during Right Stance
+* Shifts to Left Flamingo
+Low crush",,
+1294,hwoarang,Bloody Guillotine,u+3+4,m,20,i25~26,-7,+24,,"* Also possible during Right Stance
+Low crush",,
+1295,hwoarang,Scorpion Side Kick,u+4,m,18,i16~18,+3,+11,,"* Also possible during Right Stance
+* Shifts to Right Flamingo
+Low crush",,
+1296,hwoarang,Bone Stinger,uf+2,m,22,i26,+5c,+6c,,"* Also possible during Right Stance
+Low crush",,
+1297,hwoarang,Hunting Hawk (2),uf+3,m,11,i28~29,-6,-7,,"* Also possible during Right Stance
+Low crush",,
+1298,hwoarang,Hunting Hawk (1),"uf+3,4","m,m","11,12",i20~21,+2,+13,,"* Also possible during Right Stance
+* Shifts to Right Flamingo
+Low crush",,
+1299,hwoarang,Hunting Hawk,"uf+3,4,3","m,m,m","11,12,20",i27~28,-14c,0c,,"* Also possible during Right Stance
+Low crush",,
+1300,hwoarang,Flashing Trident (1),uf+3+4,"m,h","10,8","i14,i9",-10,+1,,"* Jails
+* Also possible during Right Stance
+* Shifts to Right Stance
+* uf+3+4,F to shift to Left Flamingo
+Low crush",,
+1301,hwoarang,Flashing Trident,"uf+3+4,4","m,h,m","10,8,13",i14~15,-10,+7,,"* Also possible during Right Stance
+* Shifts to Right Stance",,
+1302,hwoarang,Air Raid,uf+4,h,12,i22~23,-2,+4,,"* Also possible during Right Stance
+* Shifts to Right Flamingo
+Low crush",,
+1303,hwoarang,Air Raid,"uf+4,4","h,m","12,12",i11~12,0,+6,,"* Also possible during Right Stance
+* Shifts to Right Flamingo
+Low crush",,
+1304,hwoarang,Air Raid,"uf+4,4,4","h,m,l","12,12,12",i9~10,+1,+7,,"* Also possible during Right Stance
+* Shifts to Right Flamingo",,
+1305,hwoarang,Ki Charge,1+2+3+4,,,,,,,,,
+1306,hwoarang,Spinning Axe Kick,"f,F+3",m,24,i20~24,+6c,+6c,,* Shifts to Right Stance,,
+1307,hwoarang,Peacekeeper,"f,F+4",m,22,i17~18,-7,+19 (+10),,"* Balcony Break
+* Heat Engager
+
+* Also possible during Right Stance
+* Shifts to Right Stance (does not shift when using heat dash)",,
+1308,hwoarang,Right Flamingo Feint,"f,n,4",,,,,,,"* Shifts to Right Flamingo
+* Sidesteps to the left",,
+1309,hwoarang,Wavedash,"f,n,d,df",,,,,,,,,
+1310,hwoarang,"Lethal Sky Rocket
+","f,n,df#4",m,18,i16,-8,+59 (+49),,"* Tornado
+* Chip damage on block
+* Also possible during Right Stance",,
+1311,hwoarang,Delayed Rising Toe Kick,"uf,n,4",m,20,i23~25,-13,+32 (+22),,"* Also possible during Right Stance
+Low crush",,
+1312,hwoarang,Flying Nerichagi,"f,f,F+3",m,30,i22~24,+6,+23,,"* Balcony Break
+* Chip damage on block
+* Also possible during Right Stance
+Low crush",,
+1313,hwoarang,Torpedo Kick,"f,f,F+4",h,28,i18~19,+5,+8,,"* Chip damage on block
+* Also possible during Right Stance
+* Sideswaps and leaves opponent backturned on hit
+* Shifts to Backturn Stance on block
+Low crush",,
+1314,hwoarang,Chonsan Spin (1),ws2,m,8,i15~16,-7,+4,,,,
+1315,hwoarang,Chonsan Spin,"ws2,3","m,h","8,10",i23~25,+3,+72 (+56),,"* Tornado
+* Shifts to Left Flamingo
+Low crush",,
+1316,hwoarang,Iron Heel,ws3,m,20,i14~18,-12,+22,,,,
+1317,hwoarang,Spinning Scythe,ws3+4,m,16,i20~21,-9,+2,,"* Alternate input: f,n,d,df+3+4 (CD.3+4)
+* Shifts to Backturn Stance",,
+1318,hwoarang,Spinning Scythe > Axe Heel,"ws3+4,3","m,m","16,20",i21~26,-6,+5c,,,,
+1319,hwoarang,Tsunami Kick (1),ws4,m,12,i11~12,-3,+8,,,,
+1320,hwoarang,Tsunami Kick,"ws4,4","m,m","12,16",i15~19,-5,+4c,,* Shifts to Right Stance,,
+1321,hwoarang,Eruption (1),SS.3,m,13,i18~19,-12,-1,,,,
+1322,hwoarang,Eruption,"SS.3,3","m,h","13,16",i9~10,+3,+14,,* Shifts to Left Flamingo,,
+1323,hwoarang,Spinning Trip Kick,SS.4,l,18,i19~20,-13,+5c,,* Shifts to Right Stance,,
+1324,hwoarang,Left Plasma Kick,BT.3,m,20,i14~16,-13,+38 (+28),,,,
+1325,hwoarang,Plasma Blade,BT.4,,,i14~16,-13,+40 (+30),,* Shifts to Right Stance,,
+1326,hwoarang,Spinning Low Kick,BT.d+3,l,20,i18~19,-13,-2,,High crush,,
+1327,hwoarang,Phalanx,CD.3,m,27,i18~19,+4,+25 (+16),,"* Balcony Break
+* Chip damage on block
+* Also possible during Right Stance
+* Shifts to Left Flamingo",,
+1328,hwoarang,Sky Rocket,CD.4,m,18,i16,-18,+53 (+43),,"* Tornado
+* Also possible during Right Stance",,
+1329,hwoarang,Left Flamingo > Back Hand,LFS.1,,6,i13,+5,+7,,,,
+1330,hwoarang,Power Blast,LFS.1+4,ub(m),80,i66~69,-1,-1,,"* LFS.1+4,b,b to cancel",,
+1331,hwoarang,Right Backhand,LFS.2,m,15,i16,-2,+9,,* Shifts to Right Stance,,
+1332,hwoarang,Flamingo Starter,LFS.3,m,10,i14,-13,-7,,"* LFS.3,F to remain in Left Flamingo",,
+1333,hwoarang,Flamingo Siege Combo,"LFS.3,2","m,m","10,20",i21~22,-11,+1c,,,,
+1334,hwoarang,Flamingo Kick Combo Middle,"LFS.3,3","m,m","10,15",i21,-14,+32 (+24),,* Balcony Break,,
+1335,hwoarang,Flamingo Side Kick > Right Hook Kick,"LFS.3,4","m,h","10,15",i21~23,+8,+19,,* Shifts to Right Flamingo,,
+1336,hwoarang,Flamingo Side Kick > Backlash,"LFS.3,f+4","m,h","10,20",i21~27,-1,+40 (+14),,* Balcony Break,,
+1337,hwoarang,Flamingo Switch > Right Flamingo,LFS.3+4,,,,,,,* Shifts to Right Flamingo,,
+1338,hwoarang,Right Step Kick,LFS.4,h,24,i14~16,+4,+27 (+18),,"* Balcony Break
+* Shifts to Right Flamingo",,
+1339,hwoarang,Lightning Halberd,LFS.4~3,"h,h","17,26",i15~16,-2,+24 (+14),,"* Balcony Break
+Low crush",,
+1340,hwoarang,Stealth Needle,LFS.b+1,m,15,i15,-14,-1,,* Sidesteps to the right,,
+1341,hwoarang,Left Thunderbolt,LFS.b+3,m,23,i20~22,-12,+14,,"* Balcony Break
+* Deals chip damage on block if an attack is absorbed
+* Shifts to Right Stance
+Power crush",,
+1342,hwoarang,Flamingo Screw Kick (1),LFS.b+4,m,15,i16~17,-8,0,,* Shifts to Right Stance,,
+1343,hwoarang,Flamingo Screw Kick,"LFS.b+4,3","m,h","15,20",i16~19,0,+20 (+11),,"* Balcony Break
+* Deals chip damage on block
+* Shifts to Right Stance
+Low crush",,
+1344,hwoarang,Flamingo Double Claymore (1),LFS.df+3,m,12,i22~23,-14,-4,,"* Deals chip damage on block if an attack is absorbed
+* LFS.df+3,F/U/D to cancel and remain in Left Flamingo
+Power crush",,
+1345,hwoarang,Flamingo Double Claymore,"LFS.df+3,4","m,m","12,20",i24~25,-12,+7,,* Deals chip damage on block if an attack is absorbed,,
+1346,hwoarang,,LFS.d+3,l,7,i16,-17,-6,,,,
+1347,hwoarang,Flamingo Low Right,"LFS.d+3,4","l,h","7,10",i21~23,+8,+14,,* Shifts to Right Flamingo,,
+1348,hwoarang,Combat Low,LFS.d+4,l,17,i20~21,-12,+4,,* Shifts to Right Stance,,
+1349,hwoarang,Flamingo Rocket,LFS.f+3,m,23,i19~20,+4,+26,,"* Balcony Break
+* Heat Engager
+
+* Remains in Left Flamingo",,
+1350,hwoarang,Spinning Hook Kick,LFS.f+4,m,18,i17~18,-10,+6,,* Homing,,
+1351,hwoarang,Flamingo Hunting Hawk (2),LFS.uf+3,m,11,i28~29,-6,-7,,Low crush,,
+1352,hwoarang,Flamingo Hunting Hawk (1),"LFS.uf+3,4","m,m","11,12",i20~21,+2,+13,,"* Shifts to Right Flamingo
+Low crush",,
+1353,hwoarang,Flamingo Hunting Hawk,"LFS.uf+3,4,3","m,m,m","11,12,20",i27~28,-14,+0c,,Low crush,,
+1354,hwoarang,Flamingo Flashing Trident (1),LFS.uf+3+4,"m,h","10,8",i14,-10,+1,,"* LFS.uf+3+4,F to remain in Left Flamingo
+Low crush",,
+1355,hwoarang,Flamingo Flashing Trident,"LFS.uf+3+4,4","m,h,m","10,8,13",i14~15,-10,+7,,* Shifts to Right Stance,,
+1356,hwoarang,Switch Plasma Blade,LFS.uf+4,m,20,i19~20,-14,+32 (+22),,* Tornado,,
+1357,hwoarang,Migraine (1),RFF.1,h,10,i10,+0,+6,,* Remains in Right Stance,,
+1358,hwoarang,Migraine,"RFF.1,1","h,m","10,12",i19,-8,+3,,,,
+1359,hwoarang,Big Fists (2),RFF.2,h,6,i10,+1,+8,,* Remains in Right Stance,,
+1360,hwoarang,Big Fists (1),"RFF.2,1","h,h","6,10",i10,+0,+6,,"* Jails
+* Remains in Right Stance",,
+1361,hwoarang,Big Fists,"RFF.2,1,1","h,h,m","6,10,12",i19,-8,+3,,,,
+1362,hwoarang,Hawk Strike,"RFF.2,3","h,h","6,24",i19~20,-9,+20,,"* Tornado
+Low crush",,
+1363,hwoarang,Chainsaw Kick Combo (1),"RFF.2,4","h,h","6,9",i12,-8,+3,,"* Jails
+* Remains in Right Stance
+* Hold any direction to shift to Right Flamingo",,
+1364,hwoarang,Chainsaw Kick Combo,"RFF.2,4,3","h,h,m","6,9,20",i25~31,-14c,+14,,* Remains in Right Stance,,
+1365,hwoarang,Right Reverse Kick Combo,"RFF.2,4,4","h,h,h","6,9,23",i18~19,-5,+41,,"* Balcony Break
+* Jails",,
+1366,hwoarang,Right Flamingo Left,RFF.3,m,13,i16,-4,+7,,,,
+1367,hwoarang,Volcannon,"RFF.3,4","m,h","13,16",i27~28,+10,+21,,"* Shifts to Right Flamingo
+* RFF.3,4,F to cancel and shift to Right Flamingo",,
+1368,hwoarang,Motion Switch,RFF.3+4,,,,,,,* Shifts to Left Stance,,
+1369,hwoarang,Backlash,RFF.3~4,h,27,i27~30,+5,+47,,"* Balcony Break
+* Homing
+* Clean hit
+* Chip damage on block
+Power crush",,
+1370,hwoarang,Right Flamingo Right ,RFF.4,h,9,i12,-8,+3,,"* Remains in Right Stance
+* Hold any direction to shift to Right Flamingo",,
+1371,hwoarang,Chainsaw Kick,"RFF.4,3","h,m","9,20",i25~31,-14c,+14,,* Remains in Right Stance,,
+1372,hwoarang,Right Reverse Kick,"RFF.4,4","h,h","9,23",i18~19,-5,+41,,"* Jails
+* Balcony Break",,
+1373,hwoarang,Blast Fist,RFF.b+2,m,17,i16~17,+4,+6c,,* Remains in Right Stance,,
+1374,hwoarang,Nose Bleeder,RFF.b+3,h,17,i13~14,-10,+1,,* Sidesteps to the right,,
+1375,hwoarang,Spin Kick,RFF.b+4,h,21,i18~19,-9,+12,,* Balcony Break,,
+1376,hwoarang,Double Claymore (1),RFF.df+2+3,m,12,i22~23,-14,-4,,"* Deals chip damage on block if an attack is absorbed
+* RFF.df+2+3,F/U/D to cancel and shift to Left Flamingo
+Power crush",,
+1377,hwoarang,Double Claymore,"RFF.df+2+3,4","m,m","12,20",i24~25,-12,+7,,* Deals chip damage on block if an attack is absorbed,,
+1378,hwoarang,Black Kite,RFF.df+3,m,21,i22~24,+1,+6,,"* Homing
+* Heat Engager
+
+* Deals chip damage on block
+* Remains in Right Stance
+Low crush",,
+1379,hwoarang,Right Sidekick,RFF.df+4,m,12,i13,-7,+1,,"* Remains in Right Stance
+* Hold any direction to shift to Right Flamingo",,
+1380,hwoarang,Triumph Low Right (1),RFF.d+3,l,10,i18,-11,0,,* Shifts to Backturn Stance,,
+1381,hwoarang,Triumph Low Right,"RFF.d+3,4","l,h","10,10",i21~23,+8,+14,,* Shifts to Right Flamingo,,
+1382,hwoarang,Heel Screw,RFF.d+3+4,l,19,i19,-11,+5,,* Remains in Right Stance,,
+1383,hwoarang,Hunting Heel,"RFF.f,F+3",m,22,i22~25,-7,+19,,Low crush,,
+1384,hwoarang,Left Right Combo (1),RFF.f+1,h,5,i10,+1,+8,,,,
+1385,hwoarang,Left Right Combo,"RFF.f+1,2","h,h","5,10",i10,-3,+6,,Jails,,
+1386,hwoarang,Cheap Shot,RFF.f+3,h,21,i14~17,+6,+17,,"* Shifts to Left Flamingo
+* RFF.f+3,B to shift to Backturn Stance",,
+1387,hwoarang,Right Flamingo Feint,RFF.f+4,,,,,,,* Shifts to Right Flamingo,,
+1388,hwoarang,Plasma Blade,RFF.f+4~4,m,20,i18~20,-13,+41 (+31),,"* Tornado
+* Remains in Right Stance",,
+1389,hwoarang,Left Punch,RFS.1,m,15,i16,-2,+9,,,,
+1390,hwoarang,Right Flamingo > Back Hand,RFS.2,h,6,i13,+5,+7,,* Shifts to Right Stance,,
+1391,hwoarang,Left Step Kick,RFS.3,h,24,i14~16,+4,+27 (+18),,"* Balcony Break
+* Shifts to Left Flamingo
+* Sidesteps to the left
+Low crush",,
+1392,hwoarang,Flamingo Switch > Left Flamingo,RFS.3+4,,,,,,,* Shifts to Left Flamingo,,
+1393,hwoarang,Flying Eagle,RFS.3~4,"m,m","11,21",i16,-3,+26 (+16),,"* Balcony Break
+Low crush",,
+1394,hwoarang,Right Kick,RFS.4,m,20,i14,-13,+21 (+11),,"* Balcony Break
+* Shifts to Right Stance",,
+1395,hwoarang,Left Heel Lance,RFS.b+3,m,21,i16~17,-9,+7,,* Heat Engager,,
+1396,hwoarang,Right Thunderbolt,RFS.b+4,m,23,i20~22,-12,+14,,"* Balcony Break
+* Deals chip damage on block if an attack is absorbed
+Power crush",,
+1397,hwoarang,Snap Kick,RFS.df+4,m,17,i17~19,+1,+8c,,,,
+1398,hwoarang,Teaser (1),RFS.d+3,l,13,i15,-13,-5,,,,
+1399,hwoarang,Teaser,"RFS.d+3,3","l,h","13,28",i25~27,-2,+34 (+8),,"* Balcony Break
+* Deals chip damage on block",,
+1400,hwoarang,Predator Bardiche (2),RFS.d+4,l,15,i20~21,-23,+7,,* Shifts to Right Stance,,
+1401,hwoarang,Predator Bardiche (1),"RFS.d+4,3","l,h","15,12",i25,-9,-1,,,,
+1402,hwoarang,Predator Bardiche,"RFS.d+4,3,4","l,h,h","15,12,20",i27~28,-9,+28 (+2),,"* Balcony Break
+Low crush",,
+1403,hwoarang,Screw Kick,RFS.f+3,m,18,i20~21,-10,+5,,* Homing,,
+1404,hwoarang,Right Viper Combo,RFS.f+4,"h,h","8,8",i8,+0,+2,,* Remains in Right Flamingo,,
+1405,hwoarang,Right Viper Combo > Right Sword,"RFS.f+4,4","h,h,h","8,8,9",i23,-6,+75 (+59),,"* Tornado
+* Shifts to Right Stance",,
+1406,hwoarang,Flamingo Hunting Heel,RFS.uf+3,m,22,i24~27,-7,+19,,Low crush,,
+1407,hwoarang,Air Blade,RFS.uf+4,m,20,i17~18,-13,+30 (+20),,"* Tornado
+* Shifts to Right Stance
+Low crush",,
+1408,hwoarang,Raptor Claw,RFS.u+4,h,17,i25~26,-2,+8,,"* Homing
+* Shifts to Right Stance",,
+1409,hwoarang,Pickpocket,1+3,th(h),35,i12~14,,,,"* Break: 1 or 2
+* Opponent recovery on hit: FDFT
+* Sideswap on break",,
+1410,hwoarang,Falcon Dice Kick,2+4,th(h),25,i12~14,,,,"* Spike
+* Break: 1 or 2
+* Opponent recovery on hit: FDFT off-axis to the left, sideswap",,
+1411,hwoarang,Roll and Choke,"2+4,B",th(h),40,i12~14,,,,"* Break: 2
+* Opponent recovery on hit: FUFA, sideswap
+* Shifts to Backturn Stance",,
+1412,hwoarang,Overhead Kick,AIR.ub+3,th(m),26,i15~16,,,,"* Break: none
+* Opponent recovery on hit: FUFA, sideswap
+* Also possible during Right Stance",,
+1413,hwoarang,Slaughterhouse,Back throw,th(h),60,i12~14,,,,"* Break: none
+* Opponent recovery on hit: FUFA
+* Also possible during Right Stance",,
+1414,hwoarang,Bring It On,Left throw,th(h),45,i12~14,,,,"* Break: 1
+* Opponent recovery on hit: FUFT off-axis to the left
+* Also possible during Right Stance",,
+1415,hwoarang,Jackknife,RFF.1+3,th(h),45,i12,,,,"* Break: 1+2
+* Opponent recovery on hit: FUFA, sideswap
+* Also possible during Right Stance",,
+1416,hwoarang,Dead-End,Right throw,th(h),44,i12~14,,,,"* Break: 2
+* Opponent recovery on hit: FDFT off-axis to the right
+* Also possible during Right Stance",,
+1417,hwoarang,Door Mat,"d,db,b+3",th(h),45,i12~14,,,,"* Spike
+* Break: 1
+* Opponent recovery on hit: FUFA, sideswap",,
+1418,hwoarang,Human Canonball,f+2+3,th(h),35,i12~14,,,,"* Break: 1+2
+* Opponent recovery on hit: FUFA, sideswap
+* Possible in all stances except Backturn Stance",,
+1419,hwoarang,Leg Hook Throw,uf+1+2,th(h),40,i12~14,,,,"* Break: 1+2
+* Opponent recovery on hit: FUFA
+* Also possible during Right Stance",,
