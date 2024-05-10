@@ -32,8 +32,8 @@ window.electronAPI.receiveData((rows) => {
         // Get the note input element
         const noteInput = tr.querySelector('.note-input');
 
-        // Add event listener for note input change
-        noteInput.addEventListener('input', () => {
+        // Add event listener for note input blur
+        noteInput.addEventListener('blur', () => {
             const newNote = noteInput.value;
             const moveId = row.moveID;
             window.electronAPI.updateNote(moveId, newNote);
