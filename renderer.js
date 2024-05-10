@@ -1,16 +1,12 @@
-function addButtonEventListener(buttonId, htmlFileName) {
+function addButtonEventListener(buttonId, characterName) {
    const button = document.getElementById(buttonId);
    if (button) {
      button.addEventListener('click', () => {
        console.log(`${buttonId} Event Listener in renderer called Current time is:`, new Date());
-       if(htmlFileName) {
-           window.location.href = htmlFileName;
-       }
+       createWindowForCharacter(characterName);
      });
    }
  }
-
-
  
  const button1 = document.getElementById('goToHomePage');
  button1.addEventListener('click', () => {
@@ -37,7 +33,7 @@ function addButtonEventListener(buttonId, htmlFileName) {
  addButtonEventListener('goToJack8', 'Jack8');
  addButtonEventListener('goToJin', 'Jin');
  addButtonEventListener('goToJun', 'Jun');
- addButtonEventListener('goToKazuya', 'Kazuya', 'Kazuya.html');
+ addButtonEventListener('goToKazuya', 'Kazuya');
  addButtonEventListener('goToKing', 'King');
  addButtonEventListener('goToKuma', 'Kuma');
  addButtonEventListener('goToLars', 'Lars');
@@ -57,4 +53,4 @@ function addButtonEventListener(buttonId, htmlFileName) {
  addButtonEventListener('goToXiaoyu', 'Xiaoyu');
  addButtonEventListener('goToYoshimitsu', 'Yoshimitsu');
  addButtonEventListener('goToZafina', 'Zafina');
-
+ 

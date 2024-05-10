@@ -285,3 +285,15 @@ ipcMain.on('toggle-favorite', (event, moveId) => {
         fetchData(event);  // Refetch and send updated data
     });
 });
+
+ipcMain.on('update-note', (event, moveId, newNote) => {
+    const query = `UPDATE moves SET notes = ? WHERE moveID = ?`;
+    db.run(query, [newNote, moveId], function(err) {
+        if (err) {
+            console.error('Error updating note:', err);
+            return;
+        }
+        console.log(`Note updated for moveID: ${moveId}`);
+        fetchData(event);  // Refetch and send updated data
+    });
+});
