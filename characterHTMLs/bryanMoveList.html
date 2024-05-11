@@ -4,35 +4,52 @@
   <meta charset="UTF-8">
   <title>Bryan Move List</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body::before {
+      background-image: url('renders/bryan_render_transparent.png');
+    }
+  </style>
 </head>
 <body>
-  <h1>Bryan Move List</h1>
-  <div class="search-container">
-    <input type="text" id="searchInput" placeholder="Search moves...">
-  </div>
-  <div class="table-container">
-    <table id="data-table">
-      <thead>
-        <tr>
-          <th>Move Name</th>
-          <th>Notation</th>
-          <th>String Properties</th>
-          <th>Damage</th>
-          <th>Startup Frames</th>
-          <th>Frames On Block</th>
-          <th>Frames On Hit</th>
-          <th>Frames On Counter</th>
-          <th>Notes</th>
-          <th>Favorite</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody">
-      </tbody>
-    </table>
+  <div class="container">
+    <h1 class="title">Bryan Fury</h1>
+    <div class="header-row">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search moves...">
+      </div>
+      <div class="button-container">
+        <button id="goToHomePage" class="btn">Back</button>
+        <button id="goToCalculatorWindow" class="btn">Open Damage Calculator</button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Move Name</th>
+            <th>Notation</th>
+            <th>String Properties</th>
+            <th>Damage</th>
+            <th>Startup Frames</th>
+            <th>Frames On Block</th>
+            <th>Frames On Hit</th>
+            <th>Frames On Counter</th>
+            <th>Notes</th>
+            <th>Favorite</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div class="button-container">
+      <button id="goToHomePage" class="btn">Back</button>
+      <button id="goToCalculatorWindow" class="btn">Open Damage Calculator</button>
+    </div>
   </div>
   <script src="tableRenderer.js"></script>
-  <button id="goToHomePage">Go to Home Page</button>
-  <button id="goToCalculatorWindow">Go To Extra Window</button>
   <script src="preload.js"></script>
 </body>
 </html>

@@ -130,13 +130,13 @@ const createWindow = () => {
         mainWindow.close(); // Close the current window
     }
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        maximizable: true,
     });
     win.loadFile('index.html');
+    win.maximize();
     mainWindow = win; // Update the current window instance
 };
 
@@ -181,13 +181,13 @@ const createCharacterWindow = (character) => {
         mainWindow.close(); // Close the current window
     }
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        maximizable: true,
     });
     win.loadFile(`characterHTMLs/${character.toLowerCase()}MoveList.html`);
+    win.maximize();
     mainWindow = win; // Update the current window instance
 };
 
