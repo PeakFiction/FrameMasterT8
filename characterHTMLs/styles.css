@@ -50,6 +50,26 @@ body {
   }
 }
 
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+.floating-btn .btn {
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: transform 0.3s ease-in-out;
+}
+
+.floating-btn .btn:hover {
+  transform: scale(1.1);
+}
+
 body::before {
   content: "";
   background-repeat: no-repeat;
@@ -117,18 +137,18 @@ body::before {
   margin: 0 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 1.0);
   color: #fff;
   border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(139, 0, 0, 0.8); /* Added dark red crimson shadow */
+  border-radius: 0; /* Change border-radius to 0 for squared edges */
+  box-shadow: 0 0 10px rgba(139, 0, 0, 1); /* Added dark red crimson shadow */
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: 'Bebas Neue', cursive; /* Add this line */
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(139, 0, 0, 1);
 }
 
 .table-container {
