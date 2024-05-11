@@ -149,6 +149,24 @@ tr:hover {
   color: #fff;
 }
 
+.favorite-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.favorite-btn:hover {
+  color: #ffd700; /* Golden yellow color on hover */
+}
+
+.favorite-btn.active {
+  color: #ffd700; /* Golden yellow color when active (favorited) */
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;

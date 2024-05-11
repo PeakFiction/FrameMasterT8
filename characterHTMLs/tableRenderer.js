@@ -21,12 +21,19 @@ window.electronAPI.receiveData((rows) => {
         // Add toggle favorite button
         const toggleBtn = document.createElement('button');
         toggleBtn.textContent = row.isFavorite ? '★' : '☆';
+        toggleBtn.classList.add('favorite-btn');
+        if (row.isFavorite) {
+          toggleBtn.classList.add('active');
+        }
+
         const favoriteCell = tr.insertCell();
         favoriteCell.appendChild(toggleBtn);
 
         toggleBtn.addEventListener('click', () => {
             window.electronAPI.toggleFavorite(row.moveID);
-        });
+            toggleBtn.classList.toggle('active');
+            toggleBtn.textContent = toggleBtn.textContent === '★' ? '☆' : '★';
+          });
 
         // Get the note input element
         const noteInput = tr.querySelector('.note-input');
@@ -78,4 +85,3 @@ window.electronAPI.receiveData((rows) => {
         searchInput.addEventListener('input', filterTable);
     }
 });
-
