@@ -29,6 +29,15 @@ window.addEventListener('DOMContentLoaded', () => {
           ipcRenderer.send('asynchronous-message', 'goToCalculatorWindow');
         });
       }
+      
+    const floatingButtons = document.querySelectorAll('.floating-btn .button-container button');
+    floatingButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const buttonId = button.id;
+        console.log(`${buttonId} button clicked in preload.js`);
+        ipcRenderer.send('asynchronous-message', buttonId);
+      });
+    });
 
 
     function createCharacterButtonListener(characterName) {
