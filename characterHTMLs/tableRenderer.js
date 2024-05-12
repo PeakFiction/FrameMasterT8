@@ -15,7 +15,7 @@ window.electronAPI.receiveData((rows) => {
             <td>${row.framesOnBlock}</td>
             <td>${row.framesOnHit}</td>
             <td>${row.framesOnCounter}</td>
-            <td><textarea class="note-input">${row.notes}</textarea></td>
+            <td><textarea class="note-input" onclick="expandTextarea(this)">${row.notes}</textarea></td>
         `;
 
         // Add toggle favorite button
@@ -85,3 +85,11 @@ window.electronAPI.receiveData((rows) => {
         searchInput.addEventListener('input', filterTable);
     }
 });
+
+function expandTextarea(textarea) {
+    textarea.style.height = textarea.scrollHeight + 'px';
+    textarea.oninput = function() {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    };
+}
