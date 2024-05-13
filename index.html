@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Select</title>
+  <div id="versionInfo">
+    <p>Loading...</p>
+  </div>
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
   
@@ -38,7 +41,17 @@
           background-position: 0% 50%;
         }
       }
-  
+      
+      #versionInfo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 16px;
+        color: #fff;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+      
+
       body {
         font-family: 'Bebas Neue', cursive;
         color: #fff;
@@ -330,5 +343,37 @@
     </div>
     <!-- Temporary divs for future characters -->
   </div>
+
+  <script>
+    let currentVersion = '1.2.3'; // Current version
+    let latestVersion = ''; // Variable to store latest version
+
+    // Function to check if the app version is up-to-date
+    function checkVersion() {
+        // Displaying the latest version in the versionInfo div
+        document.getElementById('versionInfo').innerHTML = `<p>VERSION: ${currentVersion}</p>`;
+
+        // Checking if latest version is different from current version
+        if (latestVersion !== currentVersion) {
+            // If different, display message with a hyperlink to download the latest version
+            document.getElementById('versionInfo').innerHTML += `<p>This app version is outdated, you can download the latest version <a href="https://github.com/PeakFiction/FrameMasterT8">here</a>.</p>`;
+        }
+    }
+
+    // Fetching the latest version from the provided URL
+    fetch('https://raw.githubusercontent.com/PeakFiction/FrameMasterT8/main/version.md')
+        .then(response => response.text())
+        .then(data => {
+            // Storing the fetched latest version
+            latestVersion = data.trim(); // Removing any leading or trailing whitespace
+            // Checking the app version
+            checkVersion();
+        })
+        .catch(error => {
+            // Handling any errors that may occur during fetching
+            console.error('Error fetching data:', error);
+            document.getElementById('versionInfo').innerHTML = `<p>Error fetching version data. Please try again later.</p>`;
+        });
+</script>
 </body>
 </html>
