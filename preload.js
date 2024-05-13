@@ -29,6 +29,15 @@ window.addEventListener('DOMContentLoaded', () => {
           ipcRenderer.send('asynchronous-message', 'goToCalculatorWindow');
         });
       }
+
+      const comboMakerWindow = document.getElementById('goToComboMakerWindow');
+      if (comboMakerWindow) {
+        comboMakerWindow.addEventListener('click', () => {
+          console.log("comboMakerWindow IPCRenderer in preload.js called. Current time is:", new Date());
+          ipcRenderer.send('asynchronous-message', 'goToComboMakerWindow');
+        });
+      }
+      
       
     const floatingButtons = document.querySelectorAll('.floating-btn .button-container button');
     floatingButtons.forEach(button => {
