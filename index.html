@@ -432,22 +432,157 @@
   </div>
   <script>
     const audioPlayer = new Audio();
+<div style="display: flex; align-items: center; justify-content: center;">
+    <button onclick="prevSong()" class="arrow-button prev-button">◄</button>
+    <div id="song-option" style="background-color: rgba(255, 255, 255, 0); color: red; padding: 10px; position: relative; transition: transform 0.3s ease; overflow: hidden;">
+        <img id="song-image" src="" alt="" style="max-width: 300px; max-height: 300px; transition: filter 0.3s ease-in-out, transform 0.3s ease;">
+        <div id="audio-wave" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 50px; background: repeating-linear-gradient(to right, red, red 5px, transparent 5px, transparent 10px); animation: wave 1s linear infinite;"></div>
+    </div>
+    <button onclick="nextSong()" class="arrow-button next-button">►</button>
+</div>
+<br>
+<style>
+    .arrow-button {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .Player button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+    .Player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      background-color: transparent;
+    }
+
+    .Player input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    height: 20px;
+    width: 100px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Add a subtle white border */
+    border-radius: 10px; /* Add rounded corners to the border */
+  }
+
+  .Player input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Player input[type="range"]::-moz-range-thumb {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+    .playButton {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .stopButton {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .arrow-button:hover {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+
+    .prev-button {
+        margin-right: 10px;
+    }
+
+    .next-button {
+        margin-left: 10px;
+    }
+
+    #song-option {
+        overflow: hidden;
+    }
+
+    @keyframes wave {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100px 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+</style>
+<script>
+    const audioPlayer = document.getElementById('audio-player');
     const songOptionDiv = document.getElementById('song-option');
+    const songImage = document.getElementById('song-image');
+    const audioWave = document.getElementById('audio-wave');
+    const volumeInput = document.querySelector('input[type="range"]');
     const groups = ['T8', 'T7', 'Tag2', 'T6', 'T5'];
     let currentIndex = 0;
 
     function updateSongOption() {
-        songOptionDiv.textContent = groups[currentIndex];
+        const group = groups[currentIndex];
+        songImage.src = `${group}.jpg`;
+        songImage.style.filter = 'none';
+        songImage.style.transform = 'translateX(0)';
+        audioWave.style.display = 'none';
     }
 
     function prevSong() {
         currentIndex = (currentIndex - 1 + groups.length) % groups.length;
-        updateSongOption();
+        songImage.style.transform = 'translateX(-100%)';
+        setTimeout(() => {
+            updateSongOption();
+        }, 300);
     }
 
     function nextSong() {
         currentIndex = (currentIndex + 1) % groups.length;
-        updateSongOption();
+        songImage.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            updateSongOption();
+        }, 300);
     }
 
     function playSong() {
@@ -459,6 +594,9 @@
             'T6': ['sounds/T6Starter.mp3', 'sounds/T6Loop.mp3'],
             'T5': ['sounds/T5Starter.mp3', 'sounds/T5Loop.mp3']
         }[group];
+
+        songImage.style.filter = 'brightness(0.5)';
+        audioWave.style.display = 'block';
 
         audioPlayer.src = starter;
         audioPlayer.play();
@@ -475,6 +613,13 @@
     function stopSong() {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
+        songImage.style.filter = 'none';
+        audioWave.style.display = 'none';
+    }
+
+    function adjustVolume(value) {
+        audioPlayer.volume = value;
+        volumeInput.style.setProperty('--value', value);
     }
 
     function adjustVolume(value) {
@@ -482,6 +627,7 @@
     }
 
     updateSongOption();
+    adjustVolume(1); // Initialize the volume input with full red color
 </script>
 
   

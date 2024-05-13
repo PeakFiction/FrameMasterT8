@@ -244,7 +244,6 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
 });
 
 // Inside the code where you create the BrowserWindow for Kazuya.html
-
 // Assuming you have an instance of the Database object named 'db'
 db.all('SELECT * FROM moves', (err, moves) => {
     if (err) {
