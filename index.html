@@ -4,101 +4,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Select</title>
+  <div id="versionInfo">
+    <p>Loading...</p>
+  </div>
   <style>
-    body {
-      background: linear-gradient(135deg, black, crimson, purple);
-      background-size: 600% 600%;
-      animation: gradientAnimation 30s ease infinite;
-    }
- 
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-    .title {
-      font-family: 'Bebas Neue', sans-serif;
-      text-align: center;
-      font-size: 48px;
-      color: white;
-      margin-bottom: 20px;
-    }
- 
-    .character-select {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 10px;
-      justify-content: center;
-      margin: 0 auto;
-      max-width: 1200px;
-    }
- 
-    .character-icon {
-      position: relative;
-      width: 100%;
-      padding-bottom: 100%;
-      overflow: hidden;
-      cursor: pointer;
-      background-color: #333;
-      border: 2px solid #666;
-      border-top-left-radius: 15px;
-    }
- 
-    .character-icon img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
- 
-    .character-icon::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+  @keyframes fadeInAnimation {
+    0% {
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transform: translateY(20px);
     }
- 
-    .character-icon:hover::before {
+    100% {
       opacity: 1;
+      transform: translateY(0);
     }
- 
-    .character-icon.selected::before {
-      background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  @keyframes fadeInBackground {
+    0% {
+      opacity: 0;
     }
- 
-    .random {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      font-weight: bold;
-      background-color: #333;
-      color: #fff;
-      border: 2px solid #666;
-      border-top-left-radius: 15px;
+    100% {
+      opacity: 0.7;
     }
- 
-    .temp {
-      background-color: #333;
-      border: 2px solid #666;
-      border-top-left-radius: 15px;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
     }
-  </style>
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulseAnimation {
+    0% {
+      text-shadow: 0 0 10px #8B0000;
+    }
+    50% {
+      text-shadow: 0 0 20px #8B0000;
+    }
+    100% {
+      text-shadow: 0 0 10px #8B0000;
+    }
+  }
+  
+  @keyframes iconPulseAnimation {
+    0% {
+      box-shadow: 0 0 15px #8B0000; /* Adjusted box-shadow size */
+    }
+    50% {
+      box-shadow: 0 0 25px #8B0000; /* Adjusted box-shadow size */
+    }
+    100% {
+      box-shadow: 0 0 15px #8B0000; /* Adjusted box-shadow size */
+    }
+  }
+  
+  
+  #versionInfo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  body {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #8B0000, #800080);
+    background-size: 600% 600%;
+    animation: gradientAnimation 5s ease infinite;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    animation: fadeInAnimation 1s ease-in-out;
+  }
+  
+  body::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    animation: fadeInBackground 1s ease-in-out forwards;
+  }
+  
+  .title {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: pulseAnimation 2s infinite;
+  }
+  
+  .character-select {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    animation: fadeInAnimation 1s ease-in-out;
+  }
+  
+  .character-icon {
+    position: relative;
+    width: 5vw;
+    padding-bottom: 5vw;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(45, 47, 50, 1);
+    border-top-left-radius: 15px;
+    animation: iconPulseAnimation 1s infinite; /* Changed animation duration to 1s */
+    box-shadow: 0 0 10px crimson; /* Added crimson red glow */
+  }
+  
+  
+  .character-icon img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .character-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .character-icon:hover::before {
+    opacity: 10;
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  .character-icon.selected::before {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  .random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #666;
+    border-top-left-radius: 15px;
+  }
+  
+  .temp {
+    background-color: #333;
+    border: 2px solid #666;
+    border-top-left-radius: 15px;
+  }
+</style>
 </head>
 <body>
   <h1 class="title">CHARACTER SELECT</h1>
@@ -270,12 +369,38 @@
       </a>
     </div>
     <!-- Temporary divs for future characters -->
-    <div class="character-icon temp"></div>
-    <div class="character-icon temp"></div>
-    <div class="character-icon random">?</div>
   </div>
 
-  <audio id="backgroundMusic" src="t8select.m4a" loop></audio>
-  <button id="musicControlButton">Pause Music</button>
+  <script>
+    let currentVersion = '1.2.3'; // Current version
+    let latestVersion = ''; // Variable to store latest version
+
+    // Function to check if the app version is up-to-date
+    function checkVersion() {
+        // Displaying the latest version in the versionInfo div
+        document.getElementById('versionInfo').innerHTML = `<p>VERSION: ${currentVersion}</p>`;
+
+        // Checking if latest version is different from current version
+        if (latestVersion !== currentVersion) {
+            // If different, display message with a hyperlink to download the latest version
+            document.getElementById('versionInfo').innerHTML += `<p>This app version is outdated, you can download the latest version <a href="https://github.com/PeakFiction/FrameMasterT8">here</a>.</p>`;
+        }
+    }
+
+    // Fetching the latest version from the provided URL
+    fetch('https://raw.githubusercontent.com/PeakFiction/FrameMasterT8/main/version.md')
+        .then(response => response.text())
+        .then(data => {
+            // Storing the fetched latest version
+            latestVersion = data.trim(); // Removing any leading or trailing whitespace
+            // Checking the app version
+            checkVersion();
+        })
+        .catch(error => {
+            // Handling any errors that may occur during fetching
+            console.error('Error fetching data:', error);
+            document.getElementById('versionInfo').innerHTML = `<p>Error fetching version data. Please try again later.</p>`;
+        });
+</script>
 </body>
 </html>

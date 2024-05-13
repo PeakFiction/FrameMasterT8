@@ -1,38 +1,53 @@
-
 window.electronAPI.requestData();
 
-    window.electronAPI.receiveData((rows) => {
-        const tableBody = document.getElementById('data-table').getElementsByTagName('tbody')[0];
-        tableBody.innerHTML = '';  // Clear existing rows
+window.electronAPI.receiveData((rows) => {
+    const tableBody = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+    tableBody.innerHTML = ''; // Clear existing rows
 
-        rows.forEach(row => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td>${row.moveName}</td>
-                <td>${row.notation}</td>
-                <td>${row.stringProperties}</td>
-                <td>${row.damage}</td>
-                <td>${row.startupFrames}</td>
-                <td>${row.framesOnBlock}</td>
-                <td>${row.framesOnHit}</td>
-                <td>${row.framesOnCounter}</td>
-                <td>${row.notes}</td>
-                <td>${row.throwBreak}</td>
-            `;
+    rows.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${row.moveName}</td>
+            <td>${row.notation}</td>
+            <td>${row.stringProperties}</td>
+            <td>${row.damage}</td>
+            <td>${row.startupFrames}</td>
+            <td>${row.framesOnBlock}</td>
+            <td>${row.framesOnHit}</td>
+            <td>${row.framesOnCounter}</td>
+            <td><textarea class="note-input" onclick="expandTextarea(this)">${row.notes}</textarea></td>
+        `;
 
-            // Add toggle favorite button
-            const toggleBtn = document.createElement('button');
-            toggleBtn.textContent = row.isFavorite ? '★' : '☆';
-            const favoriteCell = tr.insertCell();
-            favoriteCell.appendChild(toggleBtn);
+        // Add toggle favorite button
+        const toggleBtn = document.createElement('button');
+        toggleBtn.textContent = row.isFavorite ? '★' : '☆';
+        toggleBtn.classList.add('favorite-btn');
+        if (row.isFavorite) {
+          toggleBtn.classList.add('active');
+        }
 
-            toggleBtn.addEventListener('click', () => {
-                window.electronAPI.toggleFavorite(row.moveID);  // Assuming 'moveID' is a unique identifier
-            });
+        const favoriteCell = tr.insertCell();
+        favoriteCell.appendChild(toggleBtn);
 
-            tableBody.appendChild(tr);
+        toggleBtn.addEventListener('click', () => {
+            window.electronAPI.toggleFavorite(row.moveID);
+            toggleBtn.classList.toggle('active');
+            toggleBtn.textContent = toggleBtn.textContent === '★' ? '☆' : '★';
+          });
+
+        // Get the note input element
+        const noteInput = tr.querySelector('.note-input');
+
+        // Add event listener for note input blur
+        noteInput.addEventListener('blur', () => {
+            const newNote = noteInput.value;
+            const moveId = row.moveID;
+            window.electronAPI.updateNote(moveId, newNote);
         });
+
+        tableBody.appendChild(tr);
     });
+});
 
   document.addEventListener('DOMContentLoaded', () => {
     // Function to filter table rows based on search input
@@ -71,3 +86,10 @@ window.electronAPI.requestData();
     }
 });
 
+function expandTextarea(textarea) {
+    textarea.style.height = textarea.scrollHeight + 'px';
+    textarea.oninput = function() {
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    };
+}

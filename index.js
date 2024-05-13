@@ -130,13 +130,13 @@ const createWindow = () => {
         mainWindow.close(); // Close the current window
     }
     win = new BrowserWindow({
-        width: 800,
-        height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        maximizable: true,
     });
     win.loadFile('index.html');
+    win.maximize();
     mainWindow = win; // Update the current window instance
 };
 
@@ -181,13 +181,13 @@ const createCharacterWindow = (character) => {
         mainWindow.close(); // Close the current window
     }
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        maximizable: true,
     });
     win.loadFile(`characterHTMLs/${character.toLowerCase()}MoveList.html`);
+    win.maximize();
     mainWindow = win; // Update the current window instance
 };
 
@@ -225,9 +225,7 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
         framesOnCounter TEXT,
         stringProperties TEXT,
         damage TEXT,
-        throwBreak TEXT,
         notes TEXT,
-        userNotes TEXT,
         isFavorite BOOLEAN NOT NULL DEFAULT 0
     )`, (err) => {
         if (err) {
@@ -236,7 +234,7 @@ let db = new sqlite3.Database('./mydatabase.db', sqlite3.OPEN_READWRITE | sqlite
             console.log('Table created or already exists.');
         // Insert dummy data (!) ONLY USE THIS WHEN INSERTING NEW DATA OR DB IS EMPTY (!)
         // const moves = [];
-        // const stmt = db.prepare('INSERT INTO moves (moveID, characterID, moveName, notation, stringProperties, damage, startupFrames, framesOnBlock, framesOnHit, framesOnCounter, notes, throwBreak, userNotes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+        // const stmt = db.prepare('INSERT INTO moves (moveID, characterID, moveName, notation, stringProperties, damage, startupFrames, framesOnBlock, framesOnHit, framesOnCounter, notes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
         // for (const move of moves) {
         //     stmt.run(move);
         // }
@@ -282,6 +280,18 @@ ipcMain.on('toggle-favorite', (event, moveId) => {
             return;
         }
         console.log(`Rows affected: ${this.changes}`);
+        fetchData(event);  // Refetch and send updated data
+    });
+});
+
+ipcMain.on('update-note', (event, moveId, newNote) => {
+    const query = `UPDATE moves SET notes = ? WHERE moveID = ?`;
+    db.run(query, [newNote, moveId], function(err) {
+        if (err) {
+            console.error('Error updating note:', err);
+            return;
+        }
+        console.log(`Note updated for moveID: ${moveId}`);
         fetchData(event);  // Refetch and send updated data
     });
 });
