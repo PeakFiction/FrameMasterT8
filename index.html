@@ -424,7 +424,14 @@
       clip-path: polygon(0% 50%, 5% 0%, 10% 20%, 15% 5%, 20% 40%, 25% 15%, 30% 50%, 35% 25%, 40% 60%, 45% 35%, 50% 70%, 55% 45%, 60% 80%, 65% 55%, 70% 90%, 75% 65%, 80% 100%, 85% 75%, 90% 95%, 95% 85%, 100% 80%);
     }
 
-    #audio-wave.paused {
+    #audio-wave-paused {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 10px;
       background: radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%),
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 20px 0,
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 40px 0,
@@ -434,10 +441,7 @@
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 120px 0,
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 140px 0,
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 160px 0;
-      background-size: 20px 20px;
-      clip-path: none;
-      height: 20px;
-      animation: none;
+      background-size: 20px 10px;
     }
 
   .button-container {
@@ -642,10 +646,6 @@
 
   
 
-  <div class="button-container">
-    <button id="goToCalculatorWindow" class="btn">Open Damage Calculator</button>
-    <button id="goToComboMakerWindow" class="btn">Open Combo Maker</button>
-  </div>
 
 
   <script>
@@ -678,7 +678,12 @@
             console.error('Error fetching data:', error);
             document.getElementById('versionInfo').innerHTML = `<p>Error fetching version data. Please try again later.</p>`;
         });
-</script><div id="audio-player-toggle" onclick="toggleAudioPlayerPopup()">
+</script><div class="button-container">
+  <button id="goToCalculatorWindow" class="btn">Open Damage Calculator</button>
+  <button id="goToComboMakerWindow" class="btn">Open Combo Maker</button>
+</div>
+
+<div id="audio-player-toggle" onclick="toggleAudioPlayerPopup()">
   <img src="jukebox.png" alt="Jukebox" style="width: 60px; height: 60px;">
 </div>
 
@@ -691,6 +696,7 @@
       <div id="song-option" style="background-color: rgba(255, 255, 255, 0); color: red; padding: 10px; position: relative; transition: transform 0.3s ease; overflow: hidden;">
         <img id="song-image" src="" alt="" style="max-width: 200px; max-height: 200px; transition: filter 0.3s ease-in-out, transform 0.3s ease;">
         <div id="audio-wave"></div>
+        <div id="audio-wave-paused"></div>
       </div>
       <button onclick="nextSongPreview()" class="arrow-button next-button">►</button>
     </div>
@@ -720,7 +726,9 @@
       </button>
     </div>
   </div>
-</div><script>
+</div>
+<script>
+
 let currentIndex = 0;
     let isPlaying = false;
     let previewIndex = 0;
@@ -732,7 +740,8 @@ let currentIndex = 0;
     const audioWave = document.getElementById('audio-wave');
 
     const groups = ['T8', 'T7', 'Tag2', 'T6', 'T5'];
-function updateSongOption(index) {
+
+    function updateSongOption(index) {
       const group = groups[index];
       const [starter, loop] = {
         'T8': ['sounds/T8Starter.mp3', 'sounds/T8Loop.mp3'],
@@ -746,6 +755,7 @@ function updateSongOption(index) {
       songImage.style.filter = 'none';
       songImage.style.transform = 'translateX(0)';
       audioWave.style.display = 'none';
+      document.getElementById('audio-wave-paused').style.display = 'none';
 
       return [starter, loop];
     }
@@ -774,7 +784,7 @@ function updateSongOption(index) {
 
       songImage.style.filter = 'brightness(0.5)';
       audioWave.style.display = 'block';
-      audioWave.classList.remove('paused');
+      document.getElementById('audio-wave-paused').style.display = 'none';
       audioWave.style.animation = 'wave 1s linear infinite';
       requestAnimationFrame(updateWave);
 
@@ -800,7 +810,7 @@ function updateSongOption(index) {
       audioPlayer.currentTime = 0;
       songImage.style.filter = 'none';
       audioWave.style.display = 'none';
-      audioWave.classList.remove('paused');
+      document.getElementById('audio-wave-paused').style.display = 'none';
       audioWave.style.animation = 'none';
       isPlaying = false;
       currentSong = null;
@@ -812,7 +822,8 @@ function updateSongOption(index) {
         audioPlayer.pause();
         isPlaying = false;
         currentTime = audioPlayer.currentTime;
-        audioWave.classList.add('paused');
+        audioWave.style.display = 'none';
+        document.getElementById('audio-wave-paused').style.display = 'block';
         audioWave.style.animation = 'none';
       } else {
         if (currentSong) {
@@ -820,7 +831,8 @@ function updateSongOption(index) {
           audioPlayer.currentTime = currentTime;
           audioPlayer.play();
           isPlaying = true;
-          audioWave.classList.remove('paused');
+          audioWave.style.display = 'block';
+          document.getElementById('audio-wave-paused').style.display = 'none';
           audioWave.style.animation = 'wave 1s linear infinite';
           requestAnimationFrame(updateWave);
         }
@@ -861,7 +873,7 @@ function updateSongOption(index) {
     audioPlayer.source = audioPlayer.context.createMediaElementSource(audioPlayer);
     audioPlayer.source.connect(audioPlayer.context.destination);
     adjustVolume(1);
-</script>
+  </script>
 </body>
 
  
