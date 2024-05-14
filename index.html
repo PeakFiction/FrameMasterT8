@@ -809,12 +809,14 @@ let currentIndex = 0;
 
   audioPlayer.src = starter;
   audioPlayer.currentTime = 0;
+  audioPlayer.loop = false; // Disable looping for the starter song
   audioPlayer.play();
 
   audioPlayer.addEventListener('ended', function() {
     audioPlayer.src = loop;
-    audioPlayer.loop = true; 
+    audioPlayer.loop = true; // Enable looping for the loop song
     audioPlayer.play();
+    currentSong = loop; // Update the current song to the loop song
   }, { once: true });
 
   isPlaying = true;
