@@ -419,9 +419,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 180px;
-      height: 80px;
+      height: 60px;
       background: linear-gradient(to right, rgb(124, 0, 0), rgb(72, 1, 1));
-      clip-path: polygon(0% 50%, 5% 0%, 10% 20%, 15% 5%, 20% 40%, 25% 15%, 30% 50%, 35% 25%, 40% 60%, 45% 35%, 50% 70%, 55% 45%, 60% 80%, 65% 55%, 70% 90%, 75% 65%, 80% 100%, 85% 75%, 90% 95%, 95% 85%, 100% 80%);
+      clip-path: polygon(0% 50%, 5% 0%, 10% 100%, 15% 10%, 20% 90%, 25% 20%, 30% 80%, 35% 30%, 40% 70%, 45% 40%, 50% 60%, 55% 50%, 60% 40%, 65% 70%, 70% 30%, 75% 80%, 80% 20%, 85% 90%, 90% 10%, 95% 100%, 100% 50%);
+      transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
     #audio-wave-paused {
@@ -442,8 +443,9 @@
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 140px 0,
                   radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 160px 0;
       background-size: 20px 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
-
   .button-container {
     display: flex;
     justify-content: flex-end; /* Changed to align buttons to the right */
@@ -785,7 +787,8 @@ let currentIndex = 0;
       songImage.style.filter = 'brightness(0.5)';
       audioWave.style.display = 'block';
       document.getElementById('audio-wave-paused').style.display = 'none';
-      audioWave.style.animation = 'wave 1s linear infinite';
+      audioWave.style.clipPath = 'polygon(0% 50%, 5% 0%, 10% 100%, 15% 10%, 20% 90%, 25% 20%, 30% 80%, 35% 30%, 40% 70%, 45% 40%, 50% 60%, 55% 50%, 60% 40%, 65% 70%, 70% 30%, 75% 80%, 80% 20%, 85% 90%, 90% 10%, 95% 100%, 100% 50%)';
+      audioWave.style.opacity = '1';
       requestAnimationFrame(updateWave);
 
       audioPlayer.src = starter;
@@ -816,29 +819,33 @@ let currentIndex = 0;
       currentSong = null;
       currentTime = 0;
     }
-
     function pauseSong() {
       if (isPlaying) {
         audioPlayer.pause();
         isPlaying = false;
         currentTime = audioPlayer.currentTime;
-        audioWave.style.display = 'none';
-        document.getElementById('audio-wave-paused').style.display = 'block';
-        audioWave.style.animation = 'none';
+        audioWave.style.opacity = '0';
+        setTimeout(() => {
+          audioWave.style.display = 'none';
+          document.getElementById('audio-wave-paused').style.display = 'block';
+          document.getElementById('audio-wave-paused').style.opacity = '1';
+        }, 300);
       } else {
         if (currentSong) {
           audioPlayer.src = currentSong;
           audioPlayer.currentTime = currentTime;
           audioPlayer.play();
           isPlaying = true;
-          audioWave.style.display = 'block';
-          document.getElementById('audio-wave-paused').style.display = 'none';
-          audioWave.style.animation = 'wave 1s linear infinite';
-          requestAnimationFrame(updateWave);
+          document.getElementById('audio-wave-paused').style.opacity = '0';
+          setTimeout(() => {
+            document.getElementById('audio-wave-paused').style.display = 'none';
+            audioWave.style.display = 'block';
+            audioWave.style.opacity = '1';
+            requestAnimationFrame(updateWave);
+          }, 300);
         }
       }
     }
-
     function toggleAudioPlayerPopup() {
       const audioPlayerPopup = document.getElementById('audio-player-popup');
       if (!audioPlayerPopup.classList.contains('show')) {
