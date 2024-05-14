@@ -197,6 +197,7 @@
     border: 2px solid #666;
     border-top-left-radius: 15px;
   }
+
   .custom-audio-player {
     display: flex;
     justify-content: center;
@@ -439,6 +440,29 @@
       animation: none;
     }
 
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Changed to align buttons to the right */
+  }
+  
+  .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 1.0);
+    color: #fff;
+    border: none;
+    border-radius: 0; /* Change border-radius to 0 for squared edges */
+    box-shadow: 0 0 10px rgba(139, 0, 0, 1); /* Added dark red crimson shadow */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Bebas Neue', cursive;
+  }
+  
+  .btn:hover {
+    background-color: rgba(139, 0, 0, 1);
+  }
+
 </style>
 </head>
 <body>
@@ -615,7 +639,15 @@
   
 
 
+
   
+
+  <div class="button-container">
+    <button id="goToCalculatorWindow" class="btn">Open Damage Calculator</button>
+    <button id="goToComboMakerWindow" class="btn">Open Combo Maker</button>
+  </div>
+
+
   <script>
     let currentVersion = '1.2.3'; // Current version
     let latestVersion = ''; // Variable to store latest version
