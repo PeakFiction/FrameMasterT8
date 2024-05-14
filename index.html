@@ -411,7 +411,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 300px;
-}
+} 
 #audio-wave {
       display: none;
       position: absolute;
@@ -420,8 +420,24 @@
       transform: translate(-50%, -50%);
       width: 180px;
       height: 60px;
-      background: linear-gradient(to right, rgb(124, 0, 0), rgb(72, 1, 1));
-      clip-path: polygon(0% 50%, 5% 0%, 10% 100%, 15% 10%, 20% 90%, 25% 20%, 30% 80%, 35% 30%, 40% 70%, 45% 40%, 50% 60%, 55% 50%, 60% 40%, 65% 70%, 70% 30%, 75% 80%, 80% 20%, 85% 90%, 90% 10%, 95% 100%, 100% 50%);
+      background: linear-gradient(to right, rgb(200, 150, 255), rgb(150, 100, 255));
+      clip-path: polygon(
+        0% 50%,
+        2% 60%, 2% 40%,
+        10% 75%, 10% 25%,
+        18% 60%, 18% 40%,
+        26% 75%, 26% 25%,
+        34% 60%, 34% 40%,
+        42% 75%, 42% 25%,
+        50% 60%, 50% 40%,
+        58% 75%, 58% 25%,
+        66% 60%, 66% 40%,
+        74% 75%, 74% 25%,
+        82% 60%, 82% 40%,
+        90% 75%, 90% 25%,
+        98% 60%, 98% 40%,
+        100% 50%
+      );
       transition: clip-path 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
@@ -433,15 +449,15 @@
       transform: translate(-50%, -50%);
       width: 180px;
       height: 10px;
-      background: radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%),
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 20px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 40px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 60px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 80px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 100px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 120px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 140px 0,
-                  radial-gradient(circle, rgb(124, 0, 0) 0%, rgb(124, 0, 0) 40%, transparent 50%, transparent 100%) 160px 0;
+      background: radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%),
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 20px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 40px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 60px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 80px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 100px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 120px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 140px 0,
+                  radial-gradient(circle, rgb(200, 150, 255) 0%, rgb(200, 150, 255) 40%, transparent 50%, transparent 100%) 160px 0;
       background-size: 20px 10px;
       opacity: 0;
       transition: opacity 0.3s ease-in-out;
@@ -848,10 +864,19 @@ let currentIndex = 0;
     }
     function toggleAudioPlayerPopup() {
       const audioPlayerPopup = document.getElementById('audio-player-popup');
-      if (!audioPlayerPopup.classList.contains('show')) {
+      if (audioPlayerPopup.classList.contains('show')) {
+        audioPlayerPopup.style.bottom = '-600px';
+        setTimeout(() => {
+          audioPlayerPopup.style.display = 'none';
+          audioPlayerPopup.classList.remove('show');
+        }, 500);
+      } else {
         audioPlayerPopup.style.display = 'flex';
+        setTimeout(() => {
+          audioPlayerPopup.style.bottom = '20px';
+          audioPlayerPopup.classList.add('show');
+        }, 0);
       }
-      audioPlayerPopup.classList.toggle('show');
     }
 
     function adjustVolume(volume) {
