@@ -19,6 +19,9 @@ ipcMain.on('asynchronous-message', (event, arg) => {
         case 'goToCalculatorWindow':
             createCalculatorWindow();
             break;
+        case 'goToComboMakerWindow':
+            createComboMakerWindow();
+            break;
         case 'goToAlisa':
             createCharacterWindow('Alisa');
             break;
@@ -151,6 +154,21 @@ const createCalculatorWindow = () => {
     });
     win.loadFile('calculatorWindow.html');
 };
+
+const createComboMakerWindow = () => {
+    console.log("createComboMakerWindow() function in index.js called Current time is:", new Date());
+    const win = new BrowserWindow({
+        width: 1920,
+        height: 1080,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js'),
+        },
+    });
+
+    win.maximize();
+    win.loadFile('comboMakerWindow.html');
+};
+
 
 app.whenReady().then(() => {
     createWindow();
