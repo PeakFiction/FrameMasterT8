@@ -640,10 +640,11 @@
     </div>
   </div>
 </div><script>
-  let currentIndex = 0;
+let currentIndex = 0;
 let isPlaying = false;
 let previewIndex = 0;
 let currentSong = null;
+let currentTime = 0;
 
 const audioPlayer = document.getElementById('audio-player');
 const songImage = document.getElementById('song-image');
@@ -671,27 +672,21 @@ function updateSongOption(index) {
 
 function prevSongPreview() {
   previewIndex = (previewIndex - 1 + groups.length) % groups.length;
-  const [starter, loop] = updateSongOption(previewIndex);
-  if (!isPlaying) {
-    audioPlayer.src = starter;
-    audioPlayer.currentTime = 0;
-  }
+  updateSongOption(previewIndex);
 }
 
 function nextSongPreview() {
   previewIndex = (previewIndex + 1) % groups.length;
-  const [starter, loop] = updateSongOption(previewIndex);
-  if (!isPlaying) {
-    audioPlayer.src = starter;
-    audioPlayer.currentTime = 0;
-  }
+  updateSongOption(previewIndex);
 }
 
 function playSong() {
-  if (isPlaying) {
-    audioPlayer.pause();
-    isPlaying = false;
+  if (isPlaying && currentIndex === previewIndex) {
     return;
+  }
+
+  if (isPlaying) {
+    stopSong();
   }
 
   currentIndex = previewIndex;
@@ -724,11 +719,22 @@ function stopSong() {
   audioWave.style.display = 'none';
   isPlaying = false;
   currentSong = null;
+  currentTime = 0;
 }
 
 function pauseSong() {
-  audioPlayer.pause();
-  isPlaying = false;
+  if (isPlaying) {
+    audioPlayer.pause();
+    isPlaying = false;
+    currentTime = audioPlayer.currentTime;
+  } else {
+    if (currentSong) {
+      audioPlayer.src = currentSong;
+      audioPlayer.currentTime = currentTime;
+      audioPlayer.play();
+      isPlaying = true;
+    }
+  }
 }
 
 function toggleAudioPlayerPopup() {
