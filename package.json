@@ -5,14 +5,29 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^23.1.1"
+    "electron": "^23.1.1",
+    "electron-builder": "^23.6.0"
   },
   "dependencies": {
     "sqlite3": "^5.1.7"
+  },
+  "build": {
+    "appId": "com.example.framemastertek8",
+    "mac": {
+      "icon": "path/to/mac/T8FMIcon.icns"
+    },
+    "win": {
+      "icon": "path/to/windows/T8FMIcon.ico"
+    },
+    "linux": {
+      "icon": "path/to/linux/T8FMIcon.png"
+    }
   }
 }
