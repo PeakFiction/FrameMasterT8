@@ -3,9 +3,6 @@ const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 const nativeImage = require('electron').nativeImage
 const image = nativeImage.createFromPath('T8FMIcon.ico')
-app.dock.setIcon(image);
-
-
 let mainWindow; // Declare a variable to store the current window instance
 let currentCharacterID = "";
 
