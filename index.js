@@ -14,7 +14,8 @@ ipcMain.on('request-data', (event) => {
 ipcMain.on('asynchronous-message', (event, arg) => {
     switch (arg) {
         case 'goToHomePage':
-            createWindow();
+            mainWindow.loadFile('index.html');
+            fetchData(event);
             break;
         case 'goToCalculatorWindow':
             createCalculatorWindow();
@@ -22,107 +23,10 @@ ipcMain.on('asynchronous-message', (event, arg) => {
         case 'goToComboMakerWindow':
             createComboMakerWindow();
             break;
-        case 'goToAlisa':
-            createCharacterWindow('Alisa');
-            break;
-        case 'goToAsuka':
-            createCharacterWindow('Asuka');
-            break;
-        case 'goToAzucena':
-            createCharacterWindow('Azucena');
-            break;
-        case 'goToBryan':
-            createCharacterWindow('Bryan');
-            break;
-        case 'goToClaudio':
-            createCharacterWindow('Claudio');
-            break;
-        case 'goToDevilJin':
-            createCharacterWindow('DevilJin');
-            break;
-        case 'goToDragunov':
-            createCharacterWindow('Dragunov');
-            break;
-        case 'goToEddy':
-            createCharacterWindow('Eddy');
-            break;
-        case 'goToFeng':
-            createCharacterWindow('Feng');
-            break;
-        case 'goToHwoarang':
-            createCharacterWindow('Hwoarang');
-            break;
-        case 'goToJack8':
-            createCharacterWindow('Jack8');
-            break;
-        case 'goToJin':
-            createCharacterWindow('Jin');
-            break;
-        case 'goToJun':
-            createCharacterWindow('Jun');
-            break;
-        case 'goToKazuya':
-            createCharacterWindow('Kazuya');
-            break;
-        case 'goToKing':
-            createCharacterWindow('King');
-            break;
-        case 'goToKuma':
-            createCharacterWindow('Kuma');
-            break;
-        case 'goToLars':
-            createCharacterWindow('Lars');
-            break;
-        case 'goToLaw':
-            createCharacterWindow('Law');
-            break;
-        case 'goToLee':
-            createCharacterWindow('Lee');
-            break;
-        case 'goToLeo':
-            createCharacterWindow('Leo');
-            break;
-        case 'goToLeroy':
-            createCharacterWindow('Leroy');
-            break;
-        case 'goToLili':
-            createCharacterWindow('Lili');
-            break;
-        case 'goToNina':
-            createCharacterWindow('Nina');
-            break;
-        case 'goToPanda':
-            createCharacterWindow('Panda');
-            break;
-        case 'goToPaul':
-            createCharacterWindow('Paul');
-            break;
-        case 'goToRaven':
-            createCharacterWindow('Raven');
-            break;
-        case 'goToReina':
-            createCharacterWindow('Reina');
-            break;
-        case 'goToShaheen':
-            createCharacterWindow('Shaheen');
-            break;
-        case 'goToSteve':
-            createCharacterWindow('Steve');
-            break;
-        case 'goToVictor':
-            createCharacterWindow('Victor');
-            break;
-        case 'goToXiaoyu':
-            createCharacterWindow('Xiaoyu');
-            break;
-        case 'goToYoshimitsu':
-            createCharacterWindow('Yoshimitsu');
-            break;
-        case 'goToZafina':
-            createCharacterWindow('Zafina');
-            break;
         default:
-            // Handle unexpected cases here
+            const character = arg.replace('goTo', '');
+            currentCharacterID = character.toLowerCase()
+            mainWindow.loadFile(`characterHTMLs/${character.toLowerCase()}MoveList.html`);
             break;
     }
 });
@@ -146,8 +50,8 @@ const createWindow = () => {
 const createCalculatorWindow = () => {
     console.log("createCalculatorWindow() function in index.js called Current time is:", new Date());
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 377,
+        height: 670,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
