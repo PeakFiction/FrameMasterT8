@@ -1,24 +1,28 @@
 {
-  "name": "Frame Master Tekken 8",
+  "name": "framemastertek8",
   "version": "1.0.0",
-  "description": "",
+  "description": "Your description here",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=T8FMIcon.icns --prune=true --out=release-builds",
+    "pack": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=T8FMIcon.icns --prune=true --out=release-builds",
     "dist": "electron-builder"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^23.1.1",
-    "electron-builder": "^23.6.0"
+    "electron": "^30.0.5",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
     "sqlite3": "^5.1.7"
   },
   "build": {
+    "extraFiles":[
+      "mydatabase.db"
+    ],
     "appId": "com.example.framemastertek8",
     "mac": {
       "icon": "T8FMIcon.icns"
