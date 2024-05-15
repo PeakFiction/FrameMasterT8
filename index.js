@@ -1,8 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
-
-
+const nativeImage = require('electron').nativeImage
+const image = nativeImage.createFromPath('T8FMIcon.ico')
 let mainWindow; // Declare a variable to store the current window instance
 let currentCharacterID = "";
 
@@ -41,6 +41,7 @@ const createWindow = () => {
             preload: path.join(__dirname, 'preload.js'),
         },
         maximizable: true,
+        icon: path.join(__dirname, 'T8FMIcon.ico'),
     });
     win.loadFile('index.html');
     win.maximize();
