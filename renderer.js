@@ -20,6 +20,12 @@ button3.addEventListener('click', () => {
   createCalculatorWindow();
 });
 
+const button4 = document.getElementById('goToComboMakerWindow');
+button4.addEventListener('click', () => {
+  console.log("button 4 Event Listener in renderer called Current time is:", new Date());
+  createComboMakerWindow();
+});
+
 addButtonEventListener('goToAlisa', 'Alisa');
 addButtonEventListener('goToAsuka', 'Asuka');
 addButtonEventListener('goToAzucena', 'Azucena');

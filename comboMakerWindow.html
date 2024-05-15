@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combo Maker</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    /* Add your existing styles for animations and other elements from index.html */
+
+    body {
+      font-family: 'Bebas Neue', cursive;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #000000, #8B0000, #800080);
+      background-size: 600% 600%;
+      animation: gradientAnimation 5s ease infinite;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      animation: fadeInAnimation 1s ease-in-out;
+    }
+
+    .title {
+      font-family: 'Bebas Neue', sans-serif;
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: pulseAnimation 2s infinite;
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .display {
+        background-color: #f0f0f0;
+        padding: 10px;
+        flex-grow: 1;
+        position: relative;
+      }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+      }
+
+      .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .button-group img {
+        margin: 5px;
+      }
+
+      .display-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+    .buttons img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-color: rgba(45, 47, 50, 1);
+      border-top-left-radius: 15px;
+      animation: iconPulseAnimation 1s infinite;
+      box-shadow: 0 0 10px crimson;
+    }
+
+    .buttons img:hover {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+    
+    .display {
+        display: flex;
+        align-items: center; /* Align items vertically */
+      }
+
+    #result {
+        flex-grow: 1; /* Allow the span to grow and fill the available space */
+      }
+
+    #customButton {
+        margin-left: 10px; /* Add some space between the span and the button */
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 1.0);
+        color: #fff;
+        border: none;
+        border-radius: 0; /* Change border-radius to 0 for squared edges */
+        box-shadow: 0 0 10px rgba(139, 0, 0, 1); /* Added dark red crimson shadow */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: 'Bebas Neue', cursive;
+      }
+
+      #customButton:hover {
+        background-color: rgba(139, 0, 0, 1);
+      }
+  </style>
+</head>
+<body>
+    <h1 class="title">Combo Maker</h1>
+    <div class="container">
+      <div class="display-container">
+        <div class="display">
+            <span id="result"></span>
+            <button id="customButton" onclick="clearDisplay()">CLEAR</button>
+        </div>
+      </div>
+      <div class="buttons">
+        <div>
+          <h3>Buttons</h3>
+          <div class="button-group">
+            <img src="notation/button-1.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-2.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-3.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-4.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-12.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-13.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-14.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-23.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-24.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-34.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-123.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-124.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-134.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-234.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/button-1234.png" onclick="appendToDisplay(this.src)" alt="1">
+          </div>
+        </div>
+        <div>
+          <h3>Motions</h3>
+          <div class="button-group">
+            <img src="notation/motion-neutral.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-f.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-FHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-df.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-dfHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-d.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-dHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-db.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-dbHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-b.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-bHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-ub.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-ubHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-u.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-uHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+            <img src="notation/motion-uf.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/motion-ufHold.png" onclick="appendToDisplay(this.src)" alt="1">
+
+
+          </div>
+        </div>
+        <div>
+          <h3>Actions</h3>
+          <div class="button-group">
+            <img src="notation/action-counterHit.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-crouchCancel.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-dash.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-deepdash.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-fullCrouch.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-heatBurst.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-heatDash.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-inHeat.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-microdash.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-rageArt.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-sideStepCancelorCrouch.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-sideStepLeft.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-sideStepRight.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-sideWalkLeft.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-sideWalkRight.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-tornado.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-wallSplat.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-whileRunning.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/action-whileStanding.png" onclick="appendToDisplay(this.src)" alt="1">
+          </div>
+        </div>
+        <div>
+          <h3>Stage</h3>
+          <div class="button-group">
+            <img src="notation/stage-balconyBreak.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/stage-floorBlast.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/stage-floorBreak.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/stage-wallBlast.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/stage-wallBound.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/stage-wallBreak.png" onclick="appendToDisplay(this.src)" alt="1">
+          </div>
+        </div>
+        <div>
+          <h3>Others</h3>
+          <div class="button-group">
+            <img src="notation/other-bracketLeft.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/other-bracketRight.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/other-colon.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/other-comma.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/other-next.png" onclick="appendToDisplay(this.src)" alt="1">
+            <img src="notation/other-tilde.png" onclick="appendToDisplay(this.src)" alt="1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        let display = document.getElementById('result');
+
+        function appendToDisplay(imageSrc) {
+            const img = document.createElement('img');
+            img.src = imageSrc;
+            img.width = 30;
+            img.height = 30;
+            display.appendChild(img);
+        }
+
+        function clearDisplay() {
+            display.innerHTML = '';
+        }
+    </script>
+</html>
