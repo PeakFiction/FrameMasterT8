@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pack": "electron-builder --dir",
+    "pack": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=T8FMIcon.icns --prune=true --out=release-builds",
     "dist": "electron-builder"
   },
   "author": "",
@@ -21,13 +21,13 @@
   "build": {
     "appId": "com.example.framemastertek8",
     "mac": {
-      "icon": "path/to/mac/T8FMIcon.icns"
+      "icon": "T8FMIcon.icns"
     },
     "win": {
-      "icon": "path/to/windows/T8FMIcon.ico"
+      "icon": "T8FMIcon.ico"
     },
     "linux": {
-      "icon": "path/to/linux/T8FMIcon.png"
+      "icon": "T8FMIcon.png"
     }
   }
 }
