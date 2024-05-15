@@ -56,6 +56,7 @@ const createCalculatorWindow = () => {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        icon: path.join(__dirname, 'T8FMIcon.ico'),
     });
     win.loadFile('calculatorWindow.html');
 };
@@ -68,6 +69,7 @@ const createComboMakerWindow = () => {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
         },
+        icon: path.join(__dirname, 'T8FMIcon.ico'),
     });
 
     win.maximize();
