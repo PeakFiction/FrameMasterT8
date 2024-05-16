@@ -1050,12 +1050,14 @@ let currentIndex = 0;
 
     function prevSongPreview() {
       previewIndex = (previewIndex - 1 + groups.length) % groups.length;
-      updateSongOption(previewIndex);
+      const [starter, loop] = updateSongOption(previewIndex);
+      playSong(starter, loop);
     }
 
     function nextSongPreview() {
       previewIndex = (previewIndex + 1) % groups.length;
-      updateSongOption(previewIndex);
+      const [starter, loop] = updateSongOption(previewIndex);
+      playSong(starter, loop);
     }
 
     function playSong() {
