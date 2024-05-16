@@ -13,4 +13,4 @@ def csv_to_js_array(filename, output_filename):
     with open(output_filename, 'w', encoding='utf-8') as jsfile:
         jsfile.write(js_array_content)
 
-csv_to_js_array('converter/nina.csv', 'converter/nina.js')
+csv_to_js_array('converter/moves.csv', 'converter/moves.js')
