@@ -22,7 +22,7 @@ Once downloaded, you have two options to install the application:
 1. **Normal App Setup**: Run the `setup.exe` file and follow the on-screen instructions to install Frame Master: Tekken 8 on your system.
 2. **Portable Version**: Navigate to the `win-unpacked` folder and run the `FrameMasterT8.exe` file to launch the application directly without installing it.
 
-## Getting Started
+## Getting Started (for Developers)
 
 To run Frame Master: Tekken 8 on your local machine, follow these steps:
 
