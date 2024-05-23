@@ -37,6 +37,14 @@ window.addEventListener('DOMContentLoaded', () => {
           ipcRenderer.send('asynchronous-message', 'goToComboMakerWindow');
         });
       }
+
+      const creditWindow = document.getElementById('goToCreditWindow');
+      if (creditWindow) {
+        creditWindow.addEventListener('click', () => {
+          console.log("creditWindow IPCRenderer in preload.js called. Current time is:", new Date());
+          ipcRenderer.send('asynchronous-message', 'goToCreditWindow');
+        });
+      }
       
       
     const floatingButtons = document.querySelectorAll('.floating-btn .button-container button');

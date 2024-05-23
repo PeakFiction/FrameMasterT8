@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      font-family: 'Bebas Neue', cursive;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #000000, #8B0000, #800080);
+      background-size: 600% 600%;
+      animation: gradientAnimation 5s ease infinite;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      animation: fadeInAnimation 1s ease-in-out;
+    }
+
+    .title {
+      font-family: 'Bebas Neue', sans-serif;
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .credit-content {
+      font-family: 'Bebas Neue', cursive;
+      color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      animation: fadeInAnimation 1s ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .credit-content p {
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      text-align: left;
+    }
+
+    .emphasis {
+      color: #ff6347;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+    }
+
+    .github-username {
+      color: #add8e6;
+      font-style: italic;
+      text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+    }
+
+    .song-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .song-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .song-artist,
+    .song-album {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: rgba(0, 0, 0, 1.0);
+      color: #fff;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(139, 0, 0, 1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Bebas Neue', cursive;
+    }
+
+    .btn:hover {
+      background-color: rgba(139, 0, 0, 1);
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Credits</div>
+  <div class="credit-content">
+    <p><span class="emphasis">Lovingly Crafted</span> as Part of a Software Engineering Project</p>
+    <p>created by the people of <span class="emphasis">Ichiban Group</span></p>
+    <p>&nbsp;</p>
+    <p>Muhammad Sakhran Thayyib <span class="github-username">(PeakFiction)</span></p>
+    <p>Alvin Zhafif Afilla <span class="github-username">(Alvinzhafif)</span></p>
+    <p>Alfian Fadhlurrahman <span class="github-username">(alfian-f)</span></p>
+    <p>Gregorius Samuel Hutahean <span class="github-username">(samuelcodingjourney)</span></p>
+    <p>&nbsp;</p>
+    <p><span class="emphasis">Move data</span> is provided by Wavu.Wiki</p>
+    <p><span class="emphasis">Renders and icons</span> of characters provided by the Tekken 8 Wiki</p>
+    <p>&nbsp;</p>
+    <p><span class="emphasis">Songs of the Jukebox</span> by Namco Sounds and Tekken Project:</p>
+    <div class="song-info">
+      <p class="song-title">"Rude and Reckless"</p>
+      <p class="song-artist">TEKKEN Project, Bandai Namco Game Music</p>
+      <p class="song-album"><span class="emphasis">Tekken 8 (Original Soundtrack)</span></p>
+    </div>
+    <div class="song-info">
+      <p class="song-title">"Destroyers"</p>
+      <p class="song-artist">TEKKEN Project, Bandai Namco Game Music</p>
+      <p class="song-album"><span class="emphasis">Tekken 7 (Original Soundtrack Vol.2)</span></p>
+    </div>
+    <div class="song-info">
+      <p class="song-title">"Aim To Win (Character Select)"</p>
+      <p class="song-artist">TEKKEN Project, Bandai Namco Game Music</p>
+      <p class="song-album"><span class="emphasis">Tekken Tag Tournament 2 (Original Soundtrack)</span></p>
+    </div>
+    <div class="song-info">
+      <p class="song-title">"Dist Thins Out (Character Select)"</p>
+      <p class="song-artist">TEKKEN Project, Bandai Namco Game Music</p>
+      <p class="song-album"><span class="emphasis">Tekken 6 (Original Soundtrack)</span></p>
+    </div>
+    <div class="song-info">
+      <p class="song-title">"Who's Afraid Of..."</p>
+      <p class="song-artist">TEKKEN Project, Bandai Namco Game Music</p>
+      <p class="song-album"><span class="emphasis">Tekken 5 (Original Soundtrack)</span></p>
+    </div>
+  </div>
+  <div class="button-container">
+    <button id="goToHomePage" class="btn">Back</button>
+  </div>
+</body>
+</html>

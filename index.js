@@ -23,6 +23,10 @@ ipcMain.on('asynchronous-message', (event, arg) => {
         case 'goToComboMakerWindow':
             createComboMakerWindow();
             break;
+        case 'goToCreditWindow':
+            mainWindow.loadFile('credit.html');
+            fetchData(event);
+            break;
         default:
             const character = arg.replace('goTo', '');
             currentCharacterID = character.toLowerCase()
