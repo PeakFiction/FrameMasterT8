@@ -1,5 +1,3 @@
-Sure, here's an improved version of the README.md file in markdown:
-
 # Frame Master: Tekken 8
 
 Frame Master: Tekken 8 is a comprehensive tool designed for Tekken 8 players, providing detailed frame data analysis, combo damage calculations, and an extensive move list for every character in the game. This powerful application empowers players to dive deep into the mechanics of Tekken 8, enabling them to make informed decisions and develop effective strategies.
